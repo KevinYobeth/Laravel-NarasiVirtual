@@ -85,7 +85,11 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Laravel
+                Pameran Virtual
+            </div>
+
+            <div class="links">
+                <a href = "http://127.0.0.1:8000/Seminar">Seminar</a>
             </div>
 
 
