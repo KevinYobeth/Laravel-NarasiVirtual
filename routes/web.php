@@ -29,3 +29,7 @@ Route::get('/Seminar', function () {
 Route::get('/PameranNonVirtual', function () {
     return view('PameranNonVirtual');
 });
+
+Route::get('/gallery', function () {
+    return view('images.gallery');
+});
