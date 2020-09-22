@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>NARASI 2020</title>
+
+    <meta property="og:title" content="NARASI: The Language of the Soul" />
+    <meta property="og:description"
+        content="NARASI 2020 merupakan ekshibisi online pertama dari KLIFONARA atau Klub Seni Fotografi Bina Nusantara" />
+    <meta property="og:image" content="{{ asset('img/logo/logo-light.png') }}" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -169,8 +174,8 @@
                             diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
+                <div class="row h-60">
+                    <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
                                 alt="Card image cap">
@@ -182,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="{{ asset('img/logo/logo-dark.png') }}"
                                 alt="Card image cap">
@@ -194,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
                                 alt="Card image cap">
