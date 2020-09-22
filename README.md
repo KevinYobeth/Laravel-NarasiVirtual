@@ -1,4 +1,4 @@
-<p align="center"><img src="public/img/logo-dark.png" width="300"></p>
+<p align="center"><img src="public/img/logo/logo-dark.png" width="300"></p>
 <h1 align="center">NARASI Virtual 2020</h1>
 
 # Installation
