@@ -59,11 +59,6 @@
             <br>
             <input class="form-control" type="text" name="story">
 
-            <br>
-            <label for="exif">Exif</label>
-            <br>
-            <input class="form-control" type="text" name="exif">
-
             <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">
                 Upload Files
             </button>

@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic as Image;
 use App\Submission;
 
 class SubmissionController extends Controller
 {
     public function index()
     {
-        return view('submission');
+        return view('submission.index');
     }
 
     public function fileUpload(Request $req)
@@ -32,9 +32,25 @@ class SubmissionController extends Controller
             $fileModel->fileName = time() . '_' . $req->file->getClientOriginalName();
             $fileModel->title = $req->title;
             $fileModel->story = $req->story;
-            $fileModel->exif = $req->exif;
 
-            $fileModel->save();
+            // $fileModel->save();
+
+            $exif = Image::make('storage/' . $filePath)->exif();
+            $fileModel->exif = $exif;
+
+            // dd($exif["ExposureTime"]);
+            // dd($exif["FNumber"]);
+            // dd($exif["ISOSpeedRatings"]);
+
+            $mssg = '';
+            if (!$exif) {
+                $mssg = 'Input valid EXIF';
+            }
+
+            return view('submission.verify', [
+                'file' => $fileModel,
+                'mssg' => $mssg,
+            ]);
 
             return back()
                 ->with('success', 'File has been uploaded.')
@@ -46,7 +62,7 @@ class SubmissionController extends Controller
     {
         $submission = Submission::all();
 
-        return view('viewSubmission', [
+        return view('submission.view', [
             'submissions' => $submission,
         ]);
     }
@@ -55,7 +71,5 @@ class SubmissionController extends Controller
     {
 
         return response()->download(storage_path("app/public/submission/{$fileName}"));
-        // $file = Storage::disk('submission')->get($fileName);
-        // return (Response($file, 200))->header('Content-Type', 'image/jpeg');
     }
 }

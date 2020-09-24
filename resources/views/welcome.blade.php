@@ -134,7 +134,8 @@
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
+                            style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7" style="padding-left: 50px">
                         <h4 id="what-is">What is</h4>
