@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/submission', 'SubmissionController@index')->middleware('auth');
+Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmission');
+
+Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
+Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('getfile');
