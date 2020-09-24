@@ -21,8 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/upload', 'UploadController@upload');
-Route::post('/upload/proses', 'UploadController@proses_upload');
+Route::get('/submission', 'SubmissionController@index')->middleware('auth');
+Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmission');
 
-Route::get('/upload-file', 'FileUpload@createForm');
-Route::post('/upload-file', 'FileUpload@fileUpload')->name('fileUpload');
+Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
+Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('getfile');
