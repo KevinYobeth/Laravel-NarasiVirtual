@@ -20,7 +20,9 @@ class CreateSubmissionsTable extends Migration
             $table->string('fileName');
             $table->string('title');
             $table->string('story');
-            $table->string('exif');
+            $table->string('exifF');
+            $table->string('exifSS');
+            $table->string('exifISO');
             $table->timestamps();
         });
     }

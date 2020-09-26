@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('landingPage');
 
 Auth::routes();
 
@@ -26,3 +26,5 @@ Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmi
 
 Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
 Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('getfile');
+
+Route::post('/verifySubmission', 'SubmissionController@verify');
