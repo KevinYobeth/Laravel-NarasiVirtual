@@ -65,7 +65,7 @@
                             <a class="nav-link" href="#section-1">THE STORY</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#section-2">SUBMISSIONS</a>
+                            <a class="nav-link" href="{{ route('uploadSubmission') }}">SUBMISSIONS</a>
                         </li>
                         <li>
                             <a class="nav-link" href="#section-3">EXHIBITION</a>

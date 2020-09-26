@@ -24,23 +24,20 @@ class SubmissionController extends Controller
         $fileModel = new Submission;
 
         if ($req->file()) {
-            $fileName = time() . '_' . $req->file->getClientOriginalName();
+            $user = Auth::user();
+
+            $fileName = str_replace(' ', '', $user->name) . '_' . time() . '_' . $req->file->getClientOriginalName();
             $filePath = $req->file('file')->storeAs('submission', $fileName, 'public');
+
 
             $fileModel->userID = Auth::id();
             $fileModel->filePath = '/storage/' . $filePath;
-            $fileModel->fileName = time() . '_' . $req->file->getClientOriginalName();
+            $fileModel->fileName = str_replace(' ', '', $user->name) . '_' . time() . '_' . $req->file->getClientOriginalName();
             $fileModel->title = $req->title;
             $fileModel->story = $req->story;
 
-            // $fileModel->save();
-
             $exif = Image::make('storage/' . $filePath)->exif();
             $fileModel->exif = $exif;
-
-            // dd($exif["ExposureTime"]);
-            // dd($exif["FNumber"]);
-            // dd($exif["ISOSpeedRatings"]);
 
             $mssg = '';
             if (!$exif) {
@@ -51,11 +48,27 @@ class SubmissionController extends Controller
                 'file' => $fileModel,
                 'mssg' => $mssg,
             ]);
-
-            return back()
-                ->with('success', 'File has been uploaded.')
-                ->with('file', $fileName);
         }
+    }
+
+    public function verify(Request $request)
+    {
+        $data = $request->all();
+
+        $fileModel = new Submission;
+
+        $fileModel->userID = $data['userID'];
+        $fileModel->filePath = $data['filePath'];
+        $fileModel->fileName = $data['fileName'];
+        $fileModel->title = $data['title'];
+        $fileModel->story = $data['story'];
+        $fileModel->exifF = $data['exif-f'];
+        $fileModel->exifSS = $data['exif-ss'];
+        $fileModel->exifISO = $data['exif-iso'];
+
+        $fileModel->save();
+
+        return view('submission.success');
     }
 
     public function view()
@@ -69,7 +82,6 @@ class SubmissionController extends Controller
 
     public function getFile($fileName)
     {
-
         return response()->download(storage_path("app/public/submission/{$fileName}"));
     }
 }

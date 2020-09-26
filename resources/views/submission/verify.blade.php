@@ -32,7 +32,10 @@
         </div>
     @endif
 
-    <form action="" method="POST">
+    <img src="{{ url($file->filePath) }}" alt="" width="200px">
+
+    <form action="/verifySubmission" method="POST" enctype="multipart/form-data">
+        @csrf
 
         <label for="title">Title</label>
         <input class="form-group" type="text" value="{{ $file->title }}" name="title">
@@ -59,6 +62,14 @@
             value="{{ $file->exif["ISOSpeedRatings"] ?? '' }}"
             name="exif-iso" oninvalid="this.setCustomValidity('Enter ISO Number')" required>
         <br>
+
+        <input type="hidden" name="title" value="{{ $file->title }}">
+        <input type="hidden" name="title" value="{{ $file->title }}">
+        <input type="hidden" name="story" value="{{ $file->story }}">
+        <input type="hidden" name="userID" value="{{ $file->userID }}">
+        <input type="hidden" name="filePath" value="{{ $file->filePath }}">
+        <input type="hidden" name="fileName"
+            value="{{ str_replace(' ', '', $file->fileName) }}">
 
         <button type="submit">Submit</button>
     </form>

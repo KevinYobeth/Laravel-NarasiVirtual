@@ -34,7 +34,9 @@
             <p>File Name: {{ $submission->fileName }}</p>
             <p>Title: {{ $submission->title }}</p>
             <p>Story: {{ $submission->story }}</p>
-            <p>EXIF: {{ $submission->exif }}</p>
+            <p>Aperture: {{ $submission->exifF }}</p>
+            <p>Shutter Speed: {{ $submission->exifSS }}</p>
+            <p>ISO: {{ $submission->exifISO }}</p>
             <a href="{{ route('getfile', $submission->fileName) }}">
                 <button>Download</button></a>
             <br>
