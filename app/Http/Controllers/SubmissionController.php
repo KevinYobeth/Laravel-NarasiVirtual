@@ -18,7 +18,7 @@ class SubmissionController extends Controller
     {
         // Reference: https://www.positronx.io/laravel-file-upload-with-validation/
         $req->validate([
-            'file' => 'required|mimes:jpeg,png,jpg|max:2048'
+            'file' => 'required|mimes:jpeg,jpg|max:10000'
         ]);
 
         $fileModel = new Submission;

@@ -11,21 +11,6 @@
 </head>
 
 <body>
-    {{-- 
-    $fileName = time() . '_' . $req->file->getClientOriginalName();
-    $filePath = $req->file('file')->storeAs('submission', $fileName, 'public');
-
-    $fileModel->userID = Auth::id();
-    $fileModel->filePath = '/storage/' . $filePath;
-    $fileModel->fileName = time() . '_' . $req->file->getClientOriginalName();
-    $fileModel->title = $req->title;
-    $fileModel->story = $req->story;
-
-    // $fileModel->save();
-
-    $exif = Image::make('storage/' . $filePath)->exif();
-    $fileModel->exif = $exif; --}}
-
     @if(!empty($mssg))
         <div class="alert alert-danger" role="alert">
             {{ $mssg }}
@@ -73,16 +58,6 @@
 
         <button type="submit">Submit</button>
     </form>
-    {{-- 
-    <p>{{ $file->userID }}</p>
-    <p>{{ $file->filePath }}</p>
-    <p>{{ $file->fileName }}</p>
-    <p>{{ $file->title }}</p>
-    <p>{{ $file->story }}</p>
-    <p>{{ $file->exif["ExposureTime"] }}</p>
-    <p>{{ $file->exif["FNumber"] }}</p>
-    <p>{{ $file->exif["ISOSpeedRatings"] }}</p> --}}
-
 
 </body>
 

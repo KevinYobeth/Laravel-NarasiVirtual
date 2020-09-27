@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('landingPage');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/submission', 'SubmissionController@index')->middleware('auth');
+Route::get('/submission', 'SubmissionController@index')->middleware(['auth', 'verified']);
 Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmission');
 
 Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
