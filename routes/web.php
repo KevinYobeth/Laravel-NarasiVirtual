@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dash', 'HomeController@index')->name('dash');
 
 Route::get('/submission', 'SubmissionController@index')->middleware(['auth', 'verified']);
 Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmission');
@@ -28,3 +28,5 @@ Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
 Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('getfile');
 
 Route::post('/verifySubmission', 'SubmissionController@verify');
+
+Route::get('/seminar/register/{seminarID}', 'SeminarController@index');
