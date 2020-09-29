@@ -29,4 +29,4 @@ Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('g
 
 Route::post('/verifySubmission', 'SubmissionController@verify');
 
-Route::get('/seminar/register/{seminarID}', 'SeminarController@index');
+Route::get('/seminar/register/{ID}', 'SeminarController@register')->middleware(['auth', 'verified'])->name('registerSeminar');
