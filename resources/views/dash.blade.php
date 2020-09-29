@@ -15,44 +15,55 @@
                     </div>
                 </div>
             </div>
-
-            <br>
-            <br>
         @endif
     </div>
 
+
     <div class="row justify-content-center">
-        <div class="col-md-5">
-            <div class="card">
-                <h5 class="card-header">Seminar Mental Health</h5>
-                <div class="card-body">
-                    <h5 class="card-title">How to Express Yourself</h5>
-                    <p class="card-text">Seminar ini berbicara tentang bagaimana cara-cara mengekspresikan diri melalui
-                        karya seni. Seminar ini dibawakan oleh <b>Hana Madness</b>.
-                        <span class="badge badge-pill badge-success">Berbayar</span> </p>
 
-                    <a href="#" class="btn btn-primary">Daftar</a>
-                    <a href="#" class="btn btn-primary">Join</a>
+        @if(count($attendedSeminars) > 0)
+            <h1 class="col-md-8 text-center">Registered Seminar</h1>
+        @endif
+
+        @foreach($attendedSeminars as $attendedSeminar)
+            <div class="col-md-5 py-3">
+                <div class="card">
+                    <h5 class="card-header">Seminar NARASI 2020</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $attendedSeminar->name }}</h5>
+                        <p class="card-text">{{ $attendedSeminar->description }} <br> </p>
+                        {{-- <span class="badge badge-pill badge-success">Berbayar</span> </p> --}}
+
+                        <a href="{{ $attendedSeminar->link }}" class="btn btn-primary">Join</a>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        @endforeach
 
-        <div class="col-md-5">
-            <div class="card">
-                <h5 class="card-header">Seminar Photography</h5>
-                <div class="card-body">
-                    <h5 class="card-title">How to take Expressive Photos</h5>
-                    <p class="card-text">Seminar ini mengajarkan tentang cara-cara untuk memotret foto secara conceptual
-                        untuk mendapatkan ekspresi / perasaan yang ingin didapatkan dari subjek. Seminar dibawakan oleh
-                        <b>Amanda Margareth</b>.</p>
-                    <a href="#" class="btn btn-primary">Daftar</a>
+        @if(count($seminars) > 0)
+            <h1 class="col-md-8 text-center">Available Seminar</h1>
+        @endif
+
+        @foreach($seminars as $seminar)
+            <div class="col-md-5 py-3">
+                <div class="card">
+                    <h5 class="card-header">Seminar NARASI 2020</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $seminar->name }}</h5>
+                        <p class="card-text">{{ $seminar->description }} <br> </p>
+
+                        <a href="{{ route('registerSeminar', ['ID' => $seminar->id]) }}"
+                            class="btn btn-primary">Daftar</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endforeach
+
     </div>
 
-    <div class="row text-center justify-content-center py-5">
-        <h1>Submited Photo(s)</h1>
+    <div class="row text-center justify-content-center py-3">
+        <h1>Submitted Photo</h1>
         <div class="col-md-12">
             @foreach($photos as $photo)
                 <img src="{{ url($photo->filePath) }}" alt="" width="200px">
