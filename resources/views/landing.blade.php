@@ -19,36 +19,15 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/land.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/fullpage.css') }}">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="alert alert-custom alert-dismissible fade show" role="alert" style="color: white">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center text-center">
-                    <div class="col-md-12">
-                        <p style="margin-top: 10px; display: inline-block">
-                            <strong>Photography Seminar</strong>: How to Take Expressive Photos by Amanda Margareth is
-                            nearing,
-                            get
-                            your seat now!
-                        </p>
-                        <button type="button" class="btn text-light"
-                            style="margin-left: 30px; border: 2px solid white; background-color:transparent">Register
-                            Here</button>
-                        <button style="margin-top: -5px" type="button" class="close" data-dismiss="alert"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+    <div id="header">
         <nav class="navbar navbar-expand-md sticky-top">
             <div class=" container">
                 <a href="#">
@@ -77,19 +56,39 @@
                         <li>
                             <a class="nav-link" href="#section-5">CONTACT</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#section-6">CONTACT</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#section-7">CONTACT</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </div>
 
-        <div class="section-1" id="section-1">
-            <div class="container d-flex h-100">
+    <div id="footer">
+        <div class="alert alert-custom alert-dismissible fade show" role="alert" style="color: white;">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center text-center">
+                    <div class="col-md-12">
+                        <p style="margin-top: 0px; display: inline-block">
+                            <strong>Photography Seminar</strong>: How to Take Expressive Photos by Amanda Margareth is
+                            nearing,
+                            get
+                            your seat now!
+                        </p>
+                        <button type="button" class="btn text-light"
+                            style="margin-left: 30px; border: 2px solid white; background-color:transparent">Register
+                            Here</button>
+                        <button style="margin-top: -5px" type="button" class="close" data-dismiss="alert"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullpage">
+        <div class="section" id="section-1">
+            <div class="container">
                 <div class="row justify-content-center align-self-center">
                     <div class="col-md-12">
                         <h1 id="header-expressions">Expressions</h1>
@@ -99,7 +98,7 @@
             </div>
         </div>
 
-        <div class="section-2" id="section-2">
+        <div class="section" id="section-2">
             <div class="container h-100">
                 <div class="row align-self-center">
                     <div class="col-md-4"></div>
@@ -109,11 +108,9 @@
                     </div>
                     <div class="col-md-4"></div>
                 </div>
-
             </div>
         </div>
-
-        <div class="section-3" id="section-3">
+        <div class="section" id="section-3">
             <div class="container h-100">
                 <div class="row align-self-center">
                     <div class="col-md-4"></div>
@@ -126,7 +123,7 @@
             </div>
         </div>
 
-        <div class="section-4" id="section-4">
+        <div class="section" id="section-4">
             <div class="container h-100 ">
                 <div class="row h-100 justify-content-center align-items-center">
                     <div class="col-md-1">
@@ -164,7 +161,7 @@
             </div>
         </div>
 
-        <div class="section-5" id="section-5">
+        <div class="section" id="section-5">
             <div class="container h-100 ">
                 <div class="row h-40 justify-content-center" style="padding-top: 20vh">
                     <div class="col-md-6 text-center">
@@ -214,11 +211,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <div class="section-6" id="section-6">
+        <div class="section" id="section-6">
             <div class="container d-flex h-100">
                 <div class="row align-self-center">
                     <div class="col-md-8">
@@ -230,11 +226,10 @@
                         <p id="read-more">Read More >></p>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <div class="section-7" id="section-7">
+        <div class="section" id="section-7">
             <div class="container h-100">
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-md-12">
@@ -250,7 +245,7 @@
             </div>
         </div>
 
-        <div class="section-8" id="section-8">
+        <div class="section" id="section-8">
             <div class="container h-100">
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-md-12">
@@ -271,31 +266,28 @@
 
     </div>
 
-    {{-- <div class="flex-center position-ref full-height">
-@if(Route::has('login'))
-                <div class="top-right nav-link">
-@auth
-                        <a href="{{ url('/home') }}">Home</a>
-@else
-    <a href="{{ route('login') }}">Login</a>
 
-    @if(Route::has('register'))
-        <a href="{{ route('register') }}">Register</a>
-    @endif
-    @endauth
-    </div>
-    @endif
+    {{-- <div class="wrapper">
+        
+
+
     </div> --}}
+
 
     <script src="{{ asset('js/fullpage.js') }}"></script>
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage'],
-            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            anchors: ['LandingPage', 'KlifonaraPresent', 'KlifonaraEkshibisi', 'Expression', 'WhatsUp',
+                'TheStory', 'VirtualExhibition'
+            ],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            navigationTooltips: ['Expressions', 'Klifonara Presents',
+                'Klifonara Ekshibisi', 'What is Expression',
+                'What\'s Up',
+                'The Story', 'Virtual Exhibition'
+            ]
         });
 
     </script>
