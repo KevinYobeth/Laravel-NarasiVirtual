@@ -8,47 +8,12 @@ p {
     font-size: 0.9em;
 }
 
-.down-arrow {
-    position: absolute;
-    bottom: 10%;
-    cursor: pointer;
-}
-
-.alert-custom {
-    background: rgb(155, 110, 198);
-    background: linear-gradient(90deg, rgba(155, 110, 198, 1) 0%, rgba(95, 189, 200, 1) 100%);
-    height: 80px;
-    border-radius: 0 !important;
-}
-
-.navbar-nav a {
-    color: #282828;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-.navbar-nav a:hover {
-    color: #b3b3b3;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-.section {
-    background-size: cover;
-}
-
 #header {
     position: fixed;
     z-index: 999;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 1.0);
     width: 100%;
     top: 0px;
-}
-
-.alert {
-    margin-bottom: 0rem !important;
 }
 
 #footer {
@@ -58,14 +23,15 @@ p {
     bottom: 0px;
 }
 
+.section {
+    background-size: cover;
+}
+
 #section-1 {
     background-image: url("/img/section-bg/1.jpg");
 }
 
-#section-2 {
-    background-color: #060808;
-}
-
+#section-2,
 #section-3 {
     background-color: #060808;
 }
@@ -83,40 +49,95 @@ p {
     background: linear-gradient(90deg, rgba(155, 110, 198, 1) 0%, rgba(95, 189, 200, 1) 100%);
 }
 
-#header-expressions {
-    font-size: 100px;
+.alert {
+    margin-bottom: 0rem !important;
+}
+
+.alert-custom {
+    background: rgb(155, 110, 198);
+    background: linear-gradient(90deg, rgba(155, 110, 198, 1) 0%, rgba(95, 189, 200, 1) 100%);
+    height: 80px;
+    border-radius: 0 !important;
+}
+
+.navbar-nav a.nav-link {
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: #b3b3b3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+
+}
+
+.navbar-nav button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.serif {
     font-family: 'Playfair Display', serif;
+}
+
+.sans-serif {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lh-40 {
+    line-height: 40px;
+}
+
+.lh-70 {
+    line-height: 70px;
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+.white {
+    color: white;
+}
+
+.title {
+    font-size: 100px;
     font-weight: 800;
 }
 
-#header-tagline {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
+.title-medium {
+    font-size: 60px;
+    font-weight: 800;
 }
 
-.section-2 {
-    background-color: #060808;
-    height: 100vh;
+.title-small {
+    font-size: 40px;
 }
 
-#klifonara-presents {
-    color: white;
-    padding-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+.caption {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.semi-bold {
     font-weight: 600;
-    font-size: 0.9em;
-    letter-spacing: 5px;
 }
 
-.section-3 {
-    background-color: #060808;
-    height: 100vh;
+.seven-bold {
+    font-weight: 700;
 }
 
-
-.section-4 {
-    height: 100vh;
+.bold {
+    font-weight: 800;
 }
 
 #rect {
@@ -132,104 +153,4 @@ p {
     background: linear-gradient(90deg, rgba(155, 110, 198, 1) 0%, rgba(95, 189, 200, 1) 100%);
     width: 300px;
     height: 10px;
-
-}
-
-#what-is {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    font-weight: 800;
-}
-
-#expression {
-    font-family: 'Playfair Display', serif;
-    font-size: 100px;
-    line-height: 40px;
-    font-weight: 800;
-}
-
-#brief-story {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    display: inline-block;
-}
-
-.section-5 {
-    height: 100vh;
-}
-
-#whats-up {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    font-weight: 900;
-}
-
-#with-narasi {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-.card {
-    padding: 0;
-    margin: 0;
-}
-
-.section-6 {
-
-    background-size: cover;
-    height: 100vh;
-}
-
-#the-story {
-    font-size: 100px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    color: white;
-}
-
-#thestory-caption {
-    color: white;
-}
-
-#read-more {
-    font-weight: 800;
-    color: white;
-}
-
-.section-7 {
-    background-color: rgba(0, 0, 0, 0.4);
-    background-size: cover;
-    height: 100vh;
-}
-
-#visit-our {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-#virtual-exhibition {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-size: 100px;
-    line-height: 70px;
-}
-
-#the-first {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.section-8 {
-    background: rgb(155, 110, 198);
-    background: linear-gradient(90deg, rgba(155, 110, 198, 1) 0%, rgba(95, 189, 200, 1) 100%);
-    background-size: cover;
-    height: 250px;
 }

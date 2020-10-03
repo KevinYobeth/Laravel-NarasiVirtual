@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <script src="{{ asset('js/main.js') }}"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/landingPage.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -30,7 +32,7 @@
     <div id="header">
         <nav class="navbar navbar-expand-md sticky-top">
             <div class=" container">
-                <a href="#">
+                <a href="#LandingPage">
                     <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
                         height="60px" alt />
                 </a>
@@ -55,6 +57,11 @@
                         </li>
                         <li>
                             <a class="nav-link" href="#section-5">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                                <button type="button" class="btn btn-dark btn-login">LOGIN</button>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -91,8 +98,8 @@
             <div class="container">
                 <div class="row justify-content-center align-self-center">
                     <div class="col-md-12">
-                        <h1 id="header-expressions">Expressions</h1>
-                        <h5 id="header-tagline">THE LANGUAGE OF THE SOUL</h5>
+                        <h1 class="serif title">Expressions</h1>
+                        <h5 class="sans-serif seven-bold ls-5">THE LANGUAGE OF THE SOUL</h5>
                     </div>
                 </div>
             </div>
@@ -104,19 +111,20 @@
 
                     <div class="col-md-4 text-center">
                         <img src="{{ asset('img/logo/klifonara.png') }}" alt="" height="110px">
-                        <p id="klifonara-presents">KLIFONARA PRESENTS</p>
+                        <p class="sans-serif semi-bold ls-5 white" style="padding-top: 20px">KLIFONARA PRESENTS</p>
                     </div>
 
                 </div>
             </div>
         </div>
+
         <div class="section" id="section-3">
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center align-items-center">
 
                     <div class="col-md-4 text-center">
                         <img src="{{ asset('img/logo/logo-light.png') }}" alt="" height="110px">
-                        <p id="klifonara-presents">KLIFONARA EKSHIBISI</p>
+                        <p class="sans-serif semi-bold ls-5 white" style="padding-top: 20px">KLIFONARA EKSHIBISI</p>
                     </div>
 
                 </div>
@@ -136,26 +144,25 @@
                             style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7" style="padding-left: 50px">
-                        <h4 id="what-is">What is</h4>
-                        <h1 id="expression">Expression?</h1>
-                        <p id="brief-story">A brief story of our concerns</p>
+                        <h4 class="serif title-medium">What is</h4>
+                        <h1 class="serif title lh-40">Expression?</h1>
+                        <p class="serif caption">A brief story of our concerns</p>
                         <div id="rect-small" style="display: inline-block"></div>
-                        <p id="brief-story" style="margin-top: 0px">and passion.</p>
-
+                        <p class="serif caption" style="margin-top: 0px">and passion.</p>
                         <br>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab necessitatibus tenetur debitis?
+                        <p class="sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab necessitatibus
+                            tenetur debitis?
                             Velit animi quidem recusandae quod eveniet est quasi, dolores, quam corporis perferendis
                             alias cum perspiciatis eum maxime odit. Impedit quis explicabo sapiente at omnis assumenda
                             voluptate qui, possimus harum dolores eveniet nemo? Possimus repellat dolores labore illum
                             eos.</p>
-                        <br>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at illo voluptates eos
+                        <p class="sans-serif"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at illo
+                            voluptates eos
                             obcaecati
                             ad cupiditate eaque labore esse sed maxime sint ea tenetur sit dignissimos fugiat
                             distinctio,
                             sunt possimus!</p>
-
                     </div>
                 </div>
             </div>
@@ -163,12 +170,13 @@
 
         <div class="section" id="section-5">
             <div class="container">
-                <div class="row h-100 d-flex align-items-center justify-content-center">
+                <div class="row h-100 d-flex align-items-center justify-content-center" style="margin-bottom: 20px">
                     <div class="row h-40 justify-content-center">
                         <div class="col-md-6 text-center">
-                            <h1 id="whats-up">What's Up!</h1>
-                            <h5 id="with-narasi">with NARASI 2020</h5>
-                            <p class="justify">NARASI 2020 Expression: The Language of the Soul adalah ekshibisi
+                            <h1 class="serif title-medium">What's Up!</h1>
+                            <h5 class="sans-serif semi-bold">with NARASI 2020</h5>
+                            <p class="sans-serif">NARASI 2020 Expression: The Language of the Soul adalah
+                                ekshibisi
                                 online
                                 pertama yang
                                 diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
@@ -226,12 +234,15 @@
             <div class="container d-flex h-100">
                 <div class="row align-self-center">
                     <div class="col-md-8">
-                        <h1 id="the-story">The Story</h1>
-                        <p id="thestory-caption">Sometimes the world doesn't accept you, but that doesn't mean you need
+                        <h1 class="serif title white">The Story</h1>
+                        <p class="sans-serif white">Sometimes the world doesn't accept you, but that
+                            doesn't mean you need
                             the
                             world to accept
                             you to be your true beautiful self</p>
-                        <p id="read-more">Read More >></p>
+                        <a href="">
+                            <p class="bold white">Read More >></p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -241,9 +252,11 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-md-12">
-                        <h3 id="visit-our">Visit Our</h3>
-                        <h1 id="virtual-exhibition">Virtual Exhibition</h1>
-                        <p id="the-first">The first online interactive exhibition by Klifonara</p>
+                        <h3 class="sans-serif title-small seven-bold white">Visit Our</h3>
+                        <h1 class="serif title bold white lh-70">Virtual Exhibition</h1>
+                        <p class="sans-serif semi-bold white" style="margin-top: 20px">The first online interactive
+                            exhibition by
+                            Klifonara</p>
                         <br>
                         <button type="button" class="btn text-light"
                             style=" border: 2px solid white; background-color:transparent">Get me
@@ -273,14 +286,6 @@
         </div>
 
     </div>
-
-
-    {{-- <div class="wrapper">
-        
-
-
-    </div> --}}
-
 
     <script src="{{ asset('js/fullpage.js') }}"></script>
 
