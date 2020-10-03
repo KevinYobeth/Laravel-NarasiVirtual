@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/land.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/landingPage.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/fullpage.css') }}">
@@ -100,32 +100,32 @@
 
         <div class="section" id="section-2">
             <div class="container h-100">
-                <div class="row align-self-center">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 text-center" style="margin-top: 45vh">
+                <div class="row h-100 d-flex justify-content-center align-items-center">
+
+                    <div class="col-md-4 text-center">
                         <img src="{{ asset('img/logo/klifonara.png') }}" alt="" height="110px">
                         <p id="klifonara-presents">KLIFONARA PRESENTS</p>
                     </div>
-                    <div class="col-md-4"></div>
+
                 </div>
             </div>
         </div>
         <div class="section" id="section-3">
             <div class="container h-100">
-                <div class="row align-self-center">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 text-center" style="margin-top: 45vh">
+                <div class="row h-100 d-flex justify-content-center align-items-center">
+
+                    <div class="col-md-4 text-center">
                         <img src="{{ asset('img/logo/logo-light.png') }}" alt="" height="110px">
                         <p id="klifonara-presents">KLIFONARA EKSHIBISI</p>
                     </div>
-                    <div class="col-md-4"></div>
+
                 </div>
             </div>
         </div>
 
         <div class="section" id="section-4">
             <div class="container h-100 ">
-                <div class="row h-100 justify-content-center align-items-center">
+                <div class="row h-100 d-flex justify-content-center align-items-center">
                     <div class="col-md-1">
                         <div id="rect" style="z-index: 0; margin-top: 150px"></div>
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
@@ -162,51 +162,59 @@
         </div>
 
         <div class="section" id="section-5">
-            <div class="container h-100 ">
-                <div class="row h-40 justify-content-center" style="padding-top: 20vh">
-                    <div class="col-md-6 text-center">
-                        <h1 id="whats-up">What's Up!</h1>
-                        <h5 id="with-narasi">with NARASI 2020</h5>
-                        <p class="justify">NARASI 2020 Expression: The Language of the Soul adalah ekshibisi
-                            online
-                            pertama yang
-                            diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
-                    </div>
-                </div>
-                <div class="row h-60">
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Register Now!</a>
-                            </div>
+            <div class="container">
+                <div class="row h-100 d-flex align-items-center justify-content-center">
+                    <div class="row h-40 justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <h1 id="whats-up">What's Up!</h1>
+                            <h5 id="with-narasi">with NARASI 2020</h5>
+                            <p class="justify">NARASI 2020 Expression: The Language of the Soul adalah ekshibisi
+                                online
+                                pertama yang
+                                diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ asset('img/logo/logo-dark.png') }}"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Register Now!</a>
+                    <div class="row h-60 justify-content-center">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="{{ asset('img/logo/logo-light.png') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Register Now</a>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="{{ asset('img/logo/logo-dark.png') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="{{ asset('img/logo/logo-light.png') }}"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Register Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
