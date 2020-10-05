@@ -33,7 +33,8 @@
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class=" container">
                 <a href="#LandingPage">
-                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
+                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
+                        height="60px" alt />
                 </a>
 
                 <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
@@ -70,23 +71,22 @@
     </div>
 
     <div id="footer">
-        <div class="alert alert-custom alert-dismissible fade show" role="alert" style="color: white;">
+        <div class="alert alert-custom alert-dismissible fade show d-none d-md-block" role="alert"
+            style="color: white;">
             <div class="container h-100">
-                <div class="row h-100 align-items-center text-center">
-                    <div class="col-md-12">
-                        <p style="margin-top: 0px; display: inline-block">
+                <div class="row h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="col-md-10">
+                        <p style="display: inline-block">
                             <strong>Photography Seminar</strong>: How to Take Expressive Photos by Amanda Margareth is
-                            nearing,
-                            get
-                            your seat now!
+                            nearing, get your seat now!
                         </p>
+                    </div>
+                    <div class="col-md-2">
                         <button type="button" class="btn text-light"
-                            style="margin-left: 30px; border: 2px solid white; background-color:transparent">Register
-                            Here</button>
-                        <button style="margin-top: -5px" type="button" class="close" data-dismiss="alert"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Register
                         </button>
+                        <a href="" style="padding: 0px; padding-top: 6px" class="close" data-dismiss="alert"
+                            aria-label="close">&times;</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
         <div class="section" id="section-1">
             <div class="container">
                 <div class="row justify-content-center align-self-center">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="main-title">
                         <h1 class="serif title">Expressions</h1>
                         <h5 class="sans-serif seven-bold ls-5">THE LANGUAGE OF THE SOUL</h5>
                     </div>
@@ -109,7 +109,7 @@
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center align-items-center">
 
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-8 text-center">
                         <img src="{{ asset('img/logo/klifonara.png') }}" alt="" height="110px">
                         <p class="sans-serif semi-bold ls-5 white" style="padding-top: 20px">KLIFONARA PRESENTS</p>
                     </div>
@@ -122,7 +122,7 @@
             <div class="container h-100">
                 <div class="row h-100 d-flex justify-content-center align-items-center">
 
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-8 text-center">
                         <img src="{{ asset('img/logo/logo-light.png') }}" alt="" height="110px">
                         <p class="sans-serif semi-bold ls-5 white" style="padding-top: 20px">KLIFONARA EKSHIBISI</p>
                     </div>
@@ -134,17 +134,20 @@
         <div class="section" id="section-4">
             <div class="container h-100 ">
                 <div class="row h-100 d-flex justify-content-center align-items-center">
-                    <div class="col-md-1">
+                    <div class="col-md-1 d-none d-md-block">
                         <div id="rect" style="z-index: 0; margin-top: 150px"></div>
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
-                    <div class="col-md-3">
-                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
+                    <div class="col-md-3 col-sm-12 d-none d-md-block">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
+                            style="z-index: 1">
                     </div>
-                    <div class="offset-md-1 col-md-7" style="padding-left: 50px">
-                        <h4 class="serif title-medium">What is</h4>
-                        <h1 class="serif title lh-40">Expression?</h1>
+                    <div class="offset-md-1 col-md-7 col-sm-12 pl-md-5 mt-3">
+                        <div id="main-title">
+                            <h1 class="serif title-medium">What is</h4>
+                                <h1 class="serif title lh-40">Expression?</h1>
+                        </div>
                         <p class="serif caption">A brief story of our concerns</p>
                         <div id="rect-small" style="display: inline-block"></div>
                         <p class="serif caption" style="margin-top: 0px">and passion.</p>
@@ -152,16 +155,11 @@
                         <br>
                         <p class="sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab necessitatibus
                             tenetur debitis?
-                            Velit animi quidem recusandae quod eveniet est quasi, dolores, quam corporis perferendis
-                            alias cum perspiciatis eum maxime odit. Impedit quis explicabo sapiente at omnis assumenda
-                            voluptate qui, possimus harum dolores eveniet nemo? Possimus repellat dolores labore illum
-                            eos.</p>
+                            Velit animi quidem recusandae quod eveniet est quasi.</p>
                         <p class="sans-serif"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at illo
                             voluptates eos
                             obcaecati
-                            ad cupiditate eaque labore esse sed maxime sint ea tenetur sit dignissimos fugiat
-                            distinctio,
-                            sunt possimus!</p>
+                            ad cupiditate eaque labore esse sed maxime sint ea tenetur.</p>
                     </div>
                 </div>
             </div>
@@ -169,57 +167,53 @@
 
         <div class="section" id="section-5">
             <div class="container">
-                <div class="row h-100 d-flex align-items-center justify-content-center" style="margin-bottom: 20px">
-                    <div class="row h-40 justify-content-center">
-                        <div class="col-md-6 text-center">
-                            <h1 class="serif title-medium">What's Up!</h1>
-                            <h5 class="sans-serif semi-bold">with NARASI 2020</h5>
-                            <p class="sans-serif">NARASI 2020 Expression: The Language of the Soul adalah
-                                ekshibisi
-                                online
-                                pertama yang
-                                diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <h1 class="serif title-medium">What's Up!</h1>
+                        <h5 class="sans-serif semi-bold">with NARASI 2020</h5>
+                        <p class="sans-serif">NARASI 2020 Expression: The Language of the Soul adalah
+                            ekshibisi
+                            online
+                            pertama yang
+                            diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
                     </div>
-                    <div class="row h-60 justify-content-center">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                    <div class="col-md-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
+                                                <img id="speaker"
+                                                    src="{{ asset('img/pikabu.png') }}" alt="">
+                                            </div>
+                                            <div class="col-md-5 col-sm-10">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card
+                                                            title and make up
+                                                            the
+                                                            bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Register Now!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('img/logo/logo-dark.png') }}"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Register Now!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Register Now</a>
-                                </div>
-                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -229,8 +223,8 @@
         <div class="section" id="section-6">
             <div class="container d-flex h-100">
                 <div class="row align-self-center">
-                    <div class="col-md-8">
-                        <h1 class="serif title white">The Story</h1>
+                    <div class="col-md-9">
+                        <h1 id="main-title" class="serif title white">The Story</h1>
                         <p class="sans-serif white">Sometimes the world doesn't accept you, but that
                             doesn't mean you need
                             the
@@ -249,7 +243,7 @@
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-md-12">
                         <h3 class="sans-serif title-small seven-bold white">Visit Our</h3>
-                        <h1 class="serif title bold white lh-70">Virtual Exhibition</h1>
+                        <h1 class="serif title bold white lh-70" id="main-title">Virtual Exhibition</h1>
                         <p class="sans-serif semi-bold white" style="margin-top: 20px">The first online interactive
                             exhibition by
                             Klifonara</p>
@@ -269,7 +263,8 @@
                         <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
                         <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                         <br><br>
-                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white" height="30px" alt="">
+                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white"
+                            height="30px" alt="">
                         <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt="">
                     </div>
 
@@ -287,14 +282,14 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['LandingPage', 'KlifonaraPresent', 'KlifonaraEkshibisi', 'Expression', 'WhatsUp',
-                'TheStory', 'VirtualExhibition'
+                'TheStory', 'VirtualExhibition', 'ContactUs'
             ],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['Expressions', 'Klifonara Presents',
                 'Klifonara Ekshibisi', 'What is Expression',
                 'What\'s Up',
-                'The Story', 'Virtual Exhibition'
+                'The Story', 'Virtual Exhibition', 'Contact Us'
             ]
         });
 
