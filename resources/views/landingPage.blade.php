@@ -30,14 +30,14 @@
 <body>
 
     <div id="header">
-        <nav class="navbar navbar-expand-md sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top">
             <div class=" container">
                 <a href="#LandingPage">
-                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
-                        height="60px" alt />
+                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -140,8 +140,7 @@
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
                     <div class="col-md-3">
-                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
-                            style="z-index: 1">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7" style="padding-left: 50px">
                         <h4 class="serif title-medium">What is</h4>
@@ -185,8 +184,7 @@
                     <div class="row h-60 justify-content-center">
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top"
-                                    src="{{ asset('img/logo/logo-light.png') }}"
+                                <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -199,8 +197,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top"
-                                    src="{{ asset('img/logo/logo-dark.png') }}"
+                                <img class="card-img-top" src="{{ asset('img/logo/logo-dark.png') }}"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -213,8 +210,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top"
-                                    src="{{ asset('img/logo/logo-light.png') }}"
+                                <img class="card-img-top" src="{{ asset('img/logo/logo-light.png') }}"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -273,8 +269,7 @@
                         <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
                         <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                         <br><br>
-                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white"
-                            height="30px" alt="">
+                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white" height="30px" alt="">
                         <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt="">
                     </div>
 
