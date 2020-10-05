@@ -33,8 +33,7 @@
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class=" container">
                 <a href="#LandingPage">
-                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
-                        height="60px" alt />
+                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
                 </a>
 
                 <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
@@ -140,8 +139,7 @@
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
                     <div class="col-md-3 col-sm-12 d-none d-md-block">
-                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
-                            style="z-index: 1">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7 col-sm-12 pl-md-5 mt-3">
                         <div id="main-title">
@@ -172,45 +170,76 @@
                         <h1 class="serif title-medium">What's Up!</h1>
                         <h5 class="sans-serif semi-bold">with NARASI 2020</h5>
                         <p class="sans-serif">NARASI 2020 Expression: The Language of the Soul adalah
-                            ekshibisi
-                            online
-                            pertama yang
-                            diadakan oleh Klub Seni Fotografi Bina Nusantara dan sebagainya dan sebagainya</p>
+                            ekshibisi online pertama yang diadakan oleh Klub Seni Fotografi Bina Nusantara dan
+                            sebagainya dan sebagainya
+                        </p>
                     </div>
                     <div class="col-md-12">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div class="container">
-                                        <div class="row d-flex justify-content-center align-items-center">
-                                            <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                                <img id="speaker"
-                                                    src="{{ asset('img/pikabu.png') }}" alt="">
-                                            </div>
-                                            <div class="col-md-5 col-sm-10">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Card title</h5>
-                                                        <p class="card-text">Some quick example text to build on the
-                                                            card
-                                                            title and make up
-                                                            the
-                                                            bulk of the card's content.</p>
-                                                        <a href="#" class="btn btn-primary">Register Now!</a>
-                                                    </div>
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                        </div>
+                                        <div class="col-md-5 col-sm-10">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the
+                                                        card title and make up the bulk of the card's content.
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Register Now!</a>
                                                 </div>
                                             </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-md-5 col-sm-10">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the
+                                                        card title and make up the bulk of the card's content.
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                        </div>
+                                        <div class="col-md-5 col-sm-10">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the
+                                                        card title and make up the bulk of the card's content.
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                                data-slide="prev">
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                data-slide="next">
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -263,8 +292,7 @@
                         <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
                         <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                         <br><br>
-                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white"
-                            height="30px" alt="">
+                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white" height="30px" alt="">
                         <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt="">
                     </div>
 
@@ -286,11 +314,6 @@
             ],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Expressions', 'Klifonara Presents',
-                'Klifonara Ekshibisi', 'What is Expression',
-                'What\'s Up',
-                'The Story', 'Virtual Exhibition', 'Contact Us'
-            ]
         });
 
     </script>
