@@ -18,8 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <script src="{{ asset('js/main.js') }}"></script>
-
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/landingPage.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -33,7 +31,8 @@
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class=" container">
                 <a href="#LandingPage">
-                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
+                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
+                        height="60px" alt />
                 </a>
 
                 <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
@@ -44,19 +43,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li>
-                            <a class="nav-link" href="#section-1">THE STORY</a>
+                            <a class="nav-link" href="">THE STORY</a>
                         </li>
                         <li>
                             <a class="nav-link" href="{{ route('uploadSubmission') }}">SUBMISSIONS</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#section-3">EXHIBITION</a>
+                            <a class="nav-link" href="">EXHIBITION</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#section-4">ABOUT US</a>
+                            <a class="nav-link" href="">ABOUT US</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#section-5">CONTACT</a>
+                            <a class="nav-link" href="">CONTACT</a>
                         </li>
                         <li>
                             <a href="/login">
@@ -76,14 +75,16 @@
                 <div class="row h-100 d-flex align-items-center justify-content-center text-center">
                     <div class="col-md-10">
                         <p style="display: inline-block">
-                            <strong>Photography Seminar</strong>: How to Take Expressive Photos by Amanda Margareth is
-                            nearing, get your seat now!
+                            {{ $motd[0]->message }}
                         </p>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn text-light"
-                            style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Register
-                        </button>
+                        <a href="{{ $motd[0]->link }}">
+                            <button type="button" class="btn text-light"
+                                style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Register
+                            </button>
+                        </a>
+
                         <a href="" style="padding: 0px; padding-top: 6px" class="close" data-dismiss="alert"
                             aria-label="close">&times;</a>
                     </div>
@@ -139,7 +140,8 @@
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
                     <div class="col-md-3 col-sm-12 d-none d-md-block">
-                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
+                            style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7 col-sm-12 pl-md-5 mt-3">
                         <div id="main-title">
@@ -180,7 +182,8 @@
                                 <div class="carousel-item active">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px"
+                                                src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
@@ -210,7 +213,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px"
+                                                src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
 
                                     </div>
@@ -218,7 +222,8 @@
                                 <div class="carousel-item">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px"
+                                                src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
@@ -290,11 +295,19 @@
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-md-12">
                         <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
+                        <br>
                         <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
+                        <br>
+                        <img src="{{ asset('img/logo/fpsi.png') }}" height="60px"
+                            style="padding-top: 20px" alt="">
                         <br><br>
-                        <img src="{{ asset('img/icon/instagram.svg') }}" style="color: white" height="30px" alt="">
-                        <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt="">
+                        <h1 class="sans-serif title-small white">MEDIA PARTNERS</h1>
+
+                        {{-- <img src="{{ asset('img/icon/instagram.svg') }}"
+                        style="color: white" height="30px" alt="">
+                        <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt=""> --}}
                     </div>
+
 
                     <div class="col-md-12">
                         <p style="color: white">Copyright 2020 &copy; <b>Klifonara</b> | All Rights Reserved</p>
