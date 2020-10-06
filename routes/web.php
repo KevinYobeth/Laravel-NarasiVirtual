@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Motd;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landingPage');
-})->name('landingPage');
+    $motd = Motd::all();
 
-// Route::get('/land', function () {
-//     return view('landing');
-// });
+    return view('landingPage', [
+        'motd' => $motd,
+    ]);
+})->name('landingPage');
 
 Auth::routes(['verify' => true]);
 
