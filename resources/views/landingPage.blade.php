@@ -20,6 +20,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/landingPage.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/fullpage.css') }}">
@@ -29,10 +31,9 @@
 
     <div id="header">
         <nav class="navbar navbar-expand-lg sticky-top">
-            <div class=" container">
+            <div class="container">
                 <a href="#LandingPage">
-                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}"
-                        height="60px" alt />
+                    <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
                 </a>
 
                 <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
@@ -43,16 +44,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li>
-                            <a class="nav-link" href="">THE STORY</a>
+                            <a class="nav-link" href="{{route('theStory')}}">THE STORY</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="{{ route('uploadSubmission') }}">SUBMISSIONS</a>
+                            <a class="nav-link" href="{{route('submissions')}}">SUBMISSIONS</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">EXHIBITION</a>
+                            <a class="nav-link" href="{{route('exhibition')}}">EXHIBITION</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">ABOUT US</a>
+                            <a class="nav-link" href="{{route('aboutUs')}}">ABOUT US</a>
                         </li>
                         <li>
                             <a class="nav-link" href="">CONTACT</a>
@@ -140,8 +141,7 @@
                         <div id="rect" style="z-index: 0; margin-top: 20px"></div>
                     </div>
                     <div class="col-md-3 col-sm-12 d-none d-md-block">
-                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px"
-                            style="z-index: 1">
+                        <img id="pikabu" src="{{ asset('img/pikabu.png') }}" height="450px" style="z-index: 1">
                     </div>
                     <div class="offset-md-1 col-md-7 col-sm-12 pl-md-5 mt-3">
                         <div id="main-title">
@@ -182,8 +182,7 @@
                                 <div class="carousel-item active">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px"
-                                                src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
@@ -213,8 +212,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px"
-                                                src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
 
                                     </div>
@@ -222,8 +220,7 @@
                                 <div class="carousel-item">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px"
-                                                src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
@@ -298,8 +295,7 @@
                         <br>
                         <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                         <br>
-                        <img src="{{ asset('img/logo/fpsi.png') }}" height="60px"
-                            style="padding-top: 20px" alt="">
+                        <img src="{{ asset('img/logo/fpsi.png') }}" height="60px" style="padding-top: 20px" alt="">
                         <br><br>
                         <h1 class="sans-serif title-small white">MEDIA PARTNERS</h1>
 

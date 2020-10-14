@@ -1,0 +1,50 @@
+.white {
+    color: white;
+}
+
+#section-1 {
+    height: 91.3vh;
+    background-image: url("/img/about/bg.jpg");
+}
+
+#black-bar {
+    width: 500px;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 1)
+    );
+}
+
+#section-2 {
+    height: 800px;
+}
+
+#rect {
+    background: rgba(155, 110, 198, 0.9);
+    background: linear-gradient(
+        90deg,
+        rgba(155, 110, 198, 0.9) 0%,
+        rgba(95, 189, 200, 0.9) 100%
+    );
+    width: 250px;
+    height: 80px;
+    position: relative;
+    top: 50px;
+    left: -30px;
+}
+
+#rect-2 {
+    background: rgba(155, 110, 198, 0.9);
+    background: linear-gradient(
+        90deg,
+        rgba(155, 110, 198, 0.9) 0%,
+        rgba(95, 189, 200, 0.9) 100%
+    );
+    width: 250px;
+    height: 80px;
+    position: relative;
+    bottom: 50px;
+    left: 530px;
+}

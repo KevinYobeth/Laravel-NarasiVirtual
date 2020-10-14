@@ -1,0 +1,24 @@
+.navbar-nav a.nav-link {
+    color: #282828;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: #b3b3b3;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.navbar-nav button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 1);
+}
