@@ -1,0 +1,62 @@
+#section-1 {
+    height: 100vh;
+    background-image: url("/img/subm/bg.JPG");
+    background-position: 0px -100px;
+    background-size: cover;
+}
+
+#section-2 {
+    height: 2500px;
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.text {
+    text-align: right;
+}
+
+.lh-15 {
+    line-height: 15px;
+}
+
+#rect {
+    background: rgb(155, 110, 198);
+    background: linear-gradient(
+        90deg,
+        rgba(155, 110, 198, 1) 0%,
+        rgba(95, 189, 200, 1) 100%
+    );
+    width: 450px;
+    height: 30px;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.gal {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+.gal img {
+    width: 100%;
+    padding: 7px 0;
+}
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+}
