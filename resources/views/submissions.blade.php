@@ -69,13 +69,13 @@
     <div class="section-1" id="section-1">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-6 col-sm-7 col-12">
                     <div class="text" style="padding-bottom: 170px">
                         <h5 class="sans-serif bold white pb-3">NARASI 2020: SUBMISSIONS</h5>
                         <br>
                         <i>
-                            <div id="rect" style="z-index: -1"></div>
-                            <h1 class="title serif white" style="margin-top: -90px; paddingt">Emotions</h1>
+                            <div class="d-none d-sm-block" id="rect" style="z-index: -1"></div>
+                            <h1 class="title serif white" id="emotions">Emotions</h1>
                         </i>
                         <h1 class="title-medium serif white lh-15" style="padding-bottom: 80px">in Frame</h1>
                         <p class="sans-serif white">35 curated photographs submitted by members and associates of
@@ -94,7 +94,7 @@
                     <h1 class="title-medium serif bold white">Meet Our Curators</h1>
                 </div>
 
-                <div class="col-md-4 py-5 text-center">
+                <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('/img/subm/1.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">AMANDA SASKIA</p>
                     <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
@@ -104,7 +104,7 @@
                         officia? Qui iusto quod corporis repellat. Fuga, earum! Animi quidem ducimus, nulla possimus
                         eius est.</p>
                 </div>
-                <div class="col-md-4 py-5 text-center">
+                <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('/img/subm/2.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">VANIA ANGELA</p>
                     <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
@@ -114,7 +114,7 @@
                         officia? Qui iusto quod corporis repellat. Fuga, earum! Animi quidem ducimus, nulla possimus
                         eius est.</p>
                 </div>
-                <div class="col-md-4 py-5 text-center">
+                <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('/img/subm/3.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">ELLEN ANDREA</p>
                     <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
@@ -127,7 +127,6 @@
 
                 <div class="col-md-12">
                     <div class="gal">
-
                         <img src="{{asset('/img/subm/images/1-min.jpg')}}" alt="">
                         <img src="{{asset('/img/subm/images/2-min.jpg')}}" alt="">
                         <img src="{{asset('/img/subm/images/3-min.jpg')}}" alt="">
@@ -139,7 +138,6 @@
                         <img src="{{asset('/img/subm/images/9-min.jpg')}}" alt="">
                         <img src="{{asset('/img/subm/images/10-min.jpg')}}" alt="">
                         <img src="{{asset('/img/subm/images/11-min.jpg')}}" alt="">
-
                     </div>
                 </div>
             </div>
