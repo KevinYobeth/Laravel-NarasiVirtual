@@ -69,10 +69,10 @@
     <div class="section-1" id="section-1">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-5" id="black-bar">
+                <div class="col-lg-5 col-md-8 col-sm-10">
                     <div class="row">
-                        <div class="col-md-10">
-                            <img class="pb-3" src="{{asset('img/logo/klifonara.png')}}" alt="" height="120px">
+                        <div class="col-lg-8 col-md-10 col-sm-10" id="black-bar">
+                            <img class="pb-3 mt-3" src="{{asset('img/logo/klifonara.png')}}" alt="" height="120px">
                             <p class="sans-serif white"><b>KLIFONARA</b> (Klub Seni Fotografi Bina Nusantara) sudah
                                 berdiri
                                 sejak 10 Juni
@@ -100,12 +100,12 @@
     <div class="section-2" id="section-2">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-8">
-                    <div id="rect" style="z-index: 2"></div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="d-none d-md-block" id="rect" style="z-index: 2"></div>
                     <img class="img-fluid" style="z-index: 1" src="{{asset('/img/about/about.jpg')}}" alt="">
-                    <div id="rect-2" style="z-index: -1"></div>
+                    <div class="d-none d-md-block" id="rect-2" style="z-index: -1"></div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <p class="sans-serif">
                         <b>NARASI</b> atau Klifonara Ekshibisi adalah pameran besar yang diadakan oleh KLIFONARA setiap
                         tahunnya. NARASI, sesuai dengan namanya membawa tema yang berbeda setiap tahunnya. Nama NARASI

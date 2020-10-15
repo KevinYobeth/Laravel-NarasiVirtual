@@ -27,9 +27,11 @@ class SeminarController extends Controller
         $seminar->transactionID = $transactionID;
 
         if ($seminarPrice == 0) {
-            $transaction->id = $transactionID;
-            $transaction->paymentMethod = 'null';
+            $transaction->transactionID = $transactionID;
             $transaction->verified = True;
+            $transaction->namaRekening = 'null';
+            $transaction->filePath = 'null';
+            $transaction->fileName = 'null';
         } else {
             return view('seminar.checkout', [
                 'seminar' => $seminar,
@@ -40,5 +42,41 @@ class SeminarController extends Controller
         $seminar->save();
 
         return back();
+    }
+
+    public function fileUpload(Request $req)
+    {
+        // Reference: https://www.positronx.io/laravel-file-upload-with-validation/
+        $req->validate([
+            'buktiTransfer' => 'required|mimes:jpeg,jpg,png|max:10000'
+        ]);
+
+        $transaction = new Transaction;
+        $seminar = new Seminar;
+
+        if ($req->file()) {
+            $user = Auth::user();
+
+            $fileName = str_replace(' ', '', $user->name) . '_' . time() . '_' . $req->buktiTransfer->getClientOriginalName();
+            $filePath = $req->file('buktiTransfer')->storeAs('buktiTrf', $fileName, 'public');
+
+            $transactionID = Str::random(6);
+
+            $transaction->transactionID = $transactionID;
+            $transaction->verified = False;
+            $transaction->namaRekening = $req->namaRekening;
+            $transaction->filePath = '/storage/' . $filePath;
+            $transaction->fileName = str_replace(' ', '', $user->name) . '_' . time() . '_' . $req->buktiTransfer->getClientOriginalName();
+
+            $seminar->userID = $user->id;
+            $seminar->seminarID = 2;
+            $seminar->transactionID = $transactionID;
+
+            $seminar->save();
+            $transaction->save();
+
+            return redirect()->action('MailController@sendConfirmation', ['transactionID' => $transactionID]);
+            // return redirect()->route('sendConfirmation', ['transactionID' => $transactionID]);
+        }
     }
 }

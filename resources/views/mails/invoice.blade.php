@@ -2,7 +2,7 @@
 <center><img src="{{asset('img/logo/logo-dark.png')}}" width="150"></center>
 
 @component('mail::panel')
-This is invoice is PAID
+This invoice is PAID & VERIFIED
 @endcomponent
 
 Date: {{ $data['date'] }} <br>

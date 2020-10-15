@@ -33,8 +33,12 @@ Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('g
 Route::post('/verifySubmission', 'SubmissionController@verify');
 
 Route::get('/seminar/register/{ID}', 'SeminarController@register')->middleware(['auth', 'verified'])->name('registerSeminar');
+Route::post('/seminar/register/', 'SeminarController@fileUpload')->middleware(['auth', 'verified'])->name('uploadPaymentSeminar');
 
-Route::get('/send-email', 'MailController@sendInvoice');
+Route::get('/sendInvoice/{transactionID}', 'MailController@sendInvoice')->name('sendInvoice');
+Route::get('/sendConfirmation/{transactionID}', 'MailController@sendConfirmation')->name('sendConfirmation');
+Route::get('/invoice/{invoiceID}', 'MailController@viewInvoice');
+
 
 Route::get('/invoice', function () {
     return view('mails.invoice-web');
