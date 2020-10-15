@@ -8,5 +8,5 @@ class Transaction extends Model
 {
     protected $table = 'transactions';
 
-    protected $fillable = ['id', 'verified', 'paymentMethod'];
+    protected $fillable = ['transactionID', 'verified', 'namaRekening', 'filePath', 'fileName'];
 }

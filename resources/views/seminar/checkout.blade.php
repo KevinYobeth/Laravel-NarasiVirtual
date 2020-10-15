@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-12 order-md-0 mb-4">
+        <div class="col-md-6 order-md-0 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-muted">Cart</span>
                 <span class="badge badge-secondary badge-pill">3</span>
@@ -37,28 +37,40 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-4 order-md-1 mb-4">
-            <img class="img-fluid" src="{{asset('img/qrBCA.jpg')}}" height="200px" alt="">
+        <div class="col-md-3 order-md-1 mt-4 mb-4">
+            <img class="img-fluid" src="{{asset('img/qrBCA.jpg')}}" alt="">
         </div>
-        <div class="col-md-8 order-md-1 mb-4">
+        <div class="col-md-3 order-md-1 mt-4 mb-4">
             <h3><b>Metode Pembayaran</b></h3>
             <h5>BCA</h5>
             <p>2880150505 a/n <b>Serafine Cordelia</b></p>
             <p>*Atau scan QR BCA disamping</p>
         </div>
-        <div class="col-md-12 order-md-2 mb-4">
+        <div class="col-md-6 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-muted">Checkout</span>
             </h4>
-            <form action="" method="POST">
+            <form action="{{route('uploadPaymentSeminar')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+
+                @if(count($errors) > 0)
+                <div class=" alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+
                 <div class="form-group">
                     <label for="namaRekening">Nama Pemilik Rekening</label>
-                    <input type="email" class="form-control" id="namaRekening"
+                    <input type="text" name="namaRekening" class="form-control" id="namaRekening"
                         placeholder="Masukan nama pemilik rekening">
                 </div>
                 <div class="form-group">
                     <label for="buktiTransfer">Bukti Transfer</label>
-                    <input type="file" class="form-control-file" id="buktiTransfer">
+                    <input type="file" class="form-control-file" name="buktiTransfer" id="buktiTransfer">
                 </div>
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Konfirmasi Pembayaran</button>
             </form>

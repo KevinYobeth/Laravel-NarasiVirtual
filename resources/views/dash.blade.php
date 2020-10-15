@@ -61,25 +61,5 @@
 
     </div>
 
-    <div class="row text-center justify-content-center py-3">
-        <h1>Submitted Photo</h1>
-        <div class="col-md-12">
-            @foreach($photos as $photo)
-            <img src="{{ url($photo->filePath) }}" alt="" width="200px">
-            {{-- <p>User ID: {{ $photo->userID }}</p>
-            <p>Photo ID: {{ $photo->id }}</p>
-            <p>File Name: {{ $photo->fileName }}</p>
-            <p>Title: {{ $photo->title }}</p>
-            <p>Story: {{ $photo->story }}</p>
-            <p>Aperture: {{ $photo->exifF }}</p>
-            <p>Shutter Speed: {{ $photo->exifSS }}</p>
-            <p>ISO: {{ $photo->exifISO }}</p>
-            <a href="{{ route('getfile', $photo->fileName) }}">
-                <button>Download</button></a>
-            <br> --}}
-            @endforeach
-        </div>
-    </div>
-
 </div>
 @endsection

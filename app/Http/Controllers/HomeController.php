@@ -32,21 +32,15 @@ class HomeController extends Controller
 
         $attendedSeminars = DB::table('seminar_details')
             ->join('seminars', 'seminar_details.id', '=', 'seminars.seminarID')
-            ->where('seminars.userID', $user->id)
-            ->get();
+            ->join('transactions', 'transactions.transactionID', '=', 'seminars.transactionID')
+            ->where([['seminars.userID', '=', $user->id], ['transactions.verified', '=', 1]]);
 
-        $attendedList = DB::table('seminar_details')
-            ->join('seminars', 'seminar_details.id', '=', 'seminars.seminarID')
-            ->where('seminars.userID', $user->id)
-            ->pluck('seminars.seminarID');
 
-        error_log($attendedList);
-
-        $seminars = DB::table('seminar_details')->whereNotIn('id', $attendedList)->get();
+        $seminars = DB::table('seminar_details')->whereNotIn('id', $attendedSeminars->pluck('seminars.seminarID'))->get();
 
         return view('dash', [
             'photos' => $photos,
-            'attendedSeminars' => $attendedSeminars,
+            'attendedSeminars' => $attendedSeminars->get(),
             'seminars' => $seminars,
         ]);
     }

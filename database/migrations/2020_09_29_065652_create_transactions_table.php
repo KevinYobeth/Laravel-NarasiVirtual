@@ -14,9 +14,12 @@ class CreateTransactionsTable extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->string('id');
+            $table->id();
+            $table->string('transactionID');
             $table->boolean('verified');
-            $table->string('paymentMethod');
+            $table->string('namaRekening');
+            $table->string('filePath');
+            $table->string('fileName');
             $table->timestamps();
         });
     }
