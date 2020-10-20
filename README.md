@@ -8,7 +8,7 @@
 ### Initialize Git Repository & Pull Code From Repository
 
 ```
-git init
+git init 
 git pull https://github.com/kevinyobeth/laravel-narasivirtual
 ```
 
