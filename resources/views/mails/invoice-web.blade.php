@@ -57,7 +57,7 @@
                                         style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative; max-width: 100vw; padding: 32px;">
                                         <center
                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative;">
-                                            <img src="http://127.0.0.1:8000/img/logo/logo-dark.png" width="150"
+                                            <img src="{{asset('/img/logo/logo-dark.png')}}" width="150"
                                                 style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative; max-width: 100%;">
                                         </center>
                                         <table class="panel" width="100%" cellpadding="0" cellspacing="0"
@@ -83,9 +83,9 @@
                                         </table>
                                         <p
                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left;">
-                                            Date: {{ $details->created_at }} <br>
-                                            Method: BCA Virtual Account <br>
-                                            Issued To: Leonardus Kevin Yobeth <br></p>
+                                            Date: {{ $details->created_at }} UTC <br>
+                                            Method: BCA Transfer <br>
+                                            Issued To: {{ $name }} <br></p>
                                         <h2
                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative; font-size: 16px; font-weight: bold; margin-top: 0; text-align: left;">
                                             Invoice Number: {{ $invoiceID }} <br>
