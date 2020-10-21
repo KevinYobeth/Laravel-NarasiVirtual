@@ -323,6 +323,7 @@
             ],
             navigation: true,
             navigationPosition: 'right',
+            licenseKey: '6ve5hHW@c8',
         });
 
     </script>

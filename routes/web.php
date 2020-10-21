@@ -39,6 +39,9 @@ Route::get('/sendInvoice/{transactionID}', 'MailController@sendInvoice')->name('
 Route::get('/sendConfirmation/{transactionID}', 'MailController@sendConfirmation')->name('sendConfirmation');
 Route::get('/invoice/{invoiceID}', 'MailController@viewInvoice');
 
+Route::get('/admin', 'AdminController@index')->middleware(['auth', 'verified'])->name('admin');
+Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
+
 
 Route::get('/invoice', function () {
     return view('mails.invoice-web');

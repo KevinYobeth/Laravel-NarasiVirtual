@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use URL;
+use App\User;
 use App\Transaction;
+use App\Seminar;
 
 use App\Mail\InvoiceMail;
 use App\Mail\ConfirmationMail;
@@ -18,7 +20,7 @@ class MailController extends Controller
     {
         // https://blog.mailtrap.io/send-email-in-laravel/
         $user = Auth::user();
-        
+
         $invoiceURL = URL::to('/') . "/invoice/" . $transactionID;
 
         $data = [
@@ -33,7 +35,8 @@ class MailController extends Controller
         return view('dash');
     }
 
-    public function sendConfirmation($transactionID){
+    public function sendConfirmation($transactionID)
+    {
         $user = Auth::user();
         $invoiceURL = URL::to('/') . "/invoice/" . $transactionID;
 
@@ -49,16 +52,17 @@ class MailController extends Controller
         return redirect('dash')->with('status', 'We will verify your payment as soon as possible!');
     }
 
-    public function viewInvoice($invoiceID){
+    public function viewInvoice($invoiceID)
+    {
 
-        $details = Transaction::where('id', $invoiceID)->firstOrFail();
-
-
-        // echo $details;
+        $details = Transaction::where('transactionID', $invoiceID)->firstOrFail();
+        $userID = Seminar::select('userID')->where('transactionID', $invoiceID)->value('userID');
+        $user = User::find($userID);
 
         return view('mails.invoice-web', [
             'details' => $details,
             'invoiceID' => $invoiceID,
+            'name' => $user->name,
         ]);
     }
 }

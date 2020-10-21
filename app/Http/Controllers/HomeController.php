@@ -35,7 +35,6 @@ class HomeController extends Controller
             ->join('transactions', 'transactions.transactionID', '=', 'seminars.transactionID')
             ->where([['seminars.userID', '=', $user->id], ['transactions.verified', '=', 1]]);
 
-
         $seminars = DB::table('seminar_details')->whereNotIn('id', $attendedSeminars->pluck('seminars.seminarID'))->get();
 
         return view('dash', [
