@@ -23,12 +23,16 @@ p {
     bottom: 0px;
 }
 
+.speakers {
+    filter: drop-shadow(3mm 3mm 2mm rgba(0, 0, 0, 0.3));
+}
+
 .section {
     background-size: cover;
 }
 
 #section-1 {
-    background-image: url("/img/section-bg/1.jpg");
+    background-image: url("../img/section-bg/1.jpg");
 }
 
 #section-2,
@@ -37,11 +41,11 @@ p {
 }
 
 #section-6 {
-    background-image: url("/img/section-bg/2.jpg");
+    background-image: url("../img/section-bg/2.jpg");
 }
 
 #section-7 {
-    background-image: url("/img/section-bg/3.jpg");
+    background-image: url("../img/section-bg/3.jpg");
 }
 
 #section-8 {
