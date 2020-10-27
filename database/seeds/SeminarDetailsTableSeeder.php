@@ -32,42 +32,6 @@ class SeminarDetailsTableSeeder extends Seeder
             'price' => 35000,
         ];
 
-        $data[2] = [
-            'name' => 'KLASIK: Being Aware of Mental Illness',
-            'description' => 'KLIFONARA Ngobrol Asik',
-            'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
-            'thumbnail' => '\/thumbnail/',
-            'price' => 0,
-        ];
-
-        $data[3] = [
-            'name' => 'KLASIK: Self Portrait',
-            'description' => 'KLIFONARA Ngobrol Asik',
-            'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
-            'thumbnail' => '\/thumbnail/',
-            'price' => 0,
-        ];
-
-        $data[4] = [
-            'name' => 'KLASIK: Seputar Portrait Photography',
-            'description' => 'KLIFONARA Ngobrol Asik',
-            'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
-            'thumbnail' => '\/thumbnail/',
-            'price' => 0,
-        ];
-
-        $data[5] = [
-            'name' => 'Sharing Virtual Photoshoot',
-            'description' => 'Sharing dibawakan oleh Anggota KLIFONARA',
-            'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
-            'thumbnail' => '\/thumbnail/',
-            'price' => 0,
-        ];
-
         DB::table('seminar_details')->insert($data);
     }
 }
