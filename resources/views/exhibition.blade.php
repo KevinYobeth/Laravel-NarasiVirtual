@@ -72,14 +72,15 @@
                 <div class="row text-center">
                     <div class="col-md-12">
                         <h1 class="serif title-medium white pt-3">Virtual Exhibition</h1>
-                        <div class="embed-responsive">
-                            <iframe width="1280" height="720"
-                                src="https://www.artsteps.com/embed/5f121e7608358d21e0b5d0df/1280/720" frameborder="0"
-                                allowfullscreen></iframe>
-                            {{-- <div class="embed-responsive">
-                                <iframe class="embed-responsive-item" src="https://kevinyobeth.com"></iframe>
-                            </div> --}}
-                        </div>
+                        <iframe style="padding: 10px 0px;" width="100%" height="600"
+                            src="https://www.artsteps.com/embed/5f9381b466777c60459d6319/853/480" frameborder="0"
+                            allowfullscreen></iframe>
+
+                        <p class="white">For optimal experience in our virtual venue, opening this website in your
+                            personal computer
+                            is advised. <br> For mobile access please use Artsteps application available on your
+                            playstore.
+                        </p>
                     </div>
                 </div>
             </div>

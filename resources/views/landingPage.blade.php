@@ -59,7 +59,7 @@
                             <a class="nav-link" href="">CONTACT</a>
                         </li>
                         <li>
-                            <a href="/login">
+                            <a href="{{route('login')}}">
                                 <button type="button" class="btn btn-dark btn-login">LOGIN</button>
                             </a>
                         </li>
@@ -182,16 +182,19 @@
                                 <div class="carousel-item active">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img class="speakers" id="speaker" height="300px"
+                                                src="{{ asset('img/speakers/Amanda.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
+                                                    <h5 class="card-title">Seminar Mental Health: How to Express
+                                                        Yourself</h5>
                                                     <p class="card-text">Some quick example text to build on the
                                                         card title and make up the bulk of the card's content.
                                                     </p>
-                                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                                    <a href="{{route('registerSeminar', ['ID' => 2])}}"
+                                                        class="btn btn-primary">Register Now!</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,37 +206,21 @@
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
+                                                    <h5 class="card-title">Seminar Photography: How to take "Expressive"
+                                                        Photos</h5>
                                                     <p class="card-text">Some quick example text to build on the
                                                         card title and make up the bulk of the card's content.
                                                     </p>
-                                                    <a href="#" class="btn btn-primary">Register Now!</a>
+                                                    <a href="{{route('registerSeminar', ['ID' => 1])}}"
+                                                        class="btn btn-primary">Register Now!</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
+                                            <img class="speakers" id="speaker" height="300px"
+                                                src="{{ asset('img/speakers/Hana2.png') }}" alt="">
                                         </div>
 
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row d-flex justify-content-center align-items-center">
-                                        <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
-                                            <img id="speaker" height="300px" src="{{ asset('img/pikabu.png') }}" alt="">
-                                        </div>
-                                        <div class="col-md-5 col-sm-10">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the
-                                                        card title and make up the bulk of the card's content.
-                                                    </p>
-                                                    <a href="#" class="btn btn-primary">Register Now!</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
                                     </div>
                                 </div>
                             </div>
