@@ -183,7 +183,7 @@
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
                                             <img class="speakers" id="speaker" height="300px"
-                                                src="{{ asset('img/speakers/Amanda.png') }}" alt="">
+                                                src="{{ asset('img/speakers/Hana.png') }}" alt="">
                                         </div>
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
@@ -218,7 +218,7 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12 mb-sm-5 text-center d-none d-sm-block">
                                             <img class="speakers" id="speaker" height="300px"
-                                                src="{{ asset('img/speakers/Hana2.png') }}" alt="">
+                                                src="{{ asset('img/speakers/Amanda.png') }}" alt="">
                                         </div>
 
                                     </div>

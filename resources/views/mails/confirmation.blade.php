@@ -1,5 +1,5 @@
 @component('mail::message')
-<center><img src="{{asset('/img/logo/logo-dark.png')}}" width="150"></center>
+<center><img src="{{asset('img/logo/logo-dark.png')}}" width="150"></center>
 
 @component('mail::panel')
 This payment is NOT VERIFIED
