@@ -26,7 +26,7 @@
         @endif
 
         @foreach($attendedSeminars as $attendedSeminar)
-        <div class="col-md-5 py-3">
+        <div class="col-md-12 py-3">
             <div class="card">
                 <h5 class="card-header">Seminar NARASI 2020</h5>
                 <div class="card-body">
@@ -46,7 +46,7 @@
         @endif
 
         @foreach($seminars as $seminar)
-        <div class="col-md-5 py-3">
+        <div class="col-md-12 py-3">
             <div class="card">
                 <h5 class="card-header">Seminar NARASI 2020</h5>
                 <div class="card-body">

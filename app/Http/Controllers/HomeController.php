@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Submission;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 use App\SeminarDetails;
 use Monolog\Handler\ErrorLogHandler;
 
@@ -47,5 +51,27 @@ class HomeController extends Controller
             'seminars' => $seminars,
             'uniqueName' => $uniqueName,
         ]);
+    }
+
+    public function profile()
+    {
+        $user = Auth::user();
+
+        return view('auth.profile', ['user' => $user]);
+    }
+
+    public function saveProfile(Request $request)
+    {
+        $user = User::findOrFail(Auth::id());
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->nim = $request->nim;
+        $user->jurusan = $request->jurusan;
+
+        $user->save();
+
+        Alert::toast('Profile updated', 'success');
+        return back();
     }
 }

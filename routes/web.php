@@ -21,6 +21,8 @@ Route::get('/exhibition', 'LandingPageController@exhibition')->name('exhibition'
 Route::get('/about', 'LandingPageController@aboutUs')->name('aboutUs');
 
 Auth::routes(['verify' => true]);
+Route::get('/profile', 'HomeController@profile')->middleware(['auth', 'verified'])->name('profile');
+Route::post('/profile', 'HomeController@saveProfile')->middleware(['auth', 'verified'])->name('saveProfile');
 
 Route::get('/dash', 'HomeController@index')->name('dash');
 
