@@ -6,6 +6,7 @@ use App\Submission;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\SeminarDetails;
+use Monolog\Handler\ErrorLogHandler;
 
 class HomeController extends Controller
 {
@@ -37,10 +38,14 @@ class HomeController extends Controller
 
         $seminars = DB::table('seminar_details')->whereNotIn('id', $attendedSeminars->pluck('seminars.seminarID'))->get();
 
+        // https://stackoverflow.com/questions/1699958/formatting-a-number-with-leading-zeros-in-php
+        $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . $user->name;
+
         return view('dash', [
             'photos' => $photos,
             'attendedSeminars' => $attendedSeminars->get(),
             'seminars' => $seminars,
+            'uniqueName' => $uniqueName,
         ]);
     }
 }

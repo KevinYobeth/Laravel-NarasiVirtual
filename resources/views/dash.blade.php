@@ -34,7 +34,7 @@
                     <p class="card-text">{{ $attendedSeminar->description }} <br> </p>
                     {{-- <span class="badge badge-pill badge-success">Berbayar</span> </p> --}}
 
-                    <a href="{{ $attendedSeminar->link }}" class="btn btn-primary">Join</a>
+                    <a href="{{ $attendedSeminar->link.$uniqueName }}" class="btn btn-primary">Join</a>
 
                 </div>
             </div>
