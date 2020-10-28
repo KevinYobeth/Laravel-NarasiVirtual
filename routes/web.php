@@ -41,6 +41,7 @@ Route::get('/invoice/{invoiceID}', 'MailController@viewInvoice');
 
 Route::get('/admin', 'AdminController@index')->middleware(['auth', 'verified'])->name('admin');
 Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
+Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 
 
 Route::get('/invoice', function () {

@@ -18,7 +18,7 @@ class SeminarDetailsTableSeeder extends Seeder
             'name' => 'How to Express Yourself',
             'description' => 'Seminar ini berbicara tentang bagaimana cara-cara mengekspresikan diri melalui karya seni. Seminar ini dibawakan oleh Hana Madness',
             'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
+            'link' => 'https://us02web.zoom.us/j/82408475691?pwd=cVNycDg1c1BsVHRxcEYyM3QwM2tqdz09',
             'thumbnail' => '\/thumbnail/',
             'price' => 0,
         ];
@@ -27,7 +27,8 @@ class SeminarDetailsTableSeeder extends Seeder
             'name' => 'How to take Expressive Photos',
             'description' => 'Seminar ini mengajarkan tentang cara-cara untuk memotret foto secara conceptual untuk mendapatkan ekspresi / perasaan yang ingin didapatkan dari subjek. Seminar dibawakan oleh Amanda MargaretSeminar ini mengajarkan tentang cara-cara untuk memotret foto secara conceptual untuk mendapatkan ekspresi / perasaan yang ingin didapatkan dari subjek. Seminar dibawakan oleh Amanda Margaret',
             'time' => now(),
-            'link' => 'https://us02web.zoom.us/j/87428399482?pwd=NzR1WEo5MXRVL0w4SzQ5TzRmUE5Jdz09',
+            'link' => '
+            https://us02web.zoom.us/j/86278110362?pwd=TStWV29UQ2ZBMTB0UmN0QUwzc3I5QT09',
             'thumbnail' => '\/thumbnail/',
             'price' => 35000,
         ];

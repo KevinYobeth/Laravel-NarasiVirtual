@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Transaction;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminController extends Controller
 {
@@ -17,12 +18,22 @@ class AdminController extends Controller
 
         $transData = DB::table('transactions')
             ->leftJoin('seminars', 'seminars.transactionID', '=', 'transactions.transactionID')
-            ->join('users', 'users.id', '=', 'seminars.userID')->get();
+            ->join('users', 'users.id', '=', 'seminars.userID');
 
-        // return $transData;
+        if (session('id')) {
+            $transID = session('id');
+
+            $detailData = DB::table('transactions')
+                ->leftJoin('seminars', 'seminars.transactionID', '=', 'transactions.transactionID')
+                ->join('users', 'users.id', '=', 'seminars.userID')
+                ->where('transactions.transactionID', $transID)->first();
+
+            Alert::image('Nama: ' . $detailData->name, 'Nama Rek: ' . $detailData->namaRekening, url($detailData->filePath), 'Image Width', 'Image Height');
+            // dd($transData->get());
+        }
 
         return view('admin', [
-            'transactions' => $transData,
+            'transactions' => $transData->get(),
         ]);
     }
 
@@ -33,6 +44,11 @@ class AdminController extends Controller
         $transaction->verified = 1;
         $transaction->save();
 
-        return back();
+        return redirect()->action('MailController@sendInvoice', ['transactionID' => $transID]);
+    }
+
+    public function detail($transID)
+    {
+        return back()->with('id', $transID);
     }
 }
