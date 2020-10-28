@@ -26,7 +26,7 @@
         @endif
 
         @foreach($attendedSeminars as $attendedSeminar)
-        <div class="col-md-5 py-3">
+        <div class="col-md-12 py-3">
             <div class="card">
                 <h5 class="card-header">Seminar NARASI 2020</h5>
                 <div class="card-body">
@@ -34,7 +34,7 @@
                     <p class="card-text">{{ $attendedSeminar->description }} <br> </p>
                     {{-- <span class="badge badge-pill badge-success">Berbayar</span> </p> --}}
 
-                    <a href="{{ $attendedSeminar->link }}" class="btn btn-primary">Join</a>
+                    <a href="{{ $attendedSeminar->link.$uniqueName }}" class="btn btn-primary">Join</a>
 
                 </div>
             </div>
@@ -46,7 +46,7 @@
         @endif
 
         @foreach($seminars as $seminar)
-        <div class="col-md-5 py-3">
+        <div class="col-md-12 py-3">
             <div class="card">
                 <h5 class="card-header">Seminar NARASI 2020</h5>
                 <div class="card-body">
