@@ -18,8 +18,6 @@
         @endif
     </div>
 
-    {{-- <span class="badge badge-pill badge-success">Berbayar</span> </p> --}}
-
     <div class="row justify-content-center align-items-center">
 
         @if(count($attendedSeminars) > 0)
@@ -38,10 +36,22 @@
 
             </div>
         </div>
+
+        <div class="d-md-none col-md-12 col-lg-10 py-3">
+            <div class="container">
+                <img class="img-fluid" src="{{ $attendedSeminar->thumbnailM }}">
+                <div class="bottom-center-join">
+                    <a href="{{ $attendedSeminar->link.$uniqueName }}">
+                        <button type="button" class="btn btn-join">Join Seminar</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
         @endforeach
 
         @if(count($seminars) > 0)
-        <h1 class="montserrat bold col-md-8 text-center">AVAILABLE SEMINARS</h1>
+        <h1 class="montserrat bold col-md-8 text-center pt-2">AVAILABLE SEMINARS</h1>
         @endif
 
         @foreach($seminars as $seminar)
@@ -55,8 +65,22 @@
                 </div>
             </div>
         </div>
-        <div class="d-md-none">
-            <h1>Hello</h1>
+
+        <div class="d-md-none col-md-12 col-lg-10 py-3">
+            <div class="container">
+                <img class="img-fluid" src="{{ $seminar->thumbnailM }}">
+                <div class="bottom-center">
+                    @if($seminar->id === 2)
+                    <a href="{{ route('registerSeminar', ['ID' => $seminar->id]) }}">
+                        <button type="button " class="btn btn-dark">Buy your ticket</button>
+                    </a>
+                    @else
+                    <a href="{{ route('registerSeminar', ['ID' => $seminar->id]) }}">
+                        <button type="button " class="btn btn-dark">Free Registration</button>
+                    </a>
+                    @endif
+                </div>
+            </div>
         </div>
         @endforeach
 
@@ -69,21 +93,29 @@
                         title="Verification on Process" onclick="alert('Verification on Process')">
                         Verifying
                     </button>
-                    {{-- <a href="{{ route('registerSeminar', ['ID' => $seminar->id]) }}">
-                    <button type="button " class="btn btn-dark">Verifying</button>
-                    </a> --}}
                 </div>
-
             </div>
-
         </div>
-        <div class="d-md-none">
-            <h1>Hello</h1>
+
+        <div class="d-md-none col-md-12 col-lg-10 py-3">
+            <div class="container">
+                <img class="img-fluid" src="{{ $seminar->thumbnailM }}">
+                <div class="bottom-center">
+                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
+                        title="Verification on Process" onclick="alert('Verification on Process')">
+                        Verifying
+                    </button>
+                </div>
+            </div>
         </div>
         @endforeach
 
-        <p>Tips: Don't share your zoom link because it is unique to your user ID!</p>
+        <div class="col-12 text-center">
+            <p>Tip: Don't share your zoom link because it's unique to your user ID! Only 1 user per account will be
+                allowed to join.</p>
+        </div>
     </div>
 
 </div>
+@include('sweetalert::alert')
 @endsection

@@ -50,8 +50,6 @@ class HomeController extends Controller
             ->whereNotIn('id', $unverifiedSeminar->pluck('seminars.seminarID'))
             ->get();
 
-        // dd($unverifiedSeminar);
-
         // https://stackoverflow.com/questions/1699958/formatting-a-number-with-leading-zeros-in-php
         $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . $user->name;
 

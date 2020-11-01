@@ -14,6 +14,13 @@
     left: 12.3%;
 }
 
+.bottom-center-join {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .top-left {
     position: absolute;
     top: 8px;
@@ -30,6 +37,13 @@
     position: absolute;
     bottom: 8px;
     right: 16px;
+}
+
+.bottom-center {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .centered {

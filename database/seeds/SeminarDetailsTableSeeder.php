@@ -19,7 +19,8 @@ class SeminarDetailsTableSeeder extends Seeder
             'description' => 'Seminar ini berbicara tentang bagaimana cara-cara mengekspresikan diri melalui karya seni. Seminar ini dibawakan oleh Hana Madness',
             'time' => now(),
             'link' => 'https://us02web.zoom.us/j/82408475691?pwd=cVNycDg1c1BsVHRxcEYyM3QwM2tqdz09',
-            'thumbnail' => '\img/ticketLandscape.png',
+            'thumbnail' => 'img/ticketHana.png',
+            'thumbnailM' => 'img/ticketHanaM.png',
             'price' => 0,
         ];
 
@@ -29,7 +30,8 @@ class SeminarDetailsTableSeeder extends Seeder
             'time' => now(),
             'link' => '
             https://us02web.zoom.us/j/86278110362?pwd=TStWV29UQ2ZBMTB0UmN0QUwzc3I5QT09',
-            'thumbnail' => '\img/ticketAmanda.png',
+            'thumbnail' => 'img/ticketAmanda.png',
+            'thumbnailM' => 'img/ticketAmandaM.png',
             'price' => 35000,
         ];
 
