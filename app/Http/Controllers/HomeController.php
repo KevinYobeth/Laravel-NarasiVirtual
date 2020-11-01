@@ -40,7 +40,17 @@ class HomeController extends Controller
             ->join('transactions', 'transactions.transactionID', '=', 'seminars.transactionID')
             ->where([['seminars.userID', '=', $user->id], ['transactions.verified', '=', 1]]);
 
-        $seminars = DB::table('seminar_details')->whereNotIn('id', $attendedSeminars->pluck('seminars.seminarID'))->get();
+        $unverifiedSeminar = DB::table('seminar_details')
+            ->join('seminars', 'seminar_details.id', '=', 'seminars.seminarID')
+            ->join('transactions', 'transactions.transactionID', '=', 'seminars.transactionID')
+            ->where([['seminars.userID', '=', $user->id], ['transactions.verified', '=', 0]]);
+
+        $seminars = DB::table('seminar_details')
+            ->whereNotIn('id', $attendedSeminars->pluck('seminars.seminarID'))
+            ->whereNotIn('id', $unverifiedSeminar->pluck('seminars.seminarID'))
+            ->get();
+
+        // dd($unverifiedSeminar);
 
         // https://stackoverflow.com/questions/1699958/formatting-a-number-with-leading-zeros-in-php
         $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . $user->name;
@@ -49,6 +59,7 @@ class HomeController extends Controller
             'photos' => $photos,
             'attendedSeminars' => $attendedSeminars->get(),
             'seminars' => $seminars,
+            'unverifiedSeminars' => $unverifiedSeminar->get(),
             'uniqueName' => $uniqueName,
         ]);
     }

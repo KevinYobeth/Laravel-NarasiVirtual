@@ -211,8 +211,8 @@
                                                     <p class="card-text">Some quick example text to build on the
                                                         card title and make up the bulk of the card's content.
                                                     </p>
-                                                    <a href="{{route('registerSeminar', ['ID' => 1])}}"
-                                                        class="btn btn-primary">Register Now!</a>
+                                                    <a href="{{ route('dash') }}" class="btn btn-primary">Register
+                                                        Now!</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -266,9 +266,11 @@
                             exhibition by
                             Klifonara</p>
                         <br>
-                        <button type="button" class="btn text-light"
-                            style=" border: 2px solid white; background-color:transparent">Get me
-                            there!</button>
+                        <a href="{{ route('exhibition') }}">
+                            <button type="button" class="btn text-light"
+                                style=" border: 2px solid white; background-color:transparent">Get me
+                                there!</button>
+                        </a>
                     </div>
                 </div>
             </div>
