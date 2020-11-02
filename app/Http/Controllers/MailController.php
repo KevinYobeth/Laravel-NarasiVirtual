@@ -15,13 +15,19 @@ use App\Mail\ConfirmationMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Monolog\Handler\ErrorLogHandler;
+use Symfony\Component\Console\EventListener\ErrorListener;
 
 class MailController extends Controller
 {
     public function sendInvoice($transactionID)
     {
         // https://blog.mailtrap.io/send-email-in-laravel/
-        $user = Auth::user();
+
+
+        $userID = Seminar::select('userID')->where('transactionID', $transactionID)->value('userID');
+
+        $user = User::find($userID);
 
         $invoiceURL = URL::to('/') . "/invoice/" . $transactionID;
 
