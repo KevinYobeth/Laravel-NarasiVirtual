@@ -73,6 +73,12 @@ class HomeController extends Controller
     {
         $user = User::findOrFail(Auth::id());
 
+        $validatedData = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'nim' => ['required', 'numeric', 'digits:10'],
+            'jurusan' => ['required', 'string', 'max:100'],
+        ]);
+
         $user->name = $request->name;
         $user->email = $request->email;
         $user->nim = $request->nim;

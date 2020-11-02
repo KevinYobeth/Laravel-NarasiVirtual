@@ -136,6 +136,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-md-6 text-center pt-4">
+            <p>All registration data will be collected for accountability report. <br> <b>For Binusian, please ensure
+                    your NIM
+                    and Jurusan is correct for SAT purpose.</b></p>
+        </div>
     </div>
 </div>
 @endsection
