@@ -23,3 +23,12 @@
 .title-very-small {
     font-size: 24px;
 }
+
+.ticket-title {
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+
+.bold {
+    font-weight: 700;
+}

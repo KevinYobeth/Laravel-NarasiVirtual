@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Seminar;
 use App\Transaction;
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 class SeminarController extends Controller
@@ -41,6 +42,7 @@ class SeminarController extends Controller
         $transaction->save();
         $seminar->save();
 
+        Alert::toast('Successfully registered!', 'success');
         return back();
     }
 

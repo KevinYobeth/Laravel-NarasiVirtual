@@ -29,8 +29,9 @@ class InvoiceMail extends Mailable
      */
     public function build()
     {
+        $mailAddress = env('MAIL_FROM_ADDRESS');
 
-        return $this->from('narasi@kevinyobeth.com', 'NARASI - Invoice')
+        return $this->from($mailAddress, 'NARASI - Invoice')
             ->subject('NARASI - Invoice')
             ->markdown('mails.invoice')->with([
                 'data' => $this->data,

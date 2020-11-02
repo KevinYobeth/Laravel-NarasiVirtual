@@ -9,12 +9,14 @@
 
                 <div class="card-body">
                     @if(session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ __('A fresh verification link has been sent to your email address.') }}
+                    </div>
                     @endif
 
-                    {{ __('Before proceeding, please check your email and spam folder for a verification link.') }}
+                    {{ __('Before proceeding, please check your email and ') }}
+                    <b>spam folder</b>
+                    {{ __(' for a verification link.') }}
                     {{ __('If you did not receive the email') }},
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf

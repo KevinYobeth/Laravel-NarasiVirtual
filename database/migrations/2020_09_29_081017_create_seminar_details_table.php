@@ -20,6 +20,7 @@ class CreateSeminarDetailsTable extends Migration
             $table->timestamp('time');
             $table->string('link');
             $table->string('thumbnail');
+            $table->string('thumbnailM');
             $table->integer('price');
             $table->timestamps();
         });

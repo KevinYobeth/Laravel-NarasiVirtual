@@ -188,10 +188,10 @@
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Seminar Mental Health: How to Express
-                                                        Yourself</h5>
-                                                    <p class="card-text">Some quick example text to build on the
-                                                        card title and make up the bulk of the card's content.
+                                                    <h5 class="card-title">Expressing Yourself</h5>
+                                                    <p class="card-text">Seminar ini berbicara tentang bagaimana
+                                                        cara-cara mengekspresikan diri melalui karya seni. Seminar ini
+                                                        dibawakan oleh Hana Madness.
                                                     </p>
                                                     <a href="{{route('registerSeminar', ['ID' => 2])}}"
                                                         class="btn btn-primary">Register Now!</a>
@@ -206,13 +206,14 @@
                                         <div class="col-md-5 col-sm-10">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Seminar Photography: How to take "Expressive"
-                                                        Photos</h5>
-                                                    <p class="card-text">Some quick example text to build on the
-                                                        card title and make up the bulk of the card's content.
+                                                    <h5 class="card-title">Capturing Emotions</h5>
+                                                    <p class="card-text">Seminar ini mengajarkan tentang cara-cara untuk
+                                                        memotret foto secara conceptual untuk memunculkan ekspresi /
+                                                        perasaan tertentu. Seminar ini akan dibawakan oleh Amanda
+                                                        Margareth.
                                                     </p>
-                                                    <a href="{{route('registerSeminar', ['ID' => 1])}}"
-                                                        class="btn btn-primary">Register Now!</a>
+                                                    <a href="{{ route('dash') }}" class="btn btn-primary">Register
+                                                        Now!</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -266,9 +267,11 @@
                             exhibition by
                             Klifonara</p>
                         <br>
-                        <button type="button" class="btn text-light"
-                            style=" border: 2px solid white; background-color:transparent">Get me
-                            there!</button>
+                        <a href="{{ route('exhibition') }}">
+                            <button type="button" class="btn text-light"
+                                style=" border: 2px solid white; background-color:transparent">Get me
+                                there!</button>
+                        </a>
                     </div>
                 </div>
             </div>

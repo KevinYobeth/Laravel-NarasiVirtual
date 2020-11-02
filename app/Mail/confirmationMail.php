@@ -30,7 +30,9 @@ class ConfirmationMail extends Mailable
     public function build()
     {
 
-        return $this->from('narasi@kevinyobeth.com', 'NARASI - Confirmation')
+        $mailAddress = env('MAIL_FROM_ADDRESS');
+
+        return $this->from($mailAddress, 'NARASI - Confirmation')
             ->subject('NARASI - Confirmation')
             ->markdown('mails.confirmation')->with([
                 'data' => $this->data,

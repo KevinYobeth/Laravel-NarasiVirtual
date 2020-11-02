@@ -6,7 +6,7 @@ This payment is NOT VERIFIED
 @endcomponent
 
 Date: {{ $data['date'] }} <br>
-Method: BCA Virtual Account <br>
+Method: BCA Transfer <br>
 Issued To: {{ $data['name'] }} <br>
 
 ## Invoice Number: {{ $data['invoiceNum'] }} <br>
