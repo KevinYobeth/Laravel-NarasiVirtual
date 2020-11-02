@@ -15,9 +15,9 @@ class SeminarDetailsTableSeeder extends Seeder
         $data = [];
 
         $data[0] = [
-            'name' => 'How to Express Yourself',
+            'name' => 'Expressing Yourself',
             'description' => 'Seminar ini berbicara tentang bagaimana cara-cara mengekspresikan diri melalui karya seni. Seminar ini dibawakan oleh Hana Madness',
-            'time' => now(),
+            'time' => "2020-11-28 14:30:00",
             'link' => 'https://us02web.zoom.us/j/82408475691?pwd=cVNycDg1c1BsVHRxcEYyM3QwM2tqdz09',
             'thumbnail' => 'img/ticketHana.png',
             'thumbnailM' => 'img/ticketHanaM.png',
@@ -25,11 +25,10 @@ class SeminarDetailsTableSeeder extends Seeder
         ];
 
         $data[1] = [
-            'name' => 'How to take Expressive Photos',
+            'name' => 'Capturing Emotions',
             'description' => 'Seminar ini mengajarkan tentang cara-cara untuk memotret foto secara conceptual untuk mendapatkan ekspresi / perasaan yang ingin didapatkan dari subjek. Seminar dibawakan oleh Amanda MargaretSeminar ini mengajarkan tentang cara-cara untuk memotret foto secara conceptual untuk mendapatkan ekspresi / perasaan yang ingin didapatkan dari subjek. Seminar dibawakan oleh Amanda Margaret',
-            'time' => now(),
-            'link' => '
-            https://us02web.zoom.us/j/86278110362?pwd=TStWV29UQ2ZBMTB0UmN0QUwzc3I5QT09',
+            'time' => "2020-12-13 14:30:00",
+            'link' => 'https://us02web.zoom.us/j/86278110362?pwd=TStWV29UQ2ZBMTB0UmN0QUwzc3I5QT09',
             'thumbnail' => 'img/ticketAmanda.png',
             'thumbnailM' => 'img/ticketAmandaM.png',
             'price' => 35000,
