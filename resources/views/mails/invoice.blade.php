@@ -18,7 +18,7 @@ Issued To: {{ $data['name'] }} <br>
 |:---------------------------------------|----------:|
 | Seminar: How To take Expressive Photos | Rp35.000 |
 | Knowledge :D | Rp0 |
-| Pop Corn Virtual | Rp0 |
+| Popcorn Virtual | Rp0 |
 | **TOTAL** | Rp35.000 |
 @endcomponent
 
