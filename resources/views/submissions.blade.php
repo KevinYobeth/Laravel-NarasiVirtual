@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NARASI 2020 - About</title>
+    <title>NARASI 2020 - Submissions</title>
 
     <meta property="og:title" content="NARASI: The Language of the Soul" />
     <meta property="og:description"
@@ -78,16 +78,18 @@
                             <h1 class="title serif white" id="emotions">Emotions</h1>
                         </i>
                         <h1 class="title-medium serif white lh-15" style="padding-bottom: 80px">in Frame</h1>
-                        <p class="sans-serif white">35 curated photographs submitted by members and associates of
-                            KLIFONARA
-                            in theme
-                            with our
-                            exhibition. NARASI 2020 Expressions: The Language of the Soul</p>
+                        <p class="sans-serif white">40 curated photographs submitted by members and associates of
+                            KLIFONARA in theme with our exhibition. NARASI 2020 Expressions: The Language of the Soul
+                        </p>
                     </div>
 
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <div class="section-2" id="section-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -95,57 +97,121 @@
                 </div>
 
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('/img/subm/1.jpg')}}" alt="">
-                    <p class="sans-serif title-very-small white bold pt-4">AMANDA SASKIA</p>
-                    <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
-                        ratione voluptate eos aspernatur! Ea error corporis earum recusandae libero beatae dolore
-                        reprehenderit repellat, nostrum magni! Accusamus praesentium, qui dolor impedit, quaerat aliquid
-                        illo error numquam totam corrupti sint! Eius, voluptatibus numquam. Repellat, exercitationem
-                        officia? Qui iusto quod corporis repellat. Fuga, earum! Animi quidem ducimus, nulla possimus
-                        eius est.</p>
+                    <img class="profile" src="{{asset('img/subm/1.jpg')}}" alt="">
+                    <p class="sans-serif title-very-small white bold pt-4">EDWIN DJUANDA</p>
+                    <p class="sans-serif white">Dr Edwin Djuanda, memotret sejak 50tahun lalu. Menjadi pemenang dan juri
+                        pelbagai lomba foto nasional / internasional.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('/img/subm/2.jpg')}}" alt="">
-                    <p class="sans-serif title-very-small white bold pt-4">VANIA ANGELA</p>
-                    <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
-                        ratione voluptate eos aspernatur! Ea error corporis earum recusandae libero beatae dolore
-                        reprehenderit repellat, nostrum magni! Accusamus praesentium, qui dolor impedit, quaerat aliquid
-                        illo error numquam totam corrupti sint! Eius, voluptatibus numquam. Repellat, exercitationem
-                        officia? Qui iusto quod corporis repellat. Fuga, earum! Animi quidem ducimus, nulla possimus
-                        eius est.</p>
+                    <img class="profile" src="{{asset('img/subm/2.jpg')}}" alt="">
+                    <p class="sans-serif title-very-small white bold pt-4">LEONTIUS JESSE PUTRA</p>
+                    <p class="sans-serif white">Seorang overlocker profesional yang telah memulai Digital Agency
+                        Businnes pada tahun 2016-an. Seiring berjalannya waktu, ia menyadari bahwa dunia media sosial
+                        sangat membutuhkan konten fotografi dan oleh karena itu, ia mulai bergabung dengan Caffeine
+                        Community di tahun 2017-an. Sekarang karirnya di bidang fotografi sangat berkembang dan ia juga
+                        merupakan kepala sekolah di Caffeine Academy.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('/img/subm/3.jpg')}}" alt="">
-                    <p class="sans-serif title-very-small white bold pt-4">ELLEN ANDREA</p>
-                    <p class="sans-serif white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim
-                        ratione voluptate eos aspernatur! Ea error corporis earum recusandae libero beatae dolore
-                        reprehenderit repellat, nostrum magni! Accusamus praesentium, qui dolor impedit, quaerat aliquid
-                        illo error numquam totam corrupti sint! Eius, voluptatibus numquam. Repellat, exercitationem
-                        officia? Qui iusto quod corporis repellat. Fuga, earum! Animi quidem ducimus, nulla possimus
-                        eius est.</p>
+                    <img class="profile" src="{{asset('img/subm/3.jpg')}}" alt="">
+                    <p class="sans-serif title-very-small white bold pt-4">RICKY YEP</p>
+                    <p class="sans-serif white">Berawal dari hobby, fotografi kini menjadi salah satu bagian terpenting
+                        dalam hidup saya. Kenikmatan pada saat menciptakan sebuah foto yang berkualitas tinggi membuat
+                        saya semakin menikmati karir sebagai fotografer</p>
                 </div>
 
                 <div class="col-md-12">
                     <div class="gal">
-                        <img src="{{asset('/img/subm/images/1-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/2-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/3-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/4-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/5-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/6-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/7-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/8-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/9-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/10-min.jpg')}}" alt="">
-                        <img src="{{asset('/img/subm/images/11-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/1-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/2-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/3-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/4-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/5-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/6-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/7-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/8-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/9-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/10-min.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/images/11-min.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section-2" id="section-2">
+    <div class="section-3" id="section-3">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="offset-lg-6 col-lg-6 offset-md-4 col-md-8 mt-5">
+                    <h1 id="right" class="sans-serif bold white">PAMERAN DIKLAT</h1>
+                    <h1 id="right" class="sans-serif bold white lh-15 pb-3">KLIFONARA 2020</h1>
+                    <p id="right" class="sans-serif white">50 curated photographs submitted by members of KLIFONARA who
+                        had participated in DIKLAT Basic
+                        Photography Class as a student.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="section-4" id="section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gal-pamdik">
+                        <img src="{{asset('img/subm/pamdik/pm-m-1.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-2.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-3.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-4.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-5.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-6.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-7.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-8.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-9.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-10.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-11.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-12.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-13.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-14.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-15.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-16.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-17.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-18.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-19.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-20.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-21.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-22.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-23.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-24.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-m-25.jpg')}}" alt="">
+
+                        <img src="{{asset('img/subm/pamdik/pm-p-1.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-2.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-3.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-4.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-5.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-6.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-7.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-8.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-9.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-10.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-11.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-12.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-13.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-14.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-15.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-16.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-17.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-18.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-19.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-20.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-21.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-22.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-23.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-24.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-25.jpg')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
