@@ -16,9 +16,15 @@ class AdminController extends Controller
 
         if ($user->role == 0)  return back();
 
-        $transData = DB::table('transactions')
+        $hanas = DB::table('transactions')
             ->leftJoin('seminars', 'seminars.transactionID', '=', 'transactions.transactionID')
-            ->join('users', 'users.id', '=', 'seminars.userID');
+            ->join('users', 'users.id', '=', 'seminars.userID')
+            ->where('seminarID', 1)->get();
+
+        $amandas = DB::table('transactions')
+            ->leftJoin('seminars', 'seminars.transactionID', '=', 'transactions.transactionID')
+            ->join('users', 'users.id', '=', 'seminars.userID')
+            ->where('seminarID', 2)->get();
 
         if (session('id')) {
             $transID = session('id');
@@ -33,7 +39,8 @@ class AdminController extends Controller
         }
 
         return view('admin', [
-            'transactions' => $transData->get(),
+            'hanas' => $hanas,
+            'amandas' => $amandas,
         ]);
     }
 

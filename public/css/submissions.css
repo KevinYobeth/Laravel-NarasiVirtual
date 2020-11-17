@@ -14,6 +14,21 @@ html {
     background-color: black;
 }
 
+#section-3 {
+    height: 90vh;
+    background-image: url("/img/subm/bg-2.JPG");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    background-size: cover;
+}
+
+#section-4 {
+    margin-top: -50px;
+    height: 3500px;
+    background-color: black;
+}
+
 .white {
     color: white;
 }
@@ -57,16 +72,25 @@ html {
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 }
+
 .gal img {
     width: 100%;
     padding: 7px 0;
 }
-@media (max-width: 500px) {
-    .gal {
-        -webkit-column-count: 1; /* Chrome, Safari, Opera */
-        -moz-column-count: 1; /* Firefox */
-        column-count: 1;
-    }
+
+.gal-pamdik {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+.gal-pamdik img {
+    width: 100%;
+    padding: 7px 0;
+}
+
+#right {
+    text-align: right;
 }
 
 @media (max-width: 1199.98px) {
@@ -104,6 +128,14 @@ html {
         height: 2400px;
         background-color: black;
     }
+
+    #section-3 {
+        background-position: 50% 0%;
+    }
+
+    #section-4 {
+        height: 3000px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -130,6 +162,10 @@ html {
         height: 2800px;
         background-color: black;
     }
+
+    #section-4 {
+        height: 2300px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -142,6 +178,15 @@ html {
         );
         width: 285px;
         height: 15px;
+    }
+
+    #section-2 {
+        height: 2500px;
+    }
+
+    #section-4 {
+        margin-top: -100px;
+        height: 1700px;
     }
 }
 
@@ -171,5 +216,29 @@ html {
 
     .text {
         text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    #section-2 {
+        height: 7700px;
+        background-color: black;
+    }
+
+    #section-4 {
+        height: 18000px;
+        background-color: black;
+    }
+
+    .gal {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
+    .gal-pamdik {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
     }
 }

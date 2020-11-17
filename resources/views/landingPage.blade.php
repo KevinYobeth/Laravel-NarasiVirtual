@@ -161,9 +161,15 @@
                         <p class="serif caption" style="margin-top: 0px">and passion.</p>
                         <br>
                         <br>
-                        <p class ="serif">Expressions Simple yet really powerful</p>
-                        <p class="sans-serif">One word but holds a deep meaning. It lets us speak without words, portray feelings without speaking. It is a way to express yourself and your emotions. It is essential because without expressions people wouldn't know what other people feel because not everyone can express themselves with words..</p>
-                        <p class="sans-serif"> LIt conveys various things with just one part of the body; the face. It allows others to view and understand a person through not only their physical appearance but also deep beneath their soul. So, here we are, showing you that there are so many ways you can express yourself just the way you are. The real you. The Language of the Soul.</p>
+                        <p class="serif">Expressions Simple yet really powerful</p>
+                        <p class="sans-serif">One word but holds a deep meaning. It lets us speak without words, portray
+                            feelings without speaking. It is a way to express yourself and your emotions. It is
+                            essential because without expressions people wouldn't know what other people feel because
+                            not everyone can express themselves with words..</p>
+                        <p class="sans-serif"> It conveys various things with just one part of the body; the face. It
+                            allows others to view and understand a person through not only their physical appearance but
+                            also deep beneath their soul. So, here we are, showing you that there are so many ways you
+                            can express yourself just the way you are. The real you. The Language of the Soul.</p>
                     </div>
                 </div>
             </div>
