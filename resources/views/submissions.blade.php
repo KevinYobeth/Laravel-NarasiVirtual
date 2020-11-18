@@ -157,33 +157,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="gal-pamdik">
-                        <img src="{{asset('img/subm/pamdik/pm-m-1.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-2.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-3.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-4.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-5.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-6.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-7.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-8.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-9.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-10.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-11.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-12.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-13.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-14.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-15.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-16.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-17.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-18.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-19.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-20.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-21.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-22.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-23.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-24.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-m-25.jpg')}}" alt="">
+                        @foreach ($photos as $photo)
+                        <a href="{{ route('photoDetail', ['photoID' => $photo->id]) }}">
+                            <img src="{{ $photo->directory }}" alt="">
+                        </a>
+                        @endforeach
 
-                        <img src="{{asset('img/subm/pamdik/pm-p-1.jpg')}}" alt="">
+                        {{-- <img src="{{asset('img/subm/pamdik/pm-p-1.jpg')}}" alt="">
                         <img src="{{asset('img/subm/pamdik/pm-p-2.jpg')}}" alt="">
                         <img src="{{asset('img/subm/pamdik/pm-p-3.jpg')}}" alt="">
                         <img src="{{asset('img/subm/pamdik/pm-p-4.jpg')}}" alt="">
@@ -207,7 +187,7 @@
                         <img src="{{asset('img/subm/pamdik/pm-p-22.jpg')}}" alt="">
                         <img src="{{asset('img/subm/pamdik/pm-p-23.jpg')}}" alt="">
                         <img src="{{asset('img/subm/pamdik/pm-p-24.jpg')}}" alt="">
-                        <img src="{{asset('img/subm/pamdik/pm-p-25.jpg')}}" alt="">
+                        <img src="{{asset('img/subm/pamdik/pm-p-25.jpg')}}" alt=""> --}}
                     </div>
                 </div>
             </div>

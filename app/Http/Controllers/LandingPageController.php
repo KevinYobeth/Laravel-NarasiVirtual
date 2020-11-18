@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Motd;
+use App\Photo;
 
 class LandingPageController extends Controller
 {
@@ -23,7 +24,18 @@ class LandingPageController extends Controller
 
     public function submissions()
     {
-        return view('submissions');
+        $photos = Photo::all();
+
+        return view('submissions', [
+            'photos' => $photos,
+        ]);
+    }
+
+    public function photoDetail($photoID)
+    {
+        $photo = Photo::findOrFail($photoID);
+
+        return $photo;
     }
 
     public function exhibition()

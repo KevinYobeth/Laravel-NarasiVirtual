@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             SeminarDetailsTableSeeder::class,
             UsersTableSeeder::class,
             MotdsTableSeeder::class,
+            PhotoSeeder::class,
         ]);
     }
 }

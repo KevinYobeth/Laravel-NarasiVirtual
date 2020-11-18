@@ -20,6 +20,8 @@ Route::get('/submissions', 'LandingPageController@submissions')->name('submissio
 Route::get('/exhibition', 'LandingPageController@exhibition')->name('exhibition');
 Route::get('/about', 'LandingPageController@aboutUs')->name('aboutUs');
 
+Route::get('/submissions/{photoID}', 'LandingPageController@photoDetail')->name('photoDetail');
+
 Auth::routes(['verify' => true]);
 Route::get('/profile', 'HomeController@profile')->middleware(['auth', 'verified'])->name('profile');
 Route::post('/profile', 'HomeController@saveProfile')->middleware(['auth', 'verified'])->name('saveProfile');
@@ -44,7 +46,6 @@ Route::get('/invoice/{invoiceID}', 'MailController@viewInvoice');
 Route::get('/admin', 'AdminController@index')->middleware(['auth', 'verified'])->name('admin');
 Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
 Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
-
 
 Route::get('/invoice', function () {
     return view('mails.invoice-web');
