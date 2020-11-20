@@ -68,7 +68,11 @@
                         </li>
                         <li>
                             <a href="{{route('login')}}">
+                                @if (Auth::check())
+                                <button type="button" class="btn btn-dark btn-login">DASHBOARD</button>
+                                @else
                                 <button type="button" class="btn btn-dark btn-login">LOGIN</button>
+                                @endif
                             </a>
                         </li>
                     </ul>

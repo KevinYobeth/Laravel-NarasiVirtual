@@ -278,5 +278,153 @@ class PhotoSeeder extends Seeder
         }
 
         DB::table('photos')->insert($pamdikPengajar);
+
+        $narasiPhotographer =
+            [
+                'Martinus Nathanael',
+                'Martinus Nathanael',
+                'Martinus Nathanael',
+                'Bernard Adhitya Kurniawan',
+                'Bernard Adhitya Kurniawan',
+                'Bernard Adhitya Kurniawan',
+                'Bernard Adhitya Kurniawan',
+                'Hafizh Arsya Putra',
+                'Steven Tanjaya',
+                'Fairuz I. Mauliddin',
+                'Brandon White',
+                'Brandon White',
+                'Brandon White',
+                'Ellen Andrea Berliandra',
+                'Ellen Andrea Berliandra',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Leonardus Kevin Yobeth',
+                'Leonardus Kevin Yobeth',
+                'Brandon White',
+                'Brandon White',
+                'Brandon White',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Jason Putra Chainiago',
+                'Andreas Verrill Setiaputra',
+                'Martinus Nathanael',
+                'Martinus Nathanael',
+                'Martinus Nathanael',
+                'Martinus Nathanael',
+                'Willy candra',
+                'Vincent Budihartono',
+                'Vincent Budihartono',
+                'Fairuz I. Mauliddin',
+                'Fairuz I. Mauliddin',
+                'Fairuz I. Mauliddin',
+                'Muhammad Yuwan Arkan'
+            ];
+
+        $narasiTitle =
+            [
+                'Metro Girl',
+                'Beauty of an Irony',
+                'Passionate',
+                'Pride in Chinese Culture',
+                'Ballerina in Motion',
+                'Ballerina in Motion',
+                'Lady in Red',
+                'Hi..?',
+                'Why You Looking at Me ?',
+                'A Color of Unhappiness: The Anger of A Best Friend (A Virtual Photoshot)',
+                'Look What I Capture!',
+                'You Are The Light In The Darkness',
+                'Elegance',
+                'Hibaku-Sha',
+                'Reunion',
+                'Society.',
+                'Ears.',
+                'Focus',
+                'Serendipity',
+                'Happiness',
+                'Stare',
+                'Oh Joy~',
+                'Warm In The Cold',
+                'Tired Self',
+                'Voices in Her Head.',
+                'Time-Bomb',
+                'The Battle',
+                'A Woman\'s Real Beauty',
+                'Refleksi',
+                'Find Within',
+                'Childhood',
+                'Raise a Cup of Happiness',
+                'Betrayals',
+                'The power of smiling',
+                'Kids Portrait',
+                'Long Neck Person',
+                'Monochromatic Joyfulness: Circus Clown',
+                'Monochromatic Joyfulness: From The Audience Side',
+                'Monochromatic Joyfulness: The Piano Man is Proud',
+                'Loves doesnt need a luxorius items.'
+            ];
+
+        $narasiCaption =
+            [
+                'Tinggal di abad ke 21 tentunya merupakan sebuah perjalanan yang sangat restless. Beradaptasi atau tertinggal cepatnya perubahan zaman',
+                'Apakah memetik sebuah bunga hias dari tangkainya adalah tindakan yang merusak? Apa esensi dari bunga hias itu sendiri selain memperindah? Apakah memetik untuk mengindahkan adalah tindakan yang sia-sia?',
+                'Ada orang yang ingin memiliki karya yang sempurna. Ada juga orang yang ingin karyanya dihargai orang lain. Ada juga mereka yang menghargai perjalanannya, bukan hasilnya.',
+                'The dress she pridefully wore, shares a story of a rich history',
+                'Swift in every moves she makes, shows pride in every steps she goes.',
+                'Prideful and elegant, precise in every pose she makes',
+                'Bold and strong, yet soft and lady-like',
+                'A boy who is shy but looking forward what\s ahead of him',
+                'Janganlah Memandang Hanya Dari Satu Sudut Pandang',
+                '"Who hurt my friend, come face forward to me, her problem is my problem to!"',
+                'Hunting pertama setelah bertemu mereka tak lama. Tanpa pikir panjang langsung saja kita memotret apa yang ada di lokasi. Mencoba segala ide dan berlabu ke ide saling memotret individu. Secara tidak sengaja momen ini terekam dalam rentetan suara shutter.',
+                'Matahari telah terbenam, malam dan bulan menyanjung mu di tengah kegelapan. Tak lupa kita nyalakan cahaya, tuk membawa kau menjadi dominan dalam kegelapan.',
+                'Tatapan matamu yang tajam, cincin di jarimu yang bersinar, di kelilingi oleh kumpulan bunga nan apik. Dinding merah dibelakang mu semakin melukiskan keelokanmu. Kau sungguh elegan!',
+                'Melukiskan dua orang bersaudara yang merupakan korban akibat perang dunia di Jepang pada tahun 1945 yang hidup dalam kemiskinan. Walau begitu, terlukis di wajah mereka bahwa mereka masih merasakan kehangatan satu sama lain.',
+                'Diambil dari pementasan teater Samanter Dunia Misty. Mengisahkan tentang kedua sahabat yang kembali di pertemukan setelah sekian lama terpisah dan menghilang dari kekacauan.',
+                'Have you ever been in a position where you are blinded by the greater things in life? Have you ever been in a position where you are not allowed to say certain things? That is society. Then, what\'s the point of living when you can\'t express yourself?',
+                'This is it. The era where your actions are being monitored. Where the smallest mistake is mattered because of people obsessing over "Cancel Culture".',
+                'People are focusing too much on other people\'s beauty and start questioning their own. Beautiful people always see the beauty in others.',
+                'It\'s simple, yet complicated. The mind knows. The mind knows it very well.',
+                'We define our happiness. Don\'t let others define you.',
+                'Mungkin kata orang-orang hidup harus dijalani dengan santai layaknya bagaikan air sungai yang mengalir begitu saja. Tatapan mu terlihat seperti lelah akan pergerakan yang terlalu cepat di abad ini. Kamu ingin melepas kekhawatiran di dalam hatimu.',
+                'Gelembung air. Melihat ia bermunculan dari tongkat yang ku pegang dan terbang di udara seakan-akan melepas penat pikiran saya selama ini. Terkadang hal sederhana membuat semuanya berubah.',
+                'Di malam yang dingin ku melihat cahaya dari jauh. Ku dekati cahaya tersebut dan ternyata kau menuntun diriku yang tersesat. Senyuman mu yang tulus membuat malam ini menjadi lebih hangat.',
+                'We make mistakes and sometimes it haunts us until this day. But remember, to heal a wound you need to stop touching it.',
+                'She\'s wide awake at night, sitting there in the darkness and overwhelmed by the voices in her head. The voices of painful reminder that she cares too much about things she shouldn\'t.',
+                'Every time we keep the pain to ourselves, it will become a bomb\'s fragment . Once the fragments are complete, no matter where you are, the situation you are in, it will blow. The bomb won\'t only be hurting you, it will hurt everyone around you.',
+                'Everybody can win anything, they can win all of the prizes in the world. But the biggest prize goes to the people who win the battle within themselves.',
+                'A woman\'s real beauty is not about how she look on the outside. It is about how they feel on the inside.',
+                'Memikirkan tentang hidup hari ini',
+                'Terkadang mata kita bertemu, tetapi kita tidak dapat melihat satu sama lain.',
+                'Masa yang berharga terkadang terasa berharga ketika kita sudah meninggalkannya.',
+                'Manusia sering memilih untuk melupakan masalah daripada menyelesaikannya. Apalagi ketika whisky lebih murah daripada terapi.',
+                'Keluarga akan hilang makna di depan ambisi seorang pemuda',
+                'Senyum dapat menebarkan cinta kasih dan salam damai kepada dunia maka dari itu jangan biarkan segalanya merebut senyum mu karena senyum adalah tanda kebahagian diri seseorang.',
+                'Long Neck Kids Portrait',
+                'Karen People living in Thailand',
+                'It’s the clown that bringing us the laugh, it’s the laugh that wipe our tears.',
+                'Clap and laugh, it’s their job to appreciate the performance.',
+                'All the practice has payed off as the show come to an end.',
+                'Untuk menunjukan rasa sayang tidak butuh membelikan barang mewah, kadang cinta sejati bisa ditunjukan dengan memberikan bunga yang dipetik atau membuatkan indomie rebus di kala hujan sambil menonton film romantis.'
+            ];
+
+
+        $narasiSubmission = [];
+
+        for ($i = 0; $i < 40; $i++) {
+            $narasiSubmission[$i] = [
+                'photographer' => $narasiPhotographer[$i],
+                'title' => $narasiTitle[$i],
+                'caption' => $narasiCaption[$i],
+                'instagramID' => 'PLACEHOLDER TEMPLATE',
+                'category' => 0,
+                'directory' => 'img/subm/narasi/' . ($i + 1) . '.jpg',
+            ];
+        }
+
+        DB::table('photos')->insert($narasiSubmission);
     }
 }

@@ -24,10 +24,11 @@ class LandingPageController extends Controller
 
     public function submissions()
     {
-        $photos = Photo::all();
-
+        $photos = Photo::whereIn('category', [1, 2])->get();
+        $narasi = Photo::where('category', 0)->get();
         return view('submissions', [
             'photos' => $photos,
+            'narasi' => $narasi,
         ]);
     }
 
