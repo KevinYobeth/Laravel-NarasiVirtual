@@ -10,16 +10,16 @@ html {
 }
 
 #section-2 {
-    height: 2500px;
+    height: 6300px;
     background-color: black;
 }
 
 #section-3 {
-    height: 90vh;
+    height: 100vh;
     background-image: url("/img/subm/bg-2.JPG");
     background-color: black;
     background-repeat: no-repeat;
-    background-position: 0px -100px;
+    background-position: 0px 0px;
     background-size: cover;
 }
 

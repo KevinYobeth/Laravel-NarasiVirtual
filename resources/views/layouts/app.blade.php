@@ -39,7 +39,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('dash') }}">
+                <a class="navbar-brand" href="{{ route('landingPage') }}">
                     <img src="{{ asset('img/logo/logo-dark.png') }}" height="40px" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
