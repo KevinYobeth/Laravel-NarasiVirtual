@@ -165,7 +165,7 @@
                         <p class="serif caption" style="margin-top: 0px">and passion.</p>
                         <br>
                         <br>
-                        <p class="serif">Expressions Simple yet really powerful</p>
+                        <p class="serif sub-title">Expressions simple yet really powerful</p>
                         <p class="sans-serif">One word but holds a deep meaning. It lets us speak without words, portray
                             feelings without speaking. It is a way to express yourself and your emotions. It is
                             essential because without expressions people wouldn't know what other people feel because

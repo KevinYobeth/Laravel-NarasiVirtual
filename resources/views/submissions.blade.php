@@ -99,17 +99,19 @@
                 <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('img/subm/1.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">EDWIN DJUANDA</p>
-                    <p class="sans-serif white">Dr Edwin Djuanda, memotret sejak 50tahun lalu. Menjadi pemenang dan juri
-                        pelbagai lomba foto nasional / internasional.</p>
+                    <p class="sans-serif white">Dr. Edwin Djuanda, memotret sejak 50tahun lalu. Menjadi pemenang dan
+                        juri
+                        pelbagai lomba foto nasional / internasional. Sekarang, beliau menjabat sebagai dewan penasehat
+                        di Lembaga
+                        Fotografi Candra Naya.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('img/subm/2.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">LEONTIUS JESSE PUTRA</p>
-                    <p class="sans-serif white">Seorang overlocker profesional yang telah memulai Digital Agency
-                        Businnes pada tahun 2016-an. Seiring berjalannya waktu, ia menyadari bahwa dunia media sosial
-                        sangat membutuhkan konten fotografi dan oleh karena itu, ia mulai bergabung dengan Caffeine
-                        Community di tahun 2017-an. Sekarang karirnya di bidang fotografi sangat berkembang dan ia juga
-                        merupakan kepala sekolah di Caffeine Academy.</p>
+                    <p class="sans-serif white">Seorang overclocker profesional yang telah memulai Digital Agency
+                        Businnes pada tahun 2016-an. Ia mulai bergabung dengan Caffeine
+                        Community di tahun 2017-an. Sekarang ia juga
+                        menjadi kepala sekolah di Caffeine Academy.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('img/subm/3.jpg')}}" alt="">
@@ -120,8 +122,22 @@
                 </div>
 
                 <div class="col-md-12">
+                    <h1 class="serif white text-center pb-3">
+                        Color
+                    </h1>
                     <div class="gal">
-                        @foreach ($narasi as $photo)
+                        @foreach ($narasiColor as $photo)
+                        <a href="{{ route('photoDetail', ['photoID' => $photo->id]) }}">
+                            <img src="{{ $photo->directory }}" alt="">
+                        </a>
+                        @endforeach
+                    </div>
+
+                    <h1 class="serif white text-center pt-5 pb-3">
+                        Black & White
+                    </h1>
+                    <div class="gal">
+                        @foreach ($narasiBW as $photo)
                         <a href="{{ route('photoDetail', ['photoID' => $photo->id]) }}">
                             <img src="{{ $photo->directory }}" alt="">
                         </a>
