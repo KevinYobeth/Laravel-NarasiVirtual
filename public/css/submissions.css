@@ -10,7 +10,7 @@ html {
 }
 
 #section-2 {
-    height: 6300px;
+    height: 7150px;
     background-color: black;
 }
 
@@ -125,7 +125,7 @@ html {
     }
 
     #section-2 {
-        height: 2400px;
+        height: 6200px;
         background-color: black;
     }
 
@@ -159,7 +159,7 @@ html {
     }
 
     #section-2 {
-        height: 2800px;
+        height: 5700px;
         background-color: black;
     }
 
@@ -181,7 +181,7 @@ html {
     }
 
     #section-2 {
-        height: 2500px;
+        height: 4700px;
     }
 
     #section-4 {
@@ -221,7 +221,7 @@ html {
 
 @media (max-width: 500px) {
     #section-2 {
-        height: 7700px;
+        height: 23700px;
         background-color: black;
     }
 

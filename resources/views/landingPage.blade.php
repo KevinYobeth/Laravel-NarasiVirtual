@@ -263,7 +263,7 @@
                             the
                             world to accept
                             you to be your true beautiful self</p>
-                        <a href="">
+                        <a href="{{ route('theStory') }}">
                             <p class="bold white">Read More >></p>
                         </a>
                     </div>
