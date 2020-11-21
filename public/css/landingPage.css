@@ -46,6 +46,7 @@ p {
 
 #section-7 {
     background-image: url("../img/section-bg/3.jpg");
+    background-position: 0% 0%;
 }
 
 #section-8 {
@@ -105,6 +106,10 @@ p {
 
 .title-small {
     font-size: 40px;
+}
+
+.sub-title {
+    font-size: 20px;
 }
 
 .caption {
