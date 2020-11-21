@@ -1,0 +1,20 @@
+#section-1 {
+    background-image: url("../img/story/bola.png");
+    background-size: cover;
+}
+
+.white {
+    color: white;
+}
+
+#klifonaraPresents {
+    margin-top: 30px;
+}
+
+.pt-10 {
+    padding-top: 35px;
+}
+
+.pt-20 {
+    padding-top: 150px;
+}
