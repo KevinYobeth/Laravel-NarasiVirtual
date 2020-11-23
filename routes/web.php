@@ -19,6 +19,7 @@ Route::get('/story', 'LandingPageController@theStory')->name('theStory');
 Route::get('/submissions', 'LandingPageController@submissions')->name('submissions');
 Route::get('/exhibition', 'LandingPageController@exhibition')->name('exhibition');
 Route::get('/about', 'LandingPageController@aboutUs')->name('aboutUs');
+Route::get('/live', 'LandingPageController@live')->name('live');
 
 Route::get('/submissions/{photoID}', 'LandingPageController@photoDetail')->name('photoDetail');
 
