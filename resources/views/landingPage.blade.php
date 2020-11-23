@@ -64,9 +64,6 @@
                             <a class="nav-link" href="{{route('aboutUs')}}">ABOUT US</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">CONTACT</a>
-                        </li>
-                        <li>
                             <a href="{{route('login')}}">
                                 @if (Auth::check())
                                 <button type="button" class="btn btn-dark btn-login">DASHBOARD</button>
@@ -88,11 +85,11 @@
                 <div class="row h-100 d-flex align-items-center justify-content-center text-center">
                     <div class="col-md-10">
                         <p style="display: inline-block">
-                            {{ $motd[0]->message }}
+                            {{ $motd->message }}
                         </p>
                     </div>
                     <div class="col-md-2">
-                        <a href="{{ $motd[0]->link }}">
+                        <a href="{{ $motd->link }}">
                             <button type="button" class="btn text-light"
                                 style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Register
                             </button>

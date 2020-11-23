@@ -19,6 +19,7 @@ Route::get('/story', 'LandingPageController@theStory')->name('theStory');
 Route::get('/submissions', 'LandingPageController@submissions')->name('submissions');
 Route::get('/exhibition', 'LandingPageController@exhibition')->name('exhibition');
 Route::get('/about', 'LandingPageController@aboutUs')->name('aboutUs');
+Route::get('/live', 'LandingPageController@live')->name('live');
 
 Route::get('/submissions/{photoID}', 'LandingPageController@photoDetail')->name('photoDetail');
 
@@ -44,10 +45,12 @@ Route::get('/sendConfirmation/{transactionID}', 'MailController@sendConfirmation
 Route::get('/invoice/{invoiceID}', 'MailController@viewInvoice');
 
 Route::get('/admin', 'AdminController@index')->middleware(['auth', 'verified'])->name('admin');
+Route::post('/admin', 'AdminController@motd')->middleware(['auth', 'verified'])->name('adminMotd');
 Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
 Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 
-Route::get('/ticket', 'TicketController@index')->name('exitTicket');
+Route::get('/exit', 'TicketController@index')->name('exitTicket');
+Route::post('/exit', 'TicketController@store')->name('storeTicket');
 
 
 Route::get('/invoice', function () {

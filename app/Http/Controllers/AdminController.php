@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Motd;
+use App\Transaction;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Transaction;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminController extends Controller
@@ -35,13 +36,33 @@ class AdminController extends Controller
                 ->where('transactions.transactionID', $transID)->first();
 
             Alert::image('Nama: ' . $detailData->name, 'Nama Rek: ' . $detailData->namaRekening, url($detailData->filePath), 'Image Width', 'Image Height');
-            // dd($transData->get());
         }
+
+        $motds = Motd::all();
 
         return view('admin', [
             'hanas' => $hanas,
             'amandas' => $amandas,
+            'motds' => $motds,
         ]);
+    }
+
+    public function motd(Request $r)
+    {
+        $landMotd = Motd::findOrFail(1);
+        $liveMotd = Motd::findOrFail(2);
+
+        $landMotd->message = $r->landMessage;
+        $landMotd->link = $r->landLink;
+
+        $liveMotd->message = $r->liveMessage;
+        $liveMotd->link = $r->liveLink;
+
+        $landMotd->save();
+        $liveMotd->save();
+
+        Alert::toast('MOTD\'s updated!', 'success');
+        return back();
     }
 
     public function verify($transID)

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NARASI 2020 - Submissions</title>
+    <title>NARASI 2020 - Exit Ticket</title>
 
     <meta property="og:title" content="NARASI: The Language of the Soul" />
     <meta property="og:description"
@@ -66,13 +66,16 @@
     </nav>
 
     <div class="section-1" id="section-1">
-        <div class="container">
+        <div class="container pt-5">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12">
                     <h1 class="sans-serif title-small bold text-center">Exit Ticket</h1>
-                    <form action="">
+                    <form action="{{ route('storeTicket') }}" method="POST">
+                        @csrf
+
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name"
+                                class="col-md-4 col-form-label text-md-right">{{ __('Full Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
@@ -131,7 +134,7 @@
 
                             <div class="col-md-6">
                                 <input id="nim" type="number" class="form-control @error('nim') is-invalid @enderror"
-                                    name="nim" value="{{ old('nim') }}">
+                                    name="nim" value="{{ old('nim') }}" required>
 
                                 @error('nim')
                                 <span class="invalid-feedback" role="alert">
@@ -148,7 +151,7 @@
                             <div class="col-md-6">
                                 <input id="jurusan" type="text"
                                     class="form-control @error('jurusan') is-invalid @enderror" name="jurusan"
-                                    value="{{ old('jurusan') }}">
+                                    value="{{ old('jurusan') }}" required>
 
                                 @error('jurusan')
                                 <span class="invalid-feedback" role="alert">
@@ -165,7 +168,7 @@
                             <div class="col-md-6">
                                 <input id="instansi" type="text"
                                     class="form-control @error('instansi') is-invalid @enderror" name="instansi"
-                                    value="{{ old('instansi') }}">
+                                    value="{{ old('instansi') }}" required>
 
                                 @error('instansi')
                                 <span class="invalid-feedback" role="alert">
@@ -175,6 +178,32 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="seminarID"
+                                class="col-md-4 col-form-label text-md-right">{{ __('Seminar ID') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="seminarID" type="text"
+                                    class="form-control @error('seminarID') is-invalid @enderror" name="seminarID"
+                                    value="{{ old('seminarID') }}" required>
+
+                                @error('seminarID')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="offset-md-4 col-md-2">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
+                        </div>
+
+                        {{-- <div class="form-group row">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div> --}}
                     </form>
                 </div>
             </div>
@@ -194,6 +223,25 @@
     </script>
 
     <script>
+        $(document).ready(function() {
+            var nimDiv = document.getElementById("nimInp");
+            var jurusanDiv = document.getElementById("jurusanInp");
+            var instansiDiv = document.getElementById("instansiInp");
+            var eventBinusian = document.getElementsByName("radBinusian");
+
+            var nim = document.getElementById("nim");
+            var jurusan = document.getElementById("jurusan");
+            var instansi = document.getElementById('instansi');
+
+            nim.value = "";
+            jurusan.value = "";
+            
+            nimDiv.style.display = "";
+            jurusanDiv.style.display = "";
+            instansi.value = "-";
+            instansiDiv.style.display = "none";
+        });
+
         function checkBinusian(){
             var nimDiv = document.getElementById("nimInp");
             var jurusanDiv = document.getElementById("jurusanInp");
@@ -229,6 +277,7 @@
         }
     </script>
 
+    @include('sweetalert::alert')
 </body>
 
 </html>

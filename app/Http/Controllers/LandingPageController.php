@@ -10,7 +10,7 @@ class LandingPageController extends Controller
 {
     public function index()
     {
-        $motd = Motd::all();
+        $motd = Motd::findOrFail(1);
 
         return view('landingPage', [
             'motd' => $motd,
@@ -49,6 +49,13 @@ class LandingPageController extends Controller
     public function aboutUs()
     {
         return view('aboutUs');
+    }
+
+    public function live()
+    {
+        $motd = Motd::findOrFail(2);
+
+        return redirect($motd->link);
     }
 }
 

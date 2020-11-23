@@ -54,9 +54,6 @@
                         <a class="nav-link" href="{{route('aboutUs')}}">ABOUT US</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="">CONTACT</a>
-                    </li>
-                    <li>
                         <a href="/login">
                             <button type="button" class="btn btn-dark btn-login">LOGIN</button>
                         </a>
@@ -125,7 +122,7 @@
                         <div class="col-md-5">
                             <img class="img-fluid" src="{{ asset('img/story/facialCare/smile.jpg') }}" alt="">
                             <h5 class="serif title-small text-right bold white pt-4">But First, Skin Care!</h5>
-                            <p class="sans-serif white text-right pt-3"> Treating your body is essential. So s facial
+                            <p class="sans-serif white text-right pt-3"> Treating your body is essential. So is facial
                                 care!
                                 <br> Not just for woman, but it's as important for men.
                                 <br> Be proud for what others fail to start!</p>
