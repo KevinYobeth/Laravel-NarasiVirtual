@@ -47,7 +47,8 @@ Route::get('/admin', 'AdminController@index')->middleware(['auth', 'verified'])-
 Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
 Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 
-Route::get('/ticket', 'TicketController@index')->name('exitTicket');
+Route::get('/exit', 'TicketController@index')->name('exitTicket');
+Route::post('/exit', 'TicketController@store')->name('storeTicket');
 
 
 Route::get('/invoice', function () {
