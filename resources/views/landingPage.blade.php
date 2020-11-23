@@ -64,9 +64,6 @@
                             <a class="nav-link" href="{{route('aboutUs')}}">ABOUT US</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">CONTACT</a>
-                        </li>
-                        <li>
                             <a href="{{route('login')}}">
                                 @if (Auth::check())
                                 <button type="button" class="btn btn-dark btn-login">DASHBOARD</button>

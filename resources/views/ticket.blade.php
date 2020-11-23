@@ -195,7 +195,15 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-dark">Submit</button>
+                        <div class="form-group row">
+                            <div class="offset-md-4 col-md-2">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
+                        </div>
+
+                        {{-- <div class="form-group row">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div> --}}
                     </form>
                 </div>
             </div>
