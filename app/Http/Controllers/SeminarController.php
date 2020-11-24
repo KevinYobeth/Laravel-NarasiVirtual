@@ -9,41 +9,79 @@ use Illuminate\Support\Str;
 use App\Seminar;
 use App\Transaction;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 
 class SeminarController extends Controller
 {
     public function register($ID)
     {
-
         $user = Auth::user();
-        $transaction = new Transaction;
-        $seminar = new Seminar;
-        $seminarPrice = DB::table('seminar_details')->where('id', $ID)->value('price');
 
-        $transactionID = Str::random(6);
+        if ($ID == 1) {
+            try {
+                Seminar::where('userID', $user->id)->where('seminarID', 1)->firstOrFail();
+            } catch (ModelNotFoundException $e) {
+                $transaction = new Transaction;
+                $seminar = new Seminar;
+                $seminarPrice = DB::table('seminar_details')->where('id', $ID)->value('price');
 
-        $seminar->userID = $user->id;
-        $seminar->seminarID = $ID;
-        $seminar->transactionID = $transactionID;
+                $transactionID = Str::random(6);
 
-        if ($seminarPrice == 0) {
-            $transaction->transactionID = $transactionID;
-            $transaction->verified = True;
-            $transaction->namaRekening = 'null';
-            $transaction->filePath = 'null';
-            $transaction->fileName = 'null';
-        } else {
-            return view('seminar.checkout', [
-                'seminar' => $seminar,
-            ]);
+                $seminar->userID = $user->id;
+                $seminar->seminarID = $ID;
+                $seminar->transactionID = $transactionID;
+
+                if ($seminarPrice == 0) {
+                    $transaction->transactionID = $transactionID;
+                    $transaction->verified = True;
+                    $transaction->namaRekening = 'null';
+                    $transaction->filePath = 'null';
+                    $transaction->fileName = 'null';
+                } else {
+                    return view('seminar.checkout', [
+                        'seminar' => $seminar,
+                    ]);
+                }
+
+                $transaction->save();
+                $seminar->save();
+
+                Alert::toast('Successfully registered!', 'success');
+                return back();
+            }
+
+            Alert::toast('You have already registered!', 'error');
+            return back();
+        } else if ($ID == 2) {
+            $transaction = new Transaction;
+            $seminar = new Seminar;
+            $seminarPrice = DB::table('seminar_details')->where('id', $ID)->value('price');
+
+            $transactionID = Str::random(6);
+
+            $seminar->userID = $user->id;
+            $seminar->seminarID = $ID;
+            $seminar->transactionID = $transactionID;
+
+            if ($seminarPrice == 0) {
+                $transaction->transactionID = $transactionID;
+                $transaction->verified = True;
+                $transaction->namaRekening = 'null';
+                $transaction->filePath = 'null';
+                $transaction->fileName = 'null';
+            } else {
+                return view('seminar.checkout', [
+                    'seminar' => $seminar,
+                ]);
+            }
+
+            $transaction->save();
+            $seminar->save();
+
+            Alert::toast('Successfully registered!', 'success');
+            return back();
         }
-
-        $transaction->save();
-        $seminar->save();
-
-        Alert::toast('Successfully registered!', 'success');
-        return back();
     }
 
     public function fileUpload(Request $req)
