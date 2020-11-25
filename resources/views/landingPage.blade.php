@@ -292,29 +292,95 @@
 
         <div class="section" id="section-8">
             <div class="container h-100">
-                <div class="row h-100 align-items-center text-center">
+                <div class="row h-100 align-items-center">
                     <div class="col-md-12">
-                        <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
-                        <br>
-                        <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
-                        <br>
-                        <img src="{{ asset('img/logo/fpsi.png') }}" height="60px" style="padding-top: 20px" alt="">
-                        <br><br>
-                        <h1 class="sans-serif title-small white">MEDIA PARTNERS</h1>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
+                                <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pt-5">
+                                    <p class="sans-serif white bold text-right" style="margin: 0 5px">SUPPORTED BY</p>
+                                    <div class="row pt-2">
+                                        <div class="col-md-12 text-right">
+                                            <img height="60px" src="{{ asset('img/logo/caffeine.png') }}" alt="">
+                                            <img class="circle" height="60px"
+                                                src=" {{ asset('img/logo/candraNaya.jpg') }}" alt="">
+                                            <img height="60px" src="{{ asset('img/logo/binus.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
 
-                        {{-- <img src="{{ asset('img/icon/instagram.svg') }}"
-                        style="color: white" height="30px" alt="">
-                        <img src="{{ asset('img/icon/web.svg') }}" height="30px" alt=""> --}}
-                    </div>
-
-
-                    <div class="col-md-12">
-                        <p style="color: white">Copyright 2020 &copy; <b>Klifonara</b> | All Rights Reserved</p>
+                                <div class="pt-5">
+                                    <p class="sans-serif white bold text-right" style="margin: 0 5px">MEDIA PARTNERS</p>
+                                    <div class="row">
+                                        <div class="offset-lg-4 col-lg-8 col-md-12 text-right">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/eventCampus.png') }}" alt="">
+                                            <img class="medpar circle" height="40px"
+                                                src="{{ asset('img/logo/medpar/eventMahasiswa.jpg') }}" alt="">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/eventPelajar.png') }}" alt="">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/shareEvent.png') }}" alt="">
+                                            <img class="medpar" height="20px"
+                                                src="{{ asset('img/logo/medpar/ultimagz.png') }}" alt="">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/umnRadio.png') }}" alt="">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/eventKampus.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="pt-5">
+                                            <p class="sans-serif white bold">CONTACT US!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img height="30px" src="{{ asset('img/icon/gmail.png') }}" alt="">
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p class="sans-serif white inline-block ml-2">
+                                                    klifonaraEkshibisi@gmail.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img height="30px" src="{{ asset('img/icon/instagram.png') }}" alt="">
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p class="sans-serif white inline-block ml-2">@klifo.narasi
+                                                    <br>@klifonara
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img height="30px" src="{{ asset('img/icon/location.png') }}" alt="">
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p class="sans-serif white inline-block ml-2">Syahdan Campus, BINUS
+                                                    University Jl. Kyai H. Syahdan No.
+                                                    9, RT. 6 / RW. 12, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI
+                                                    Jakarta 11480</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="{{ asset('js/fullpage.js') }}"></script>
@@ -322,7 +388,7 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['LandingPage', 'KlifonaraPresent', 'KlifonaraEkshibisi', 'Expression', 'WhatsUp',
-                'TheStory', 'VirtualExhibition', 'ContactUs'
+                'TheStory', 'VirtualExhibition', 'Footer'
             ],
             navigation: true,
             navigationPosition: 'right',

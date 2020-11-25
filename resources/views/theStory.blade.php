@@ -230,6 +230,23 @@
                 <br><br><br><br><br>
             </div>
         </div>
+
+        <div class="footers" id="footers">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center pt-2">
+                    <div class="col-md-12 text-center">
+                        <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
+                        <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p class="white mb-0">Copyright 2020 &copy; KLIFONARA | All Rights Reserved</p>
+                        <p class="white"><a class="white underline" href="">Terms and Condition</a> | <a
+                                class="white underline" href="">Privacy
+                                Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
