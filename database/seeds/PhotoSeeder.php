@@ -141,7 +141,7 @@ class PhotoSeeder extends Seeder
                 'caption' => $pamdikPengajarCaption[$i],
                 'instagramID' => $pamdikPengajarIG[$i],
                 'category' => 1,
-                'directory' => 'img/subm/pamdik/pm-m-' . ($i + 1) . '.jpg',
+                'directory' => 'img/submissions/pamdik/pm-m-' . ($i + 1) . '.jpg',
             ];
         }
 
@@ -273,7 +273,7 @@ class PhotoSeeder extends Seeder
                 'caption' => $pamdikPengajarCaption[$i],
                 'instagramID' => $pamdikPengajarIG[$i],
                 'category' => 2,
-                'directory' => 'img/subm/pamdik/pm-p-' . ($i + 1) . '.jpg',
+                'directory' => 'img/submissions/pamdik/pm-p-' . ($i + 1) . '.jpg',
             ];
         }
 
@@ -411,6 +411,50 @@ class PhotoSeeder extends Seeder
                 'Untuk menunjukan rasa sayang tidak butuh membelikan barang mewah, kadang cinta sejati bisa ditunjukan dengan memberikan bunga yang dipetik atau membuatkan indomie rebus di kala hujan sambil menonton film romantis.'
             ];
 
+        $narasiIG =
+            [
+                'martinus.nl',
+                'martinus.nl',
+                'martinus.nl',
+                'sinnohvan',
+                'sinnohvan',
+                'sinnohvan',
+                'sinnohvan',
+                'hafizharsya',
+                'telescopic.lens',
+                'fairuzzdhr',
+                'branndonwhitte',
+                'branndonwhitte',
+                'branndonwhitte',
+                'ellenandrea_',
+                'ellenandrea_',
+                'jasonptra',
+                'jasonptra',
+                'jasonptra',
+                'kevinyobeth',
+                'kevinyobeth',
+                'branndonwhitte',
+                'branndonwhitte',
+                'branndonwhitte',
+                'jasonptra',
+                'jasonptra',
+                'jasonptra',
+                'jasonptra',
+                'jasonptra',
+                'verrill_231',
+                'martinus.nl',
+                'martinus.nl',
+                'martinus.nl',
+                'martinus.nl',
+                'willy_Candraa',
+                'vincentbudii',
+                'vincentbudii',
+                'fairuzzdhr',
+                'fairuzzdhr',
+                'fairuzzdhr',
+                'yuwanarkan'
+            ];
+
 
         $narasiSubmission = [];
 
@@ -419,9 +463,9 @@ class PhotoSeeder extends Seeder
                 'photographer' => $narasiPhotographer[$i],
                 'title' => $narasiTitle[$i],
                 'caption' => $narasiCaption[$i],
-                'instagramID' => 'PLACEHOLDER TEMPLATE',
+                'instagramID' => $narasiIG[$i],
                 'category' => 0,
-                'directory' => 'img/subm/narasi/' . ($i + 1) . '.jpg',
+                'directory' => 'img/submissions/narasi/' . ($i + 1) . '.jpg',
             ];
         }
 
