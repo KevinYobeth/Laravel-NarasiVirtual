@@ -293,16 +293,17 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
+                        <div class="row pt-5 pt-sm-0">
+                            <div class="col-md-12 text-center d-none d-sm-block">
                                 <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
                                 <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                             </div>
                             <div class="col-md-6">
-                                <div class="pt-5">
-                                    <p class="sans-serif white bold text-right" style="margin: 0 5px">SUPPORTED BY</p>
+                                <div class="pt-3">
+                                    <p class="sans-serif white bold text-md-right text-center" style="margin: 0 2px">
+                                        SUPPORTED BY</p>
                                     <div class="row pt-2">
-                                        <div class="col-md-12 text-right">
+                                        <div class="col-md-12 text-md-right text-center">
                                             <img height="60px" src="{{ asset('img/logo/caffeine.png') }}" alt="">
                                             <img class="circle" height="60px"
                                                 src=" {{ asset('img/logo/candraNaya.jpg') }}" alt="">
@@ -311,13 +312,14 @@
                                     </div>
                                 </div>
 
-                                <div class="pt-5">
-                                    <p class="sans-serif white bold text-right" style="margin: 0 5px">MEDIA PARTNERS</p>
+                                <div class="pt-3">
+                                    <p class="sans-serif white bold text-md-right text-center" style="margin: 0 2px">
+                                        MEDIA PARTNERS</p>
                                     <div class="row">
-                                        <div class="offset-lg-4 col-lg-8 col-md-12 text-right">
+                                        <div class="col-md-12 offset-lg-4 col-lg-8 col-md-12 text-md-right text-center">
                                             <img class="medpar" height="40px"
                                                 src="{{ asset('img/logo/medpar/eventCampus.png') }}" alt="">
-                                            <img class="medpar circle" height="40px"
+                                            <img class="medpar circle" height="30px"
                                                 src="{{ asset('img/logo/medpar/eventMahasiswa.jpg') }}" alt="">
                                             <img class="medpar" height="40px"
                                                 src="{{ asset('img/logo/medpar/eventPelajar.png') }}" alt="">
@@ -336,36 +338,36 @@
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="pt-5">
-                                            <p class="sans-serif white bold">CONTACT US!</p>
+                                        <div class="pt-3">
+                                            <p class="sans-serif white bold text-md-left text-center">CONTACT US!</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-12">
                                         <div class="row">
-                                            <div class="col-md-1">
+                                            <div class="col-1">
                                                 <img height="30px" src="{{ asset('img/icon/gmail.png') }}" alt="">
                                             </div>
-                                            <div class="col-md-11">
+                                            <div class="col-11">
                                                 <p class="sans-serif white inline-block ml-2">
                                                     klifonaraEkshibisi@gmail.com
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-1">
+                                            <div class="col-1">
                                                 <img height="30px" src="{{ asset('img/icon/instagram.png') }}" alt="">
                                             </div>
-                                            <div class="col-md-11">
+                                            <div class="col-11">
                                                 <p class="sans-serif white inline-block ml-2">@klifo.narasi
                                                     <br>@klifonara
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-1">
+                                            <div class="col-1">
                                                 <img height="30px" src="{{ asset('img/icon/location.png') }}" alt="">
                                             </div>
-                                            <div class="col-md-11">
+                                            <div class="col-11">
                                                 <p class="sans-serif white inline-block ml-2">Syahdan Campus, BINUS
                                                     University Jl. Kyai H. Syahdan No.
                                                     9, RT. 6 / RW. 12, Palmerah, Kec. Palmerah, Kota Jakarta Barat, DKI
