@@ -31,14 +31,13 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/submissions.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/submissionDetails.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class=" container">
             <a href="/">
                 <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
@@ -76,6 +75,27 @@
         </div>
     </nav>
 
+    <div class="section-1" id="section-1">
+        <div class="container h-100 ">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-5">
+                    <img class="img-fluid" src="{{ asset($details->directory) }}" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="serif bold white">{{ $details->title }}</h1>
+                    <h5 class="sans-serif white">{{ $details->photographer }}</h5>
+                    <p class="sans-serif white">{{ $details->caption }}</p>
+
+                    <a target="_blank" href="{{ 'https://instagram.com/' . $details->instagramID }}">
+                        <button type="button" class="btn btn-light">View Instagram</button>
+                    </a>
+                    <a href="{{ route('submissions') }}">
+                        <button type="button" class="btn btn-outline-light">Return</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -36,9 +36,11 @@ class LandingPageController extends Controller
 
     public function photoDetail($photoID)
     {
-        $photo = Photo::findOrFail($photoID);
+        $details = Photo::findOrFail($photoID);
 
-        return $photo;
+        return view('photoDetail', [
+            'details' => $details
+        ]);
     }
 
     public function exhibition()
