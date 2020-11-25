@@ -299,15 +299,15 @@
                                 <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
                             </div>
                             <div class="col-md-6">
-                                <div class="pt-3">
+                                <div class="pt-sm-3 pt-5">
                                     <p class="sans-serif white bold text-md-right text-center" style="margin: 0 2px">
                                         SUPPORTED BY</p>
                                     <div class="row pt-2">
                                         <div class="col-md-12 text-md-right text-center">
-                                            <img height="60px" src="{{ asset('img/logo/caffeine.png') }}" alt="">
-                                            <img class="circle" height="60px"
+                                            <img height="40px" src="{{ asset('img/logo/caffeine.png') }}" alt="">
+                                            <img class="circle" height="40px"
                                                 src=" {{ asset('img/logo/candraNaya.jpg') }}" alt="">
-                                            <img height="60px" src="{{ asset('img/logo/binus.png') }}" alt="">
+                                            <img height="40px" src="{{ asset('img/logo/binus.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
