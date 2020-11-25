@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .title {
     font-size: 100px;
     font-weight: 800;
