@@ -36,7 +36,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body>
+<body oncontextmenu="return false">
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class=" container">
@@ -180,23 +180,6 @@
                         </a>
                         @endforeach
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footers" id="footers">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center pt-2">
-                <div class="col-md-12 text-center">
-                    <img src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt="">
-                    <img src="{{ asset('img/logo/klifonara.png') }}" height="60px" alt="">
-                </div>
-                <div class="col-md-12 text-center">
-                    <p class="white mb-0">Copyright 2020 &copy; KLIFONARA | All Rights Reserved</p>
-                    <p class="white"><a class="white underline" href="">Terms and Condition</a> | <a
-                            class="white underline" href="">Privacy
-                            Policy</a></p>
                 </div>
             </div>
         </div>

@@ -185,8 +185,7 @@
                         <h1 class="serif title-medium">What's Up!</h1>
                         <h5 class="sans-serif semi-bold">with NARASI 2020</h5>
                         <p class="sans-serif">NARASI 2020 Expression: The Language of the Soul adalah
-                            ekshibisi online pertama yang diadakan oleh Klub Seni Fotografi Bina Nusantara dan
-                            sebagainya dan sebagainya
+                            ekshibisi online pertama yang diadakan oleh Klub Seni Fotografi Bina Nusantara.
                         </p>
                     </div>
                     <div class="col-md-12">
