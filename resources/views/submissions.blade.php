@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('img/subm/1.jpg')}}" alt="">
+                    <img class="profile" src="{{asset('img/submissions/1.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">EDWIN DJUANDA</p>
                     <p class="sans-serif white">Dr. Edwin Djuanda, memotret sejak 50tahun lalu. Menjadi pemenang dan
                         juri
@@ -113,7 +113,7 @@
                         Fotografi Candra Naya.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('img/subm/2.jpg')}}" alt="">
+                    <img class="profile" src="{{asset('img/submissions/2.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">LEONTIUS JESSE PUTRA</p>
                     <p class="sans-serif white">Seorang overclocker profesional yang telah memulai Digital Agency
                         Businnes pada tahun 2016-an. Ia mulai bergabung dengan Caffeine
@@ -121,7 +121,7 @@
                         menjadi kepala sekolah di Caffeine Academy.</p>
                 </div>
                 <div class="col-md-12 col-lg-4 py-5 text-center">
-                    <img class="profile" src="{{asset('img/subm/3.jpg')}}" alt="">
+                    <img class="profile" src="{{asset('img/submissions/3.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">RICKY YEP</p>
                     <p class="sans-serif white">Berawal dari hobby, fotografi kini menjadi salah satu bagian terpenting
                         dalam hidup saya. Kenikmatan pada saat menciptakan sebuah foto yang berkualitas tinggi membuat
