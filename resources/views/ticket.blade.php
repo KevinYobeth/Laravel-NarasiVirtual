@@ -79,7 +79,8 @@
         <div class="container pt-5">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12">
-                    <h1 class="sans-serif title-small bold text-center">Exit Ticket</h1>
+                    {{-- <h1 class="sans-serif title-small bold text-center">Exit Ticket</h1> --}}
+                    <h5 class="serif title-medium text-center bold pb-3">{{ $eventName }}</h5>
                     <form action="{{ route('storeTicket', ['seminarCode' => $seminarCode]) }}" method="POST">
                         @csrf
 
@@ -194,6 +195,11 @@
                             </div>
                         </div>
                     </form>
+                </div>
+
+                <div class="col-md-8 text-center pt-4">
+                    <p>Data will be collected for SAT and E-Certificate purposes.
+                        <br><b>Ensure your data is correct!</b></p>
                 </div>
             </div>
         </div>

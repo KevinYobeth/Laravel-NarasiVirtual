@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             MotdsTableSeeder::class,
             PhotoSeeder::class,
+            StatusSeeder::class,
         ]);
     }
 }

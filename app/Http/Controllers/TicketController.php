@@ -5,24 +5,19 @@ namespace App\Http\Controllers;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
 use App\Ticket;
+use App\Status;
 
 class TicketController extends Controller
 {
     public function index($seminarCode)
     {
+        $seminarExit = Status::where('slug', strtoupper($seminarCode))->firstOrFail();
 
-        $seminar = array(
-            'EXPYSL', 'MTHAWR', 'SLFPRT', 'SLFLVE', 'VTLPHS',
-            'BTYPRT', 'CPTEMT', 'VRTEXH', 'ARTOBW', 'FLMPHT', 'INSPBN'
-        );
-
-        if (in_array(strtoupper($seminarCode), $seminar)) {
-            return view('ticket', ['seminarCode' => $seminarCode]);
+        if ($seminarExit->status) {
+            return view('ticket', ['seminarCode' => $seminarCode, 'eventName' => $seminarExit->eventName]);
         } else {
-            abort(404);
+            return view('notAccepting');
         }
-
-        return view('ticket', ['seminarCode' => $seminarCode]);
     }
 
     public function store(Request $r, $seminarCode)

@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NARASI 2020 - Submission Detail</title>
+    <title>NARASI 2020 - Exit Ticket Closed</title>
 
     <meta property="og:title" content="NARASI: The Language of the Soul" />
     <meta property="og:description"
@@ -31,13 +31,13 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/submissionDetails.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body oncontextmenu="return false">
-    <nav class="navbar navbar-expand-lg fixed-top">
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class=" container">
             <a href="/">
                 <img class="navbar-brand" src="{{ asset('img/logo/logo-dark.png') }}" height="60px" alt />
@@ -76,27 +76,23 @@
     </nav>
 
     <div class="section-1" id="section-1">
-        <div class="container h-100 ">
-            <div class="row h-100 align-items-center">
-                <div class="col-md-5">
-                    <img class="img-fluid" src="{{ asset($details->directory) }}" alt="">
+        <div class="container pt-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-12">
+                    <h1 class="sans-serif title-small bold text-center">Exit Ticket</h1>
                 </div>
-                <div class="col-md-7">
-                    <h1 class="serif bold white">{{ $details->title }}</h1>
-                    <h5 class="sans-serif white">{{ $details->photographer }}</h5>
-                    <p class="sans-serif white">{{ $details->caption }}</p>
+                <div class="col-md-12 pt-3">
+                    <div class="card">
+                        <div class="card-header">{{ __('Form is not accepting response anymore!') }}</div>
 
-                    <a target="_blank" href="{{ 'https://instagram.com/' . $details->instagramID }}">
-                        <button type="button" class="btn btn-light">View Instagram</button>
-                    </a>
-                    <a href="{{ route('submissions') }}">
-                        <button type="button" class="btn btn-outline-light">Return</button>
-                    </a>
+                        <div class="card-body">
+                            {{ __('If you think this is a mistake, please contact @klifo.narasi on Instagram')}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -107,7 +103,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>
