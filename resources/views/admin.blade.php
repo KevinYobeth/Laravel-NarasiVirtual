@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', __('NARASI 2020 - Admin'))
 
 @section('content')
 <div class="container">

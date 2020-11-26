@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NARASI 2020 - Submissions</title>
+    <title>NARASI 2020 - Submission Detail</title>
 
     <meta property="og:title" content="NARASI: The Language of the Soul" />
     <meta property="og:description"

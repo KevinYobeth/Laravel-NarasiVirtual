@@ -188,38 +188,15 @@
                             </div>
                         </div>
 
-                        {{-- <div class="form-group row">
-                            <label for="seminarID"
-                                class="col-md-4 col-form-label text-md-right">{{ __('Seminar ID') }}</label>
-
-                        <div class="col-md-6">
-                            <input id="seminarID" type="text"
-                                class="form-control @error('seminarID') is-invalid @enderror" name="seminarID"
-                                value="{{ old('seminarID') }}" required>
-
-                            @error('seminarID')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                        <div class="form-group row">
+                            <div class="offset-md-4 col-md-2">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
                         </div>
-                </div> --}}
-
-                <div class="form-group row">
-                    <div class="offset-md-4 col-md-2">
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </div>
+                    </form>
                 </div>
-
-                {{-- <div class="form-group row">
-                            <button type="submit" class="btn btn-dark">Submit</button>
-                        </div> --}}
-                </form>
             </div>
         </div>
-    </div>
-
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
