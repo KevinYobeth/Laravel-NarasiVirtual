@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Motd;
 use App\Transaction;
+use App\Ticket;
+use App\Status;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -45,6 +47,41 @@ class AdminController extends Controller
             'amandas' => $amandas,
             'motds' => $motds,
         ]);
+    }
+
+    public function ticket()
+    {
+        $events = Status::all();
+
+        return view('adminTickets', [
+            'events' => $events,
+            'eventDetail' => null,
+            'tickets' => null,
+        ]);
+    }
+
+    public function viewTicket($slug)
+    {
+        $events = Status::all();
+        $eventDetail = Status::where('slug', $slug)->firstOrFail();
+
+        $tickets = Ticket::where('seminarID', $slug)->get();
+
+        return view('adminTickets', [
+            'events' => $events,
+            'eventDetail' => $eventDetail,
+            'tickets' => $tickets,
+        ]);
+    }
+
+    public function ticketStatus($slug)
+    {
+        $eventDetail = Status::where('slug', $slug)->firstOrFail();
+
+        $eventDetail->status = !$eventDetail->status;
+        $eventDetail->save();
+
+        return back();
     }
 
     public function motd(Request $r)
