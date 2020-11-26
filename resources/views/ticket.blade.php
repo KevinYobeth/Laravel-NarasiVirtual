@@ -80,7 +80,7 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12">
                     <h1 class="sans-serif title-small bold text-center">Exit Ticket</h1>
-                    <form action="{{ route('storeTicket') }}" method="POST">
+                    <form action="{{ route('storeTicket', ['seminarCode' => $seminarCode]) }}" method="POST">
                         @csrf
 
                         <div class="form-group row">
@@ -188,36 +188,36 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <label for="seminarID"
                                 class="col-md-4 col-form-label text-md-right">{{ __('Seminar ID') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="seminarID" type="text"
-                                    class="form-control @error('seminarID') is-invalid @enderror" name="seminarID"
-                                    value="{{ old('seminarID') }}" required>
+                        <div class="col-md-6">
+                            <input id="seminarID" type="text"
+                                class="form-control @error('seminarID') is-invalid @enderror" name="seminarID"
+                                value="{{ old('seminarID') }}" required>
 
-                                @error('seminarID')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
+                            @error('seminarID')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                         </div>
+                </div> --}}
 
-                        <div class="form-group row">
-                            <div class="offset-md-4 col-md-2">
-                                <button type="submit" class="btn btn-dark">Submit</button>
-                            </div>
-                        </div>
+                <div class="form-group row">
+                    <div class="offset-md-4 col-md-2">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+                </div>
 
-                        {{-- <div class="form-group row">
+                {{-- <div class="form-group row">
                             <button type="submit" class="btn btn-dark">Submit</button>
                         </div> --}}
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
 
 
     </div>
@@ -261,8 +261,6 @@
             var nim = document.getElementById("nim");
             var jurusan = document.getElementById("jurusan");
             var instansi = document.getElementById('instansi');
-            
-            // document.getElementById("mytext").value = "My value";
 
             if (eventBinusian[0].checked) {
                 nim.value = "";

@@ -4,7 +4,7 @@ html {
 
 #section-1 {
     height: 100vh;
-    background-image: url("/img/submissions/bg.JPG");
+    background-image: url("../img/submissions/bg.jpg");
     background-position: 0px -100px;
     background-size: cover;
 }
@@ -16,7 +16,7 @@ html {
 
 #section-3 {
     height: 100vh;
-    background-image: url("/img/submissions/bg-2.JPG");
+    background-image: url("../img/submissions/bg-2.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-position: 0px 0px;
@@ -95,7 +95,7 @@ html {
 
 @media (max-width: 1199.98px) {
     #section-1 {
-        background-position: 70% 0%;
+        background-position: 60% 0%;
     }
 
     #section-1 .title {
@@ -220,13 +220,17 @@ html {
 }
 
 @media (max-width: 500px) {
+    .lh-15 {
+        line-height: 1.2;
+    }
+
     #section-2 {
-        height: 23700px;
+        height: 18900px;
         background-color: black;
     }
 
     #section-4 {
-        height: 19000px;
+        height: 18000px;
         background-color: black;
     }
 

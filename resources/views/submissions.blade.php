@@ -89,11 +89,9 @@
                             KLIFONARA in theme with our exhibition. NARASI 2020 Expressions: The Language of the Soul
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="section-2" id="section-2">
