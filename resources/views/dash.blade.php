@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', __('NARASI 2020 - Dashboard'))
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
