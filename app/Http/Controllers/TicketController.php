@@ -8,12 +8,24 @@ use App\Ticket;
 
 class TicketController extends Controller
 {
-    public function index()
+    public function index($seminarCode)
     {
-        return view('ticket');
+
+        $seminar = array(
+            'EXPYSL', 'MTHAWR', 'SLFPRT', 'SLFLVE', 'VTLPHS',
+            'BTYPRT', 'CPTEMT', 'VRTEXH', 'ARTOBW', 'FLMPHT', 'INSPBN'
+        );
+
+        if (in_array(strtoupper($seminarCode), $seminar)) {
+            return view('ticket', ['seminarCode' => $seminarCode]);
+        } else {
+            abort(404);
+        }
+
+        return view('ticket', ['seminarCode' => $seminarCode]);
     }
 
-    public function store(Request $r)
+    public function store(Request $r, $seminarCode)
     {
         $validatedData = $r->validate([
             'name' => 'required|string|max:255',
@@ -21,7 +33,6 @@ class TicketController extends Controller
             'nim' => 'required|numeric|digits:10',
             'jurusan' => 'required|string|max:100',
             'instansi' => 'required|string|max:100',
-            'seminarID' => 'required|string|max:6|min:6',
         ]);
 
         $ticket = new Ticket;
@@ -30,7 +41,7 @@ class TicketController extends Controller
         $ticket->nim = $validatedData['nim'];
         $ticket->jurusan = $validatedData['jurusan'];
         $ticket->instansi = $validatedData['instansi'];
-        $ticket->seminarID = $validatedData['seminarID'];
+        $ticket->seminarID = strtoupper($seminarCode);
 
         $ticket->save();
 

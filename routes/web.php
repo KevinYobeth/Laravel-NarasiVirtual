@@ -29,9 +29,6 @@ Route::post('/profile', 'HomeController@saveProfile')->middleware(['auth', 'veri
 
 Route::get('/dash', 'HomeController@index')->name('dash');
 
-// Route::get('/submission', 'SubmissionController@index')->middleware(['auth', 'verified']);
-// Route::post('/submission', 'SubmissionController@fileUpload')->name('uploadSubmission');)
-
 Route::get('/viewSubmission', 'SubmissionController@view')->middleware('auth');
 Route::get('viewSubmission/{filename}', 'SubmissionController@getFile')->name('getfile');
 
@@ -49,8 +46,8 @@ Route::post('/admin', 'AdminController@motd')->middleware(['auth', 'verified'])-
 Route::get('/admin/{transID}/verify', 'AdminController@verify')->middleware(['auth', 'verified'])->name('verify');
 Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 
-Route::get('/exit', 'TicketController@index')->name('exitTicket');
-Route::post('/exit', 'TicketController@store')->name('storeTicket');
+Route::get('/exit/{seminarCode}', 'TicketController@index')->name('exitTicket');
+Route::post('/exit/{seminarCode}', 'TicketController@store')->name('storeTicket');
 
 
 Route::get('/invoice', function () {
