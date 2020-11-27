@@ -104,9 +104,9 @@
                 <div class="col-md-12 col-lg-4 py-5 text-center">
                     <img class="profile" src="{{asset('img/submissions/1.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">EDWIN DJUANDA</p>
-                    <p class="sans-serif white">Dr. Edwin Djuanda, memotret sejak 50tahun lalu. Menjadi pemenang dan
+                    <p class="sans-serif white">Dr. Edwin Djuanda, memotret sejak 50 tahun lalu. Menjadi pemenang dan
                         juri
-                        pelbagai lomba foto nasional / internasional. Sekarang, beliau menjabat sebagai dewan penasehat
+                        berbagai lomba foto nasional / internasional. Sekarang, beliau menjabat sebagai dewan penasehat
                         di Lembaga
                         Fotografi Candra Naya.</p>
                 </div>
@@ -114,7 +114,7 @@
                     <img class="profile" src="{{asset('img/submissions/2.jpg')}}" alt="">
                     <p class="sans-serif title-very-small white bold pt-4">LEONTIUS JESSE PUTRA</p>
                     <p class="sans-serif white">Seorang overclocker profesional yang telah memulai Digital Agency
-                        Businnes pada tahun 2016-an. Ia mulai bergabung dengan Caffeine
+                        Business pada tahun 2016-an. Ia mulai bergabung dengan Caffeine
                         Community di tahun 2017-an. Sekarang ia juga
                         menjadi kepala sekolah di Caffeine Academy.</p>
                 </div>
