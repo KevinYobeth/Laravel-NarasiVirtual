@@ -134,9 +134,9 @@
                 </div>
                 <div class="col-md-12 text-center">
                     <p class="white mb-0">Copyright 2020 &copy; KLIFONARA | All Rights Reserved</p>
-                    <p class="white"><a class="white underline" href="">Terms and Condition</a> | <a
-                            class="white underline" href="">Privacy
-                            Policy</a></p>
+                    <p class="white"><a class="white underline" target="_blank"
+                            href="https://instagram.com/klifonara">@klifonara</a> | <a class="white underline"
+                            target="_blank" href="https://instagram.com/klifo.narasi">@klifo.narasi</a></p>
                 </div>
             </div>
         </div>
