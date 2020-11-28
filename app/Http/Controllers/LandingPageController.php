@@ -25,7 +25,7 @@ class LandingPageController extends Controller
     public function submissions()
     {
         $photos = Photo::whereIn('category', [1, 2])->get();
-        $narasiColor = Photo::inRandomOrder()->whereBetween('id', [50, 70])->get();
+        $narasiColor = Photo::inRandomOrder()->whereBetween('id', [51, 70])->get();
         $narasiBW = Photo::inRandomOrder()->whereBetween('id', [71, 90])->get();
         return view('submissions', [
             'photos' => $photos,

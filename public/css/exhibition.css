@@ -4,6 +4,12 @@
     background-size: cover;
 }
 
+@media (max-width: 399.98px) {
+    #section-1 {
+        height: 140vh;
+    }
+}
+
 .white {
     color: white;
 }

@@ -156,20 +156,22 @@
                     </div>
                     <div class="offset-md-1 col-md-7 col-sm-12 pl-md-5 mt-3">
                         <div id="main-title">
-                            <h1 class="serif title-medium">What is</h4>
-                                <h1 class="serif title lh-40">Expression?</h1>
+                            <h1 class="serif title-medium px-2">What is</h4>
+                                <h1 class="serif title lh-40 px-2">Expression?</h1>
                         </div>
-                        <p class="serif caption">A brief story of our concerns</p>
+                        <p class="serif caption px-2">A brief story of our concerns</p>
                         <div id="rect-small" style="display: inline-block"></div>
-                        <p class="serif caption" style="margin-top: 0px">and passion.</p>
+                        <p class="serif caption px-2" style="margin-top: 0px">and passion.</p>
                         <br>
                         <br>
-                        <p class="serif sub-title">Expressions simple yet really powerful</p>
-                        <p class="sans-serif">One word but holds a deep meaning. It lets us speak without words, portray
+                        <p class="serif sub-title px-2">Expressions simple yet really powerful</p>
+                        <p class="sans-serif px-2">One word but holds a deep meaning. It lets us speak without words,
+                            portray
                             feelings without speaking. It is a way to express yourself and your emotions. It is
                             essential because without expressions people wouldn't know what other people feel because
                             not everyone can express themselves with words..</p>
-                        <p class="sans-serif"> It conveys various things with just one part of the body; the face. It
+                        <p class="sans-serif px-2"> It conveys various things with just one part of the body; the face.
+                            It
                             allows others to view and understand a person through not only their physical appearance but
                             also deep beneath their soul. So, here we are, showing you that there are so many ways you
                             can express yourself just the way you are. The real you. The Language of the Soul.</p>
@@ -253,7 +255,7 @@
 
         <div class="section" id="section-6">
             <div class="container d-flex h-100">
-                <div class="row align-self-center">
+                <div class="row align-self-end align-self-sm-center pb-5 pb-sm-0">
                     <div class="col-md-9">
                         <h1 id="main-title" class="serif title white">The Story</h1>
                         <p class="sans-serif white">Sometimes the world doesn't accept you, but that
@@ -389,7 +391,7 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['LandingPage', 'KlifonaraPresent', 'KlifonaraEkshibisi', 'Expression', 'WhatsUp',
-                'TheStory', 'VirtualExhibition', 'Footer'
+                'TheStory', 'VirtualExhibition', 'FooterLand'
             ],
             navigation: true,
             navigationPosition: 'right',
