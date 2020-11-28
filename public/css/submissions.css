@@ -45,6 +45,10 @@ html {
     line-height: 15px;
 }
 
+.submi {
+    margin-bottom: 80px;
+}
+
 #rect {
     background: rgb(155, 110, 198);
     background: linear-gradient(
@@ -221,7 +225,11 @@ html {
 
 @media (max-width: 500px) {
     .lh-15 {
-        line-height: 1.2;
+        line-height: 0.5;
+    }
+
+    .submi {
+        margin-bottom: 210px;
     }
 
     #section-2 {

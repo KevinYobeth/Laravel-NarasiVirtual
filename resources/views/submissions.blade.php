@@ -77,14 +77,14 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-5 col-md-6 col-sm-7 col-12">
-                    <div class="text" style="padding-bottom: 170px">
+                    <div class="text" style="">
                         <h5 class="sans-serif bold white pb-3">NARASI 2020: SUBMISSIONS</h5>
                         <br>
                         <i>
                             <div class="d-none d-sm-block" id="rect" style="z-index: -1"></div>
                             <h1 class="title serif white" id="emotions">Emotions</h1>
                         </i>
-                        <h1 class="title-medium serif white lh-15" style="padding-bottom: 80px">in Frame</h1>
+                        <h1 class="title-medium serif white lh-15 submi pb-5 pb-sm-0">in Frame</h1>
                         <p class="sans-serif white">40 curated photographs submitted by members and associates of
                             KLIFONARA in theme with our exhibition. NARASI 2020 Expressions: The Language of the Soul
                         </p>
@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="title-medium serif bold white">Meet Our Curators</h1>
+                    <h1 class="title-medium serif bold white pt-5">Meet Our Curators</h1>
                 </div>
 
                 <div class="col-md-12 col-lg-4 py-5 text-center">

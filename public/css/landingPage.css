@@ -265,6 +265,10 @@ p {
 }
 
 @media (max-width: 575.98px) {
+    #section-1 {
+        background-position: 57.2% 0%;
+    }
+
     #section-1 #main-title h1 {
         font-size: 3rem;
     }
