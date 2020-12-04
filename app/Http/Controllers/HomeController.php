@@ -53,6 +53,8 @@ class HomeController extends Controller
         // https://stackoverflow.com/questions/1699958/formatting-a-number-with-leading-zeros-in-php
         $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . $user->name;
 
+        // return $attendedSeminars->get();
+
         return view('dash', [
             'photos' => $photos,
             'attendedSeminars' => $attendedSeminars->get(),
@@ -88,5 +90,10 @@ class HomeController extends Controller
 
         Alert::toast('Profile updated', 'success');
         return back();
+    }
+
+    public function download()
+    {
+        return response()->download('img/virtual-bg.jpg');
     }
 }
