@@ -21,12 +21,10 @@
 
     <div class="row justify-content-center align-items-center">
 
-
         @if(count($attendedSeminars) > 0 && (time() < strtotime($attendedSeminars[0]->time))) <h1
                 class="montserrat bold col-md-8 text-center">REGISTERED SEMINAR</h1>
             @endif
 
-            {{-- {{ Log::alert(time()) }} --}}
             @foreach($attendedSeminars as $attendedSeminar)
             @if (time() < strtotime($attendedSeminar->time))
                 <div class="d-none d-md-block col-md-12 col-lg-10 py-3">
@@ -123,53 +121,52 @@
     </div>
 
     <div class="row d-flex justify-content-center align-items-center pt-5">
-        <div class="col-12 offset-md-3 col-md-3">
+
+        <div class="col-8 offset-lg-3 col-md-5 col-lg-3 offset-md-1">
             <img class="img-fluid" src="{{ asset('img/klasik/Precia.png') }}" alt="">
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 text-center text-md-left pt-3 pt-md-0">
             <h1 class="serif title-small bold">KLASIK SELF-LOVE</h1>
             <p>
                 <b>Time:</b> <br>Sabtu, 5 Desember 2020. 15:00 <br>
                 <b>Benefits:</b> <br>
                 SAT <br>
                 E-Certificate <br>
-                Knowledge
+                Knowledge <br>
+                <b>Speaker:</b><br>Precia Jacey
             </p>
             <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
                     Seminar</button></a>
         </div>
     </div>
 
-    <div class="row d-flex justify-content-center align-items-center pt-5">
-        <div class="col-12 col-md-6 text-right">
+    <div class="row align-items-center pt-5">
+        <div class="order-2 order-md-1 col-12 col-md-6 text-center text-md-right pt-3 pt-m3-0">
             <h1 class="serif title-small bold">SHARING VIRTUAL PHOTOSHOOT</h1>
             <p>
                 <b>Time:</b> <br>Minggu, 6 Desember 2020. 14:00 <br>
                 <b>Benefits:</b> <br>
                 SAT <br>
                 E-Certificate <br>
-                Knowledge
+                Knowledge <br>
+                <b>Speakers:</b><br>Albert J. & J. Gaby
             </p>
-
             <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
                     Seminar</button></a>
         </div>
-        <div class="col-12 col-md-3">
-            <img class="img-fluid" src="{{ asset('img/klasik/Albert.png') }}" alt="">
-        </div>
-        <div class="col-12 col-md-3">
-            <img class="img-fluid" src="{{ asset('img/klasik/Gaby.png') }}" alt="">
+        <div class="order-1 order-md-2 col-8 col-md-5 col-lg-3 offset-2 offset-md-0">
+            <img class="img-fluid" src="{{ asset('img/klasik/al-gab.gif') }}" alt="">
         </div>
     </div>
 
-    <div class="row pt-5 align-items-center">
+    <div class="row pt-5 d-flex justify-content-center align-items-center ">
         <div class="col-12">
             <h1 class="montserrat bold text-center pt-2">VIRTUAL BACKGROUND</h1>
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-8 col-sm-6 text-center">
             <img class="img-fluid" src="{{ asset('img/virtual-bg.jpg') }}" alt="">
         </div>
-        <div class="col-12 col-md-5">
+        <div class="col-12 text-center pt-3">
             <h5>Download Virtual Background</h5>
             <a href="{{ route('downVirtualBG') }}"><button type="button" class="btn btn-primary">Download</button></a>
         </div>
