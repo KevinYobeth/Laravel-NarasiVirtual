@@ -129,6 +129,7 @@
         <div class="col-12 col-md-6">
             <h1 class="serif title-small bold">KLASIK SELF-LOVE</h1>
             <p>
+                <b>Time:</b> <br>Sabtu, 5 Desember 2020. 15:00 <br>
                 <b>Benefits:</b> <br>
                 SAT <br>
                 E-Certificate <br>
@@ -141,8 +142,9 @@
 
     <div class="row d-flex justify-content-center align-items-center pt-5">
         <div class="col-12 col-md-6 text-right">
-            <h1 class="serif title-small bold">KLASIK SELF-LOVE</h1>
+            <h1 class="serif title-small bold">SHARING VIRTUAL PHOTOSHOOT</h1>
             <p>
+                <b>Time:</b> <br>Minggu, 6 Desember 2020. 14:00 <br>
                 <b>Benefits:</b> <br>
                 SAT <br>
                 E-Certificate <br>
