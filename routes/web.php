@@ -52,6 +52,8 @@ Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 Route::get('/exit/{seminarCode}', 'TicketController@index')->name('exitTicket');
 Route::post('/exit/{seminarCode}', 'TicketController@store')->name('storeTicket');
 
+Route::get('/download/virtual-bg', 'HomeController@download')->name('downVirtualBG');
+
 
 Route::get('/invoice', function () {
     return view('mails.invoice-web');
