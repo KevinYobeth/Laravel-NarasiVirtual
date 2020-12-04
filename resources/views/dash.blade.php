@@ -122,20 +122,41 @@
                 </div>
     </div>
 
-    <div class="row align-items-center pt-5">
-        <div class="col-12 col-md-7">
+    <div class="row d-flex justify-content-center align-items-center pt-5">
+        <div class="col-12 offset-md-3 col-md-3">
+            <img class="img-fluid" src="{{ asset('img/klasik/Precia.png') }}" alt="">
+        </div>
+        <div class="col-12 col-md-6">
             <h1 class="serif title-small bold">KLASIK SELF-LOVE</h1>
-            <p class="bold">Benefits:</p>
-            <ul>
-                <li>SAT</li>
-                <li>E-Certificate</li>
-                <li>Knowledge</li>
-            </ul>
+            <p>
+                <b>Benefits:</b> <br>
+                SAT <br>
+                E-Certificate <br>
+                Knowledge
+            </p>
             <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
                     Seminar</button></a>
         </div>
-        <div class="col-12 col-md-5">
-            <img class="img-fluid" src="{{ asset('img/klasik/self-love.jpg') }}" alt="">
+    </div>
+
+    <div class="row d-flex justify-content-center align-items-center pt-5">
+        <div class="col-12 col-md-6 text-right">
+            <h1 class="serif title-small bold">KLASIK SELF-LOVE</h1>
+            <p>
+                <b>Benefits:</b> <br>
+                SAT <br>
+                E-Certificate <br>
+                Knowledge
+            </p>
+
+            <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
+                    Seminar</button></a>
+        </div>
+        <div class="col-12 col-md-3">
+            <img class="img-fluid" src="{{ asset('img/klasik/Albert.png') }}" alt="">
+        </div>
+        <div class="col-12 col-md-3">
+            <img class="img-fluid" src="{{ asset('img/klasik/Gaby.png') }}" alt="">
         </div>
     </div>
 
@@ -151,7 +172,6 @@
             <a href="{{ route('downVirtualBG') }}"><button type="button" class="btn btn-primary">Download</button></a>
         </div>
     </div>
-
 
 </div>
 @include('sweetalert::alert')
