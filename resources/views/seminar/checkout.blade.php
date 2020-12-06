@@ -44,8 +44,12 @@
         <div class="col-md-3 order-md-1 mt-4 mb-4">
             <h3><b>Metode Pembayaran</b></h3>
             <h5>BCA</h5>
-            <p>2880150505 a/n <b>Serafine Cordelia</b></p>
-            <p>*Atau scan QR BCA disamping</p>
+            <p>2880150505 a/n <b>Serafine Cordelia</b>
+                <br>*Atau scan QR BCA disamping</p>
+
+            <br>
+            <h5 class="bold">Khusus Member KLIFONARA</h5>
+            <p>Cukup tulis nama display name di group KLIFONARA & upload bukti member KLIFONARA.</p>
         </div>
         <div class="col-md-6 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -65,13 +69,16 @@
                 @endif
 
                 <div class="form-group">
-                    <label for="namaRekening">Nama Pemilik Rekening</label>
+                    <label for="namaRekening">Nama Pemilik Rekening / Display name di group KLIFONARA</label>
                     <input type="text" name="namaRekening" class="form-control" id="namaRekening"
                         placeholder="Masukan nama pemilik rekening">
                 </div>
                 <div class="form-group">
-                    <label for="buktiTransfer">Bukti Transfer</label>
+                    <label for="buktiTransfer">Bukti Transfer / *Bukti Member KLIFONARA</label>
                     <input type="file" class="form-control-file" name="buktiTransfer" id="buktiTransfer">
+                    <small class="form-text text-muted">*Bagi Member KLIFONARA bukti berupa ID Card Klifo / Screenshot
+                        group
+                        angkatan KLIFONARA (group KLIFONARA 20**)</small>
                 </div>
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Konfirmasi Pembayaran</button>
             </form>
