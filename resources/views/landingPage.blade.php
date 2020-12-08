@@ -93,7 +93,8 @@
                     <div class="col-md-2">
                         <a href="{{ $motd->link }}">
                             <button type="button" class="btn text-light"
-                                style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Register
+                                style="margin-right: 30px; width: 100px; display: inline-text; border: 2px solid white; background-color:transparent">Click
+                                Me!
                             </button>
                         </a>
 
@@ -334,7 +335,7 @@
                                             <img class="medpar" height="40px"
                                                 src="{{ asset('img/logo/medpar/eventKampus.png') }}" alt="">
                                             <img class="medpar" height="40px"
-                                                src="{{ asset('img/logo/medpar/sunibCurhat.png') }}" alt="">
+                                                src="{{ asset('img/logo/medpar/sunibcurhat.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
