@@ -333,6 +333,8 @@
                                                 src="{{ asset('img/logo/medpar/umnRadio.png') }}" alt="">
                                             <img class="medpar" height="40px"
                                                 src="{{ asset('img/logo/medpar/eventKampus.png') }}" alt="">
+                                            <img class="medpar" height="40px"
+                                                src="{{ asset('img/logo/medpar/sunibCurhat.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
