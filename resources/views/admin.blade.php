@@ -4,7 +4,7 @@
 @section('content')
 <div class="container">
 
-    <h1 class="text-center">Hana Madness</h1>
+    {{-- <h1 class="text-center">Hana Madness</h1>
     <table class="table table-striped text-center">
         <thead class="thead-dark">
             <tr>
@@ -19,16 +19,16 @@
             @foreach ($hanas as $hana)
             <tr>
                 <th scope="row">{{$loop->index + 1 }}</th>
-                <td>{{ $hana->transactionID }}</td>
-                <td>{{ $hana->name }}</td>
-                <td>{{ $hana->verified ? "True" : "False" }}</td>
-                <td> <a href="{{ route('transDetail', ["transID" => $hana->transactionID]) }}"><button type="button"
-                            class="btn btn-info">Info</button></a> </td>
+    <td>{{ $hana->transactionID }}</td>
+    <td>{{ $hana->name }}</td>
+    <td>{{ $hana->verified ? "True" : "False" }}</td>
+    <td> <a href="{{ route('transDetail', ["transID" => $hana->transactionID]) }}"><button type="button"
+                class="btn btn-info">Info</button></a> </td>
 
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+    </tr>
+    @endforeach
+    </tbody>
+    </table> --}}
 
     <h1 class="pt-5 text-center">Amanda Margareth</h1>
 
