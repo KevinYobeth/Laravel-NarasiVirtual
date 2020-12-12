@@ -30,6 +30,11 @@ class TicketController extends Controller
             'instansi' => 'required|string|max:100',
         ]);
 
+        if (Ticket::where('name', $validatedData['name'])->where('seminarID', strtoupper($seminarCode))->exists()) {
+            Alert::toast('You already submitted a ticket!', 'error');
+            return back();
+        }
+
         $ticket = new Ticket;
         $ticket->name = $validatedData['name'];
         $ticket->email = $validatedData['email'];
