@@ -51,7 +51,7 @@ class HomeController extends Controller
             ->get();
 
         // https://stackoverflow.com/questions/1699958/formatting-a-number-with-leading-zeros-in-php
-        $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . $user->name;
+        $uniqueName =  '&uname=' . str_pad($user->id, 3, '0', STR_PAD_LEFT) . ' - ' . ucwords(strtolower($user->name));
 
         // return $attendedSeminars->get();
 
