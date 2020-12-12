@@ -65,12 +65,12 @@ class AdminController extends Controller
         $events = Status::all();
         $eventDetail = Status::where('slug', $slug)->firstOrFail();
 
-        $tickets = Ticket::where('seminarID', $slug)->get();
+        $ticketClean = Ticket::where('seminarID', $slug)->groupBy('name', 'seminarID')->get();
 
         return view('adminTickets', [
             'events' => $events,
             'eventDetail' => $eventDetail,
-            'tickets' => $tickets,
+            'tickets' => $ticketClean,
         ]);
     }
 

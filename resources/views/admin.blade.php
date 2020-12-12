@@ -32,34 +32,38 @@
 
     <h1 class="pt-5 text-center">Amanda Margareth</h1>
 
-    <table class="table table-striped text-center">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">No</th>
-                <th scope="col">Trans ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Nama Rekening</th>
-                <th scope="col">Verified</th>
-                <th scope="col">Verify Payment</th>
-                <th scope="col">Details</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($amandas as $amanda)
-            <tr>
-                <th scope="row">{{$loop->index + 1 }}</th>
-                <td>{{ $amanda->transactionID }}</td>
-                <td>{{ $amanda->name }}</td>
-                <td>{{ $amanda->namaRekening }}</td>
-                <td>{{ $amanda->verified ? "True" : "False" }}</td>
-                <td><a href="{{ route('verify', ['transID'=> $amanda->transactionID]) }}" type="button"
-                        class="btn btn-success">Verify</a></td>
-                <td> <a href="{{ route('transDetail', ["transID" => $amanda->transactionID]) }}"><button type="button"
-                            class="btn btn-info">Info</button></a> </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">No</th>
+                    {{-- <th scope="col">Trans ID</th> --}}
+                    <th scope="col">Name</th>
+                    <th scope="col">Nama Rekening</th>
+                    <th scope="col">Verified</th>
+                    <th scope="col">Verify Payment</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($amandas as $amanda)
+                <tr>
+                    <th scope="row">{{$loop->index + 1 }}</th>
+                    {{-- <td>{{ $amanda->transactionID }}</td> --}}
+                    <td>{{ str_pad($amanda->id, 3, '0', STR_PAD_LEFT) . ' - ' . ucwords(strtolower($amanda->name)) }}
+                    </td>
+                    <td>{{ $amanda->namaRekening }}</td>
+                    <td>{{ $amanda->verified ? "True" : "False" }}</td>
+                    <td><a href="{{ route('verify', ['transID'=> $amanda->transactionID]) }}" type="button"
+                            class="btn btn-success">Verify</a></td>
+                    <td> <a href="{{ route('transDetail', ["transID" => $amanda->transactionID]) }}"><button
+                                type="button" class="btn btn-info">Info</button></a> </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+
 
 
     <form class="pt-5" action="{{ route('adminMotd') }}" method="POST">
