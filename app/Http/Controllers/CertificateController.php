@@ -54,7 +54,7 @@ class CertificateController extends Controller
                 }
 
                 $img->text(strtoupper($certificates[$i]->name), 1754, 1060, function ($font) {
-                    $font->file(public_path('fonts/Raleway-bold.ttf'));
+                    $font->file(public_path('fonts/Raleway-Bold.ttf'));
                     $font->size(120);
                     $font->color('#000');
                     $font->align('center');
@@ -64,7 +64,7 @@ class CertificateController extends Controller
                 $event = Status::where('slug', $certificates[$i]->seminarID)->firstOrFail();
 
                 $img->text($event->eventName, 1754, 1380, function ($font) {
-                    $font->file(public_path('fonts/Raleway-medium.ttf'));
+                    $font->file(public_path('fonts/Raleway-Medium.ttf'));
                     $font->size(90);
                     $font->color('#000');
                     $font->align('center');
@@ -92,6 +92,10 @@ class CertificateController extends Controller
 
     public function downloadZip($folderName)
     {
+        if (file_exists('storage/certif/' . $folderName . '/E-Certificate.zip')) {
+            return response()->download(public_path('storage/certif/' . $folderName . '/E-Certificate.zip'), 'E-Certificate NARASI 2020.zip');
+        }
+
         $zip = new ZipArchive();
 
         error_log($folderName);
