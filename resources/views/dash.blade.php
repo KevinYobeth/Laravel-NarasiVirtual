@@ -19,7 +19,64 @@
         @endif
     </div>
 
-    <div class="row justify-content-center align-items-center">
+    <div class="row d-flex justify-content-center align-items-center pt-3">
+        <div class="col-8 offset-lg-3 col-md-5 col-lg-3 offset-md-1">
+            <img class="img-fluid" src="{{ asset('img/klasik/Tubagus.png') }}" alt="">
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-left pt-3 pt-md-0">
+            <h1 class="serif title-small bold">The Art of<br>Black and White</h1>
+            <p>
+                <b>Time:</b> <br>Sabtu, 19 Desember 2020. 15:00 <br>
+                <b>Benefits:</b> <br>
+                SAT <br>
+                E-Certificate <br>
+                Knowledge <br>
+                <b>Speaker:</b><br>Tubagus Rizky
+            </p>
+            <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
+                    Seminar</button></a>
+        </div>
+    </div>
+
+    <div class="row align-items-center pt-5">
+        <div class="order-2 order-md-1 col-12 col-md-6 text-center text-md-right pt-3 pt-m3-0">
+            <h1 class="serif title-small bold">Film Photography</h1>
+            <p>
+                <b>Time:</b> <br>Minggu, 20 Desember 2020. 14:15 <br>
+                <b>Benefits:</b> <br>
+                SAT <br>
+                E-Certificate <br>
+                Knowledge <br>
+                <b>Speakers:</b><br>Benaya Oktavianus
+            </p>
+            <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
+                    Seminar</button></a>
+        </div>
+        <div class="order-1 order-md-2 col-8 col-md-5 col-lg-3 offset-2 offset-md-0">
+            <img class="img-fluid" src="{{ asset('img/klasik/Benaya.png') }}" alt="">
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center align-items-center pt-5">
+        <div class="col-8 offset-lg-3 col-md-5 col-lg-3 offset-md-1">
+            <img class="img-fluid" src="{{ asset('img/klasik/gan-vin.gif') }}" alt="">
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-left pt-3 pt-md-0">
+            <h1 class="serif title-small bold">InSight Pameran Besar NARASI</h1>
+            <p>
+                <b>Time:</b> <br>Minggu, 20 Desember 2020. 15:45 <br>
+                <b>Benefits:</b> <br>
+                SAT <br>
+                E-Certificate <br>
+                Knowledge <br>
+                <b>Speaker:</b><br>Ganal Asmara & Kevin Yobeth
+            </p>
+            <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
+                    Seminar</button></a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center mt-5">
         <h1 class="montserrat bold col-md-10 text-center">OUR OFFICIAL MERCHANDISE</h1>
         <div class="col-md-8 text-center">
             <img class="img-fluid" src="{{ asset('img/merch/A.png') }}" alt="">
@@ -139,45 +196,6 @@
         be
         allowed to join.</p>
 </div>
-</div> --}}
-
-{{-- <div class="row d-flex justify-content-center align-items-center pt-5">
-
-    <div class="col-8 offset-lg-3 col-md-5 col-lg-3 offset-md-1">
-        <img class="img-fluid" src="{{ asset('img/klasik/Bernard.png') }}" alt="">
-</div>
-<div class="col-12 col-md-6 text-center text-md-left pt-3 pt-md-0">
-    <h1 class="serif title-small bold">Editing Beauty Portrait </h1>
-    <p>
-        <b>Time:</b> <br>Sabtu, 12 Desember 2020. 15:00 <br>
-        <b>Benefits:</b> <br>
-        SAT <br>
-        E-Certificate <br>
-        Knowledge <br>
-        <b>Speaker:</b><br>Bernard Adhitya
-    </p>
-    <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
-            Seminar</button></a>
-</div>
-</div>
-
-<div class="row align-items-center pt-5">
-    <div class="order-2 order-md-1 col-12 col-md-6 text-center text-md-right pt-3 pt-m3-0">
-        <h1 class="serif title-small bold">Keliling Virtual Exhibition</h1>
-        <p>
-            <b>Time:</b> <br>Minggu, 13 Desember 2020. 16:30 <br>
-            <b>Benefits:</b> <br>
-            SAT <br>
-            E-Certificate <br>
-            Knowledge <br>
-            <b>Speakers:</b><br>Adil, Andrew & Daniel
-        </p>
-        <a href="https://narasi.klifonara.com/live"><button type="button" class="btn btn-primary">Join
-                Seminar</button></a>
-    </div>
-    <div class="order-1 order-md-2 col-8 col-md-5 col-lg-3 offset-2 offset-md-0">
-        <img class="img-fluid" src="{{ asset('img/klasik/ad-an-da.gif') }}" alt="">
-    </div>
 </div> --}}
 
 <div class="row pt-5 d-flex justify-content-center align-items-center ">
