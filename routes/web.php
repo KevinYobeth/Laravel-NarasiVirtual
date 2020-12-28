@@ -14,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/download/zip/{folderName}', 'CertificateController@downloadZip')->name('downZip');
+Route::get('/download/{filepath}', 'CertificateController@downloadCertificate')->where('filepath', '.*')->name('downCertificate');
+
+Route::get('/claim', 'CertificateController@index')->name('certificate');
+Route::post('/claim', 'CertificateController@showCertificate')->name('claimCertificate');
+
+Route::get('{allExcept}', function () {
+    return redirect('https://narasi.klifonara.com/seeyou');
+})->where('allExcept', '[^/claim]*');
+
+Route::get('/seeyou', function () {
+    return view('seeyou.index');
+});
+
 Route::get('/', 'LandingPageController@index')->name('landingPage');
 Route::get('/story', 'LandingPageController@theStory')->name('theStory');
 Route::get('/submissions', 'LandingPageController@submissions')->name('submissions');
@@ -52,13 +66,4 @@ Route::get('/admin/{transID}', 'AdminController@detail')->name('transDetail');
 Route::get('/exit/{seminarCode}', 'TicketController@index')->name('exitTicket');
 Route::post('/exit/{seminarCode}', 'TicketController@store')->name('storeTicket');
 
-Route::get('/download/zip/{folderName}', 'CertificateController@downloadZip')->name('downZip');
 Route::get('/download/virtual-bg', 'HomeController@download')->name('downVirtualBG');
-Route::get('/download/{filepath}', 'CertificateController@downloadCertificate')->where('filepath', '.*')->name('downCertificate');
-
-Route::get('/claim', 'CertificateController@index')->name('certificate');
-Route::post('/claim', 'CertificateController@showCertificate')->name('claimCertificate');
-
-Route::get('/invoice', function () {
-    return view('mails.invoice-web');
-});
