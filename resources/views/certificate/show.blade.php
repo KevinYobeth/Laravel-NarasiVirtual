@@ -10,9 +10,6 @@
             <a href="{{ route('downZip', ['folderName' => $folderName]) }}">
                 <button class="btn btn-dark" type="button">Download as ZIP</button>
             </a>
-            <a href="{{ route('emailMe', ['folderName' => $folderName]) }}">
-                <button class="btn btn-dark" type="button">Email Me</button>
-            </a>
         </div>
 
         @foreach ($certifs as $certif)
