@@ -98,8 +98,6 @@ class CertificateController extends Controller
 
         $zip = new ZipArchive();
 
-        error_log($folderName);
-
         $fileName = 'storage/certif/' . $folderName . '/E-Certificate.zip';
 
         if ($zip->open($fileName, ZipArchive::CREATE)) {
