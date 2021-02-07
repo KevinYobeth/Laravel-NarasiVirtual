@@ -20,13 +20,14 @@ Route::get('/download/{filepath}', 'CertificateController@downloadCertificate')-
 Route::get('/claim', 'CertificateController@index')->name('certificate');
 Route::post('/claim', 'CertificateController@showCertificate')->name('claimCertificate');
 
-Route::get('{allExcept}', function () {
-    return redirect('https://narasi.klifonara.com/seeyou');
-})->where('allExcept', '[^/claim]*');
-
 Route::get('/seeyou', function () {
     return view('seeyou.index');
 });
+
+Route::get('{allExceptRoot}', function () {
+    return redirect('/seeyou');
+})->where('allExceptRoot', '[^/]*');
+
 
 Route::get('/', 'LandingPageController@index')->name('landingPage');
 Route::get('/story', 'LandingPageController@theStory')->name('theStory');

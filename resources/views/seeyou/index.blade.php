@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<title>See You Soon!</title>
-<style>
-  body {
-    background-color: rgb(31, 31, 31);
-    text-align: center;
-    padding: 150px;
-  }
 
-  h1 {
-    font-size: 50px;
-  }
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZLFCCXTSX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  body {
-    font: 20px Helvetica, sans-serif;
-    color: white;
-  }
+  gtag('config', 'G-VZLFCCXTSX');
+  </script>
+  <title>See You Soon!</title>
+  <style>
+    body {
+      background-color: rgb(31, 31, 31);
+      text-align: center;
+      padding: 150px;
+    }
 
-  article {
-    display: block;
-    text-align: left;
-    width: 650px;
-    margin: 0 auto;
-  }
+    h1 {
+      font-size: 50px;
+    }
 
-  a {
-    color: #dc8100;
-    text-decoration: none;
-  }
+    body {
+      font: 20px Helvetica, sans-serif;
+      color: white;
+    }
 
-  a:hover {
-    color: rgb(197, 197, 197);
-    text-decoration: none;
-  }
-</style>
+    article {
+      display: block;
+      text-align: left;
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #dc8100;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(197, 197, 197);
+      text-decoration: none;
+    }
+  </style>
+</head>
 
 <article>
   <img height="40px" src="{{ asset('img/logo/klifonara.png') }}" alt="" />

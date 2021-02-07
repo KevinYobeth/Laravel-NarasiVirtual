@@ -1,63 +1,60 @@
 <p align="center"><img src="public/img/logo/logo-dark.png" width="300"></p>
 <h1 align="center">NARASI Virtual 2020</h1>
+<p align="center">Online Exhibition by KLIFONARA</p>
 
-# Installation
+# Klifonara Ekshibisi
 
-## First Time Pull
+Integrating website with virtual venue, we held the first fully virtual exhibition by KLIFONARA. With the theme of Expressions and The Language of the Soul as it's title, we aim to break the stereotypes set by our society.
 
-### Initialize Git Repository & Pull Code From Repository
+## Installation
 
-```
-git init 
-git pull https://github.com/kevinyobeth/laravel-narasivirtual
-```
+-   Pull code from repo
+    ```
+    git pull https://github.com/KevinYobeth/Laravel-NarasiVirtual
+    ```
+-   Install dependencies
+    ```
+    composer install
+    ```
+-   Rename .env.example to .env (Windows)
+    ```
+    move .env.example .env
+    ```
+-   Generate key
+    ```
+    php artisan generate:key
+    ```
+-   Migrate and seed database
+    ```
+    php artisan migrate:fresh --seed
+    ```
+-   Run app
+    ```
+    php artisan serve
+    ```
 
-### Installing Dependencies
+## Support Me
 
-```
-composer install
-```
+<a href="https://www.buymeacoffee.com/kevinyobeth"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=kevinyobeth&button_colour=40DCA5&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
 
-### Running PHP Server
+## App Preview
 
-```
-php artisan serve
-```
+### Landing Page
 
-### Migrate Database
+![alt](public/img/docs/landingPage.gif)
 
-```
-php artisan migrate:fresh
-```
+### The Story
 
-### Seeding Database
+![alt](public/img/docs/theStory.jpg)
 
-```
-php artisan db:seed
-```
+### Submissions
 
-## Pull Repository
+![alt](public/img/docs/submissions.jpg)
 
-```
-git pull origin master
-php artisan serve
-```
+## Live Preview
 
-## First Time Commit
+You can view the live application [here](https://narasi.kevinyobeth.com/) or https://narasi.kevinyobeth.com
 
-```
-git add .
-git remote add origin https://github.com/kevinyobeth/laravel-narasivirtual
-git commit -m "[Kevin] commit message"
+## Copyright
 
-git checkout -b [nama kalian]
-git push origin [nama kalian]
-```
-
-## Commit to Repository
-
-```
-git add .
-git commit -m "[NamaKalian] Ngapain aja"
-git push origin [NamaKalian]
-```
+All rights reserved. All images are copyright to their respective owners.
