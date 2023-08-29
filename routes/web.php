@@ -24,9 +24,9 @@ Route::get('/seeyou', function () {
     return view('seeyou.index');
 });
 
-Route::get('{allExceptRoot}', function () {
-    return redirect('/seeyou');
-})->where('allExceptRoot', '[^/]*');
+// Route::get('{allExceptRoot}', function () {
+//     return redirect('/seeyou');
+// })->where('allExceptRoot', '[^/]*');
 
 
 Route::get('/', 'LandingPageController@index')->name('landingPage');
